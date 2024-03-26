@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committe Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css"> -->
+
+    <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
+</head>
+     <style >
+     .body {
+        margin: 0;
+        padding: 0;
+        font-family: "arial", sans-serif;
+        box-sizing: border-box;
+    }
+    
+    /* .contain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .team-member {
+        text-align: center;
+        margin: 100px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        transition: transform 0.3s ease;
+    }
+    
+    .team-member:hover {
+        transform: scale(1.05);
+    }
+    
+    .team-member img {
+        width: 200px;
+        height: 200px;
+        border-radius: 30%;
+        object-fit: cover;
+    } */
+    /* .team img{
+        margin-top:70px;
+    }
+     */
+     .hidden {
+    display: none;
+  }
+  .list {
+    width: 500px;
+    margin: 20px auto;
+  }
+  .main-div {
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+  }
+  .list > div > div {
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .arrow {
+    position: absolute;
+    right: 10px;
+    transform: translateY(-100%);
+  }
+    .team {
+        text-align: center;
+        background-image: url('./assets/images/mits4.jpg');
+        background-size: 100% 100%; 
+        color: #fff;
+        height: 400px;
+    }
+    hr{
+        width: 50%;
+        margin: auto;
+        border-color: whitesmoke;
+    }
+    .team img {
+        width: 350px;
+        height: auto;
+        margin-top: 70px;
+    } 
+    html {
+        scroll-behavior: smooth;
+    }
+    .col-lg-4{
+            margin: 7%;
+        }
+    .footer{
+    background-color: var(--second-color);
+    color: #a74242;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 3.5rem 0;
+}
+.footer-title {
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--mb-4);
+}
+.social-item {
+    text-align: center;
+    margin:  var(--mb-2);
+}
+.skills-icon {
+    width: 10%; /* Adjust according to your preference */
+}
+.social-name {
+    color: #041b78;
+    margin-top: 10px;
+}
+.main-div > div{
+    cursor:default;
+}
+@media screen and (max-width:768px) {
+    .list{
+        width:300px;
+    }
+}
+</style>
+</head>
+<body>
+    
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+          <span class="dot"></span>
+          <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div> 
+    
+      
+      <!-- ***** Pre HEader *****
+      <div class="pre-header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-sm-6">
+                      <span>Hey! The Show is Starting in 15 Days.</span>
+                  </div>
+                  <div class="col-lg-6 col-sm-6">
+                      <div class="text-button">
+                          <a href="rent-venue.html">Contact Us Now! <i class="fa fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> -->
+      
+      <!-- ***** Header Area Start ***** -->
+      <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">A<em>shv 2k24</em></a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="committe.html">Committe</a></li>
+                            <li><a href="technical.html">Technical Events</a></li> 
+                            <li><a href="non-technical.html">Culturals</a></li>
+                            <li><a href="sports.html">Sports</a></li> 
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="#contact">Contact us</a></li> 
+                        </ul>         
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="team">
+        <h1 style="text-shadow: 3px 3px 4px black;">Committee</h1>
+        <hr>
+        <img style="text-shadow: 3px 3px 4px black;" src="./assets/images/ashv1.webp"  alt="Image description">
+    </div>
+    
+    <!-- <div class="contain">
+        
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Harsha</h2>
+            <p>coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Bharath</h2>
+            <p>coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Anil</h2>
+            <p>coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Sharath</h2>
+            <p>coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Anusha</h2>
+            <p>coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Lakshmi</h2>
+            <p>coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Harsha</h2>
+            <p>coordinator</p>
+        </div>
+        <div class="team-member">
+            <img src="./assets/images/teampro.jpeg" alt="virat">
+            <h2>Harsha</h2>
+            <p>coordinator</p>
+        </div> -->
+        <!-- add chey-->
+        <div class="list">
+            <div class="main-div" onclick="toggleContent(this, 'chief-patron-content')">
+              <h5 id="chief-patron">Chief Patron</h5>
+              <span class="arrow">▼</span>
+              <div id="chief-patron-content" >
+                <strong>Dr. N. Vijaya Bhaskar Choudary, Ph.D</strong>
+                <p>Secretary & Correspondent</p>
+              </div>
+            </div>
+            <div class="main-div" onclick="toggleContent(this, 'patrons-content')">
+              <h5 id="patrons">Patrons</h5>
+              <span class="arrow">▼</span>
+              <div id="patrons-content" >
+                <strong>Mrs. Keerthi Nadella, </strong>
+                   <p> Executive Director </p>
+                   <strong> Mr. N. Dwarakanath, </strong>
+                   <p>President - RRR Educational Academy </p>
+              </div>
+            </div>
+            <div class="main-div" onclick="toggleContent(this, 'chief-content')">
+                <h5 id="chief">Chief Coordinator</h5>
+                <span class="arrow">▼</span>
+                <div id="chief-content" >
+                  <strong>Dr . C. Yuvaraj, </strong>
+                     <p>Principal</p>
+                </div>
+              </div>
+              <div class="main-div" onclick="toggleContent(this, 'Convener-content')">
+                <h5 id="Convener">Convener</h5>
+                <span class="arrow">▼</span>
+                <div id="Convener-content" class="hidden">
+                  <strong>Dr. C. Kamal Basha,  </strong>
+                     <p>Vice Principal-Administration</p>
+                </div>
+              </div>
+              <div class="main-div" onclick="toggleContent(this, 'Co-Conveners-content')">
+                <h5 id="Co-Conveners">Co-Conveners</h5>
+                <span class="arrow">▼</span>
+                <div id="Co-Conveners-content" class="hidden">
+                    <strong>Dr. Dhrubajit Sarma,</strong> Asst. Professor - MECH</p>
+                    <strong>Y. Pradeep Kumar,</strong> Asst. Professor - ECE</p>
+                    <strong>G. Subbarao,</strong> Asst. Professor - ECE </p>
+                    <strong>G. Deepthi,</strong> AAO - CST</p>
+                </div>
+              </div>
+              <div class="main-div" onclick="toggleContent(this, 'Advisors-content')">
+                <h5 id="Advisors">Advisors</h5>
+                <span class="arrow">▼</span>
+                <div id="Advisors-content" class="hidden">
+                    <strong>Dr. P. Ramanathan,</strong>Vice Principal-Academics</p>
+                    <strong>Prof. Goutam Chakraborty,</strong> Dean-CSE</p>
+                    <strong>Dr. Basabi Chakraborty,</strong> Dean-CST</p>
+                    <strong>Dr. Sremmant Basu,</strong> Dean-Admin & IRO</p>
+                    <strong>Dr. R. Thulasiram Naidu,</strong> Advisor R&D</p>
+                    <strong>Dr. Dipankar Roy,</strong> HOD - Civil</p>
+                    <strong>Dr. R. Kalpana,</strong> HOD - CSE</p>
+                    <strong>Dr. M. Sreedevi,</strong> HOD - CST</p>
+                    <strong>Dr. K. Chokkanathan,</strong> HOD - AI</p>
+                    <strong>Dr. C. Kusuma,</strong> HOD - DS</p>
+                    <strong>Dr. S V S Gangadevi,</strong> HOD - CSE-CS</p>
+                    <strong>Dr. S. Rajasekaran,</strong> HOD - ECE</p>
+                    <strong>Dr. A. V. Pavan Kumar,</strong> HOD - EEE</p>
+                    <strong>Dr. Dr. S. Baskaran,</strong> HOD - ME</p>
+                    <strong>Dr. N. Naveen Kumar,</strong> HOD - MCA</p>
+                    <strong>Dr. P. Ramesh Reddy,</strong> HOD - Maths</p>
+                    <strong>Dr. M. Chandra Sekhar,</strong> HOD - Physics</p>
+                    <strong>Dr. Renjith Bhaskaran,</strong> HOD - Chemistry</p>
+                    <strong>Dr. P. Athahar,</strong> HOD - English & Foreign Lang</p>
+                    <strong>Dr. C. Damodharan,</strong> Physical Director</p>
+                    <strong>Mr. V. Maruthi Prasad,</strong> SMC</p>
+                    <strong>Mrs. M. Prathibha,</strong> SAO - Admin (Gen)</p>
+                </div>
+              </div>
+              <div class="main-div" onclick="toggleContent(this, 'student-content')">
+                <h5 id="student">Student Co-ordinaters</h5>
+                <span class="arrow">▼</span>
+                <div id="student-content" class="hidden">
+                <strong>K. Sai Thanush Reddy,</strong>President</p>
+                <strong>A.Sai Sandeep ,</strong>Secretary</p>
+                <strong>N.Shruthi ,</strong>Secretary</p>
+                <strong>P.Sai Kiran,</strong>Vice-President</p>
+                <strong>K. Vamsidhar Reddy,</strong>Vice-President</p>
+                <strong>B. Jaganmohan Reddy,</strong>Vice-President</p>
+                <strong>P. Obul Reddy,</strong>Vice-President</p>
+                <strong>Pavan Rasineni,</strong>Vice-President</p>
+                <strong>T.Sushanth Reddy,</strong>Vice-President</p>
+                <strong>Y. Harasha Vardhan,</strong>Vice-President</p>
+                <strong>P.Abubakar siddiq khan,</strong>Vice-President</p>
+                <strong>M.Teja,</strong>Vice-President</p>
+                </div>
+              </div>
+          </div>
+    <footer class="footer section" id="contact">
+        <h2 class="section-title">Contact Us!</h2><br>
+        <p class="footer-title">Get in Touch</p><br><br>
+        <div class="footer-social">
+            <div class="social-item">
+                <a href="" target="_blank">
+                    <img class="skills-icon" src="./assets/images/insta.jpg" alt="Instagram" />
+                    <span class="social-name">Instagram</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="" target="_blank">
+                    <img class="skills-icon" src="./assets/images/twitter.jpg" alt="Twitter" />
+                    <span class="social-name">&nbsp;&nbsp;Twitter&nbsp;&nbsp;</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="tel:" target="_blank">
+                    <img class="skills-icon" src="./assets/images/phone.jpg" alt="Phone" />
+                    <span class="social-name">&nbsp;&nbsp;Phone&nbsp;&nbsp;&nbsp;</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="" target="_blank">
+                    <img class="skills-icon" src="./assets/images/facebook.jpg" alt="Facebook" />
+                    <span class="social-name">Facebook</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="" target="_blank">
+                    <img class="skills-icon" src="./assets/images/whatsapp.jpg" alt="Facebook" />
+                    <span class="social-name">whatsapp</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="col-lg-12">
+        <div class="sub-footer">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo"><span>A<em>shv 2k24</em></span></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="menu">
+                        <ul class="nav">
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="committe.html">Committe</a></li>
+                            <li><a href="technical.html">Technical Events</a></li> 
+                            <li><a href="non-technical.html">Culturals</a></li>
+                            <li><a href="sports.html">Sports</a></li> 
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="#contact">Contact us</a></li> 
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-6">
+        <div class="text-button">
+            <a href="create.html" > Created by <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+    function toggleContent(element, contentId) {
+    var content = document.getElementById(contentId);
+    var arrow = element.querySelector('.arrow');
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      arrow.innerHTML = '▲';
+    } else {
+      content.style.display = 'none';
+      arrow.innerHTML = '▼';
+    }
+  }
+    </script>
+</body>
+</html>
