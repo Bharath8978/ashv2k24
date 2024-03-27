@@ -486,7 +486,7 @@ header
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .header-area .main-nav .nav li a.active:after {
     display: none;
   }
@@ -585,7 +585,7 @@ header
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1000px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
@@ -1619,10 +1619,6 @@ Tickets Page
 ---------------------------------------------
 */
 
-.tickets-page {
-  margin-bottom: 100px;
-}
-
 .tickets-page .search-box {
   background-color: #7c838b;
   padding: 30px;
@@ -1716,7 +1712,7 @@ Tickets Page
 }
 
 .tickets-page .ticket-item .down-content {
-  background-color: #e1e1e1ce;
+  background-color: #ffff;
   padding: 30px;;
 }
 

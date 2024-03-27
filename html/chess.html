@@ -7,7 +7,7 @@
     <meta name="author" content="Tooplate">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-    <title>ASHV - Theatre</title>
+    <title>ASHV - Chess</title>
 
 
     <!-- Additional CSS Files -->
@@ -25,6 +25,9 @@
     .col-lg-4{
          margin: 7%;
      }
+     html{
+            scroll-behavior: smooth;
+        }
      .footer{
  background-color: var(--second-color);
  color: #a74242;
@@ -53,11 +56,8 @@
  font-size: 1rem;
  color: #041b78;
 }
-.non-tech{
-    color: rgb(0, 0, 0);
-}
 #b{
-    font-weight: 900;
+    font-weight:900;
 }
 .up-arrow {
     position: fixed;
@@ -83,10 +83,7 @@
      height: 500px;
 }
 .up-arrow:hover {
-    color: #ddcccc;
-}
-html{
-    scroll-behavior: smooth;
+    color: #ddcccc;
 }
 .main-nav img{
             position: absolute !important;
@@ -122,32 +119,30 @@ html{
         }
         }
 </style>
-<body id="main_id">
-    <header class="header-area header-sticky">
+<body>
+    <header class="header-area header-sticky" id="main">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <!-- <a href="../index.html" class="logo">A<em>shv 2K24</em></a> -->
+                        <!-- ** Logo Start ** -->
                         <img id="imgOne"  src="../assets/images/mits.png" alt="logo">
                                 <img id="imgTwo" src="../assets/images/logo2.jpg"alt="">
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
+                        <!-- ** Logo End ** -->
+                        <!-- ** Menu Start ** -->
                         <ul class="nav">
                             <li><a href="../index.html" >Home</a></li>
                             <li><a href="../about.html">About Us</a></li>
-                            <li><a href="../committe.html">Committe</a></li>
-                            <li><a href="../technical.html">Technical Events</a></li> 
-                            <li class="non-tech"><a id="b" href="../non-technical.html">Culturals</a></li>
-                            <li><a href="../sports.html">Sports</a></li> 
+                            <li><a  href="../technical.html">Technical Events</a></li> 
+                            <li><a href="../non-technical.html">Culturals</a></li>
+                            <li class="non-tech"><a  id="b" href="../sports.html">Sports</a></li> 
                             <li><a href="../gallery.html">Gallery</a></li>
                             <li><a href="#contact">Contact us</a></li> 
                         </ul>      
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        <!-- ***** Menu End ***** -->
+                        <!-- ** Menu End ** -->
                     </nav>
                 </div>
             </div>
@@ -155,61 +150,23 @@ html{
     </header><br>
     <div class="main">
     </div><br>
-    <div  class="des" >
-        <h1 style="color: rgb(57, 55, 55);">Theatre</h1><br>
-        <center><img style="max-width: 100%; height: auto;" class="image" src="../assets/images/theatre.jpg" alt="Theatre"></center>
+    <div  class="des">
+        <h1 style="color: rgb(57, 55, 55);">Chess</h1><br>
+        <center><img style="max-width: 30%; height: auto;" class="image" src="../assets/images/chess.webp" alt="Chess"></center>
         <br><br>
         <h4>Description</h4><br>
         <div  class="in-des">
-            <h6 >
-                SUB EVENTS
-            </h6>
-            <p>
-                1.Short film <br>
-                2.Drama <br>
-                3.Photography contest <br>
-                4.Memes contest <br>
-                5.Mime <br>
-                6.Mimicry <br>
-                7.Monoact <br>
-                8.Standup comedy <br>
-            </p><br>
-            <h5 >
-                RULES FOR SHORT FILM CONTEST
-            </h5>
-            <p>
-                1.Short film must be message oriented only. <br>
-                2.Maximum duration limit 30 minutes. <br>
-                3.Minimum duration limit 5 minutes. <br>
-                4.No adult scenes and 18+comedy. <br>
-                5. Teams should submit their videos in PENDRIVE only. <br>
-                6. Videos should be in .flv , .MP4 format. <br>
-                7. Decision of judges is final. <br>
-            </p><br>
-            <h5 >
-                RULES FOR DRAMA
-            </h5>
-            <p>
-                1.Maximum duration limit 10 minutes. <br>
-                2.No adult or 18+ Comedy. <br>
-            </p><br>
-            <h5 >
-                RULES FOR PHOTOGRAPHY CONTEST : 
-            </h5>
-            <p>
-                1.Concept is summer. <br>
-                2.Edited pictures not allowed. <br>
-                3. photo should contain time, date when you capture the photo. <br>
-                4.No filters allowed. <br>
-            </p><br>
-        </div>
-    </div>
+           
     <div>
+        </div>
+        </div>
+        </div>
+      
         <center><a href="#"><img style="width: 25%;" src="../assets/images/register.gif" alt="Register Now"></a></center>
     </div>
     <br>
-    <!-- *** Footer *** -->
-    <footer style="margin-top: -15%;"  class="footer section" id="contact"><br><br><br>
+    <!-- * Footer * -->
+    <footer   class="footer section" id="contact"><br><br><br>
         <hr><h2 class="section-title">Contact Us!</h2><br>
         <p class="footer-title">Get in Touch</p><br><br>
         <div class="footer-social">
@@ -245,10 +202,11 @@ html{
             </div>
         </div>
     </footer>
+            
         </div>
     </div>
     <div class="arrow">
-        <a href="#main_id"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
+        <a href="#main"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
     </div>
     <script src="../assets/js/jquery-2.1.0.min.js"></script>
 
