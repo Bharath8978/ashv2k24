@@ -486,7 +486,7 @@ header
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1060px) {
   .header-area .main-nav .nav li a.active:after {
     display: none;
   }
@@ -585,7 +585,7 @@ header
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1060px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }
@@ -1377,10 +1377,10 @@ Shows Events Page
 */
 
 .page-heading-shows-events {
-  background-image: url(../images/mits5.jpg);
+  background-image: url(../images/theatre1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 110px 0px;
+  padding: 100px 0px;
   text-align: center;
 }
 

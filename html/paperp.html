@@ -85,35 +85,27 @@
 .up-arrow:hover {
     color: #ddcccc;
 }
-.main-nav img{
+.main-nav .nav li {
+            display: inline-block;
+        }
+        .main-nav img{
             position: absolute !important;
         }
         #imgOne{
-            left: 0rem !important;
-            top: 1rem !important;
+            left: 3rem ;
+            top: 0.5rem !important;
             margin-top: 0 !important;
-            width: 4rem; height: 3rem;margin-top: .5rem;
+            width: auto; height: 4rem;margin-top: .5rem;
         }
-        #imgTwo{
-            top:1rem !important;
-            left: 3.8rem !important;
-            margin-top: 0 !important;
-            width: 6rem; height: 3rem;margin-top: .5rem;
-        }
+
 
         @media screen and (max-width:768px) {
             .main-nav img{
             position: absolute;
         }
         #imgOne{
-            left: 2rem;
+            left: 1rem;
             top: 1rem;
-            margin-top: 0;
-           
-        }
-        #imgTwo{
-            top:1rem;
-            left: 4.8rem;
             margin-top: 0;
            
         }
@@ -121,24 +113,27 @@
 </style>
 <body>
     <header class="header-area header-sticky" id="main">
-        <div class="container">
+        <div class="contain">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <img id="imgOne"  src="../assets/images/mits.png" alt="logo">
-                                <img id="imgTwo" src="../assets/images/logo2.jpg"alt="">
+                            <img id="imgOne"  src="../assets/images/mits.png" alt="logo">
+                        
+                        <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="../index.html" >Home</a></li>
+                        <ul class="nav" >
+                            <li class="non-tech"><a href="../index.html">Home</a></li>
                             <li><a href="../about.html">About Us</a></li>
-                            <li><a href="../committe.html">Co-Ordinators</a></li>
-                            <li class="non-tech"><a id="b" href="../technical.html">Technical Events</a></li> 
+                            <li><a href="../committe.html">Committe</a></li>
+                            <li><a href="../technical.html" id="b">Technical Events</a></li>
                             <li><a href="../non-technical.html">Culturals</a></li>
-                            <li><a href="../sports.html">Sports</a></li> 
+                            <li><a href="../sports.html">Sports</a></li>
                             <li><a href="../gallery.html">Gallery</a></li>
-                            <li><a href="#contact">Contact us</a></li> 
-                        </ul>      
+                            <li><a href="../theatre.html">Theatre</a></li>
+                            <li><a href="../register.html">Register</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
