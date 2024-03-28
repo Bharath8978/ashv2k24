@@ -85,9 +85,7 @@
      width:  90%;
      height: 500px;
 }
-.up-arrow:hover {
-    color: #ddcccc;
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -116,9 +114,40 @@ html{
            
         }
         }
+        @media screen and (max-width:768px) {
+    .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.logo-container img {
+    margin-right: 10px;
+}
+.footer-social {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-icon{
+        width: 35%;
+        
+    }
+
+    .social-item {
+        margin: 0;
+        margin-bottom: 0; 
+    }
+
+    .social-item span {
+        display: none;
+    }
+}
 </style>
 <body id="main_id">
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky" id="main_id">
         <div class="contain">
             <div class="row">
                 <div class="col-12">
@@ -138,7 +167,7 @@ html{
                             <li><a href="../gallery.html">Gallery</a></li>
                             <li><a href="../theatre.html" id="b">Theatre</a></li>
                             <li><a href="../register.html">Register</a></li>
-                            <li><a href="#contact">Contact us</a></li>
+                            <li><a href="../contactus.html">Contact us</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -176,6 +205,9 @@ html{
     </div>
     <br>
     <!-- *** Footer *** -->
+    <div class="arrow">
+        <a href="#main_id"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
+    </div>
     <footer style="margin-top: -15%;"  class="footer section" id="contact"><br><br><br>
         <hr><h2 class="section-title">Contact Us!</h2><br>
         <p class="footer-title">Get in Touch</p><br><br>
@@ -214,9 +246,7 @@ html{
     </footer>
         </div>
     </div>
-    <div class="arrow">
-        <a href="#main_id"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
-    </div>
+    
     <script src="../assets/js/jquery-2.1.0.min.js"></script>
 
     <!-- Bootstrap -->

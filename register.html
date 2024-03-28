@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -9,7 +8,7 @@
     <meta name="author" content="Tooplate">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-    <title>Ashv 2k24</title>
+    <title>Ashv 2k24 - Registration</title>
 
 
     <!-- Additional CSS Files -->
@@ -27,32 +26,128 @@ Tooplate 2125 ArtXibition
 https://www.tooplate.com/view/2125-artxibition
 
 -->
-<style>
-    .up-arrow {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #333;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    z-index: 1000;
-    transition: background-color 0.3s;
-}
-
-.up-arrow:hover {
-    color: #ddcccc;
-}
-#b{
-    font-weight: 900;
-}
-    .col-lg-4{
-            margin: 7%;
+    </head>
+    <style>
+         html {
+            scroll-behavior: smooth;
         }
+        .footer {
+            background-color: var(--second-color);
+            color: #a74242;
+            text-align: center;
+            font-weight: var(--font-semi);
+            padding: 3.5rem 0;
+        }
+
+        .footer-title {
+            font-size: 2rem;
+            margin-bottom: var(--mb-4);
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: var(--mb-4);
+        }
+
+        .social-item {
+            text-align: center;
+            margin: 0 var(--mb-2);
+        }
+
+        .skills-icon {
+            width: 10%;
+            /* Adjust according to your preference */
+        }
+
+        .social-name {
+            font-size: 1rem;
+            color: #041b78;
+        }
+
+        .ashv {
+            width: 400px;
+            height: auto;
+        }
+
+        .mits {
+            width: 80px;
+            height: auto;
+        }
+
+        #b {
+            font-weight: 900;
+        }
+
+        .up-arrow {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            z-index: 1000;
+            padding-top: 8px;
+            transition: background-color 0.3s;
+        }
+
+        .up-arrow:hover {
+            color: #ddcccc;
+        }
+
+
+        .main-nav .nav {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Center the navigation items */
+        }
+
+        
+        .main-nav .nav li:last-child {
+            margin-right: 0;
+        }
+        
+        .main-nav .nav li a {
+            color: #333;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+        
+        .main-nav .nav li a:hover {
+            color: #ff6b6b;
+        }
+        .main-nav .nav li {
+            display: inline-block;
+        }
+        .main-nav img{
+            position: absolute !important;
+        }
+        #imgOne{
+            left: 3rem ;
+            top: 0.5rem !important;
+            margin-top: 0 !important;
+            width: auto; height: 4rem;margin-top: .5rem;
+        }
+        @media screen and (max-width:768px) {
+            .main-nav img{
+            position: absolute;
+        }
+        #imgOne{
+            left: 1rem;
+            top: 1rem;
+            margin-top: 0;
+        }
+        }
+        
         .footer{
     background-color: var(--second-color);
     color: #a74242;
@@ -81,60 +176,33 @@ https://www.tooplate.com/view/2125-artxibition
     font-size: 1rem;
     color: #041b78;
 }
-.hero{
+.ashv{
     width: 400px;
     height: auto;
-    margin-left: 50%;
 }
-.col-lg-4{
-    margin-left: 30%;
+.mits{
+    width: 80px;
+    height: auto;
 }
-.page-heading-shows-events {
-  background-image: url(./assets/images/mits8.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 110px 0px;
-  text-align: center;
+.logo-container {
+    display: flex;
+    align-items: center;
 }
-html{
-    scroll-behavior: smooth;
-}
-.main-nav .nav li {
-            display: inline-block;
-        }
-        .main-nav img{
-            position: absolute !important;
-        }
-        #imgOne{
-            left: 3rem ;
-            top: 0.5rem !important;
-            margin-top: 0 !important;
-            width: auto; height: 4rem;margin-top: .5rem;
-        }
-
-
-        @media screen and (max-width:768px) {
-            .main-nav img{
-            position: absolute;
-        }
-        #imgOne{
-            left: 1rem;
-            top: 1rem;
-            margin-top: 0;
-           
-        }
-        }
 @media screen and (max-width:768px) {
-    .hero{
-        margin-left: 0%;
-    }
-    .col-lg-4{
-        margin-left: 0%;
-    }
+    .logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
-        
-</style>
-    </head>
+
+.logo-container img {
+    margin-right: 10px;
+}  
+}
+    </style>
+
     
     <body>
     
@@ -152,132 +220,552 @@ html{
     <!-- ***** Preloader End ***** -->
     
     <!-- ***** Pre HEader ***** -->
-    <!-- <div class="pre-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <span>Hey! The Show Is Starting In 5 Days.</span>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="text-button">
-                        <a href="rent-venue.html">Contact Us Now! <i class="fa fa-arrow-right"></i></a>
+    
+
+    <!-- ***** Header Area Start ***** -->
+    <section id="nav">
+        <header class="header-area header-sticky">
+            <div class="contain">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                                <img id="imgOne"  src="./assets/images/mits.png" alt="logo">
+                            
+                            <!-- ***** Logo End ***** -->
+                            <!-- ***** Menu Start ***** -->
+                            <ul class="nav" >
+                                <li ><a  href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="committe.html">Committe</a></li>
+                                <li><a href="technical.html">Technical Events</a></li>
+                                <li><a href="non-technical.html">Culturals</a></li>
+                                <li><a href="sports.html">Sports</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="theatre.html">Theatre</a></li>
+                                <li class="non-tech" ><a  id="b" href="register.html">Register</a></li>
+                                <li><a href="contactus.html">Contact us</a></li>
+                            </ul>
+                            <a class='menu-trigger'>
+                                <span>Menu</span>
+                            </a>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
                     </div>
                 </div>
             </div>
-        </div>
-    </div> -->
-
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky" id="scroll">
-        <div class="contain">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                            <img id="imgOne"  src="./assets/images/mits.png" alt="logo">
-                        
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav" >
-                            <li class="non-tech"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="committe.html">Committe</a></li>
-                            <li><a href="technical.html">Technical Events</a></li>
-                            <li><a href="non-technical.html">Culturals</a></li>
-                            <li><a href="sports.html">Sports</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="theatre.html">Theatre</a></li>
-                            <li><a href="register.html" id="b">Register</a></li>
-                            <li><a href="#contact">Contact us</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+        </header>
+    </section>
 
     <!-- ***** About Us Page ***** -->
     <div class="page-heading-shows-events">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 style="text-shadow: 3px 3px 4px black;">Registration's</h2>
+                    <h2 style="text-shadow: 3px 3px 4px black;">Registration</h2>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <div class="show-events-carousel">
+
+    <div class="shows-events-schedule" style="margin: 6%; padding: 2%; background-image: url(./assets/images/tech.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="owl-show-events owl-carousel">
-                        <div class="item">
-                            <img src="assets/images/satyadev1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/satyadev2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/satyadev3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/satyadev4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/satyadev1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/satyadev2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/satyadev3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/satyadev4.jpg" alt="">
-                        </div>
+                    <div class="section-heading">
+                        <h2 style="color: white;">Technical Events</h2>
                     </div>
                 </div>
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Drone Workshop</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS <br> Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="ticket-details.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Web Development Workshop</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="ticket-details.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Robotics Workshop</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="ticket-details.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Paper Presentation</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/paperp.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Poster Presentation</h4>
+                                        <span>3-- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS <br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/posterp.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Project Expo</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/projectexpo.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="title">
+                                    <h4> Technical Quiz</h4>
+                                    <span>--- slots Available</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="main-dark-button">
+                                    <a href="./html/quizing.html">Register</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                        
+                    
+                    </ul>
+                </div>
+                
             </div>
         </div>
     </div>
-    <div class="ticket-details-page">
+    
+    <div class="shows-events-schedule" style="margin: 6%; padding: 2%; background-image: url(./assets/images/cultural.jpg);  background-repeat: no-repeat; background-size: cover; ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="left-image">
-                        <img src="assets/images/satyadev.jpg" class="hero" alt="">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2 style="color: black; ">Cultural Events</h2>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="right-content">
-                        <h4>Satyadev Kancharana</h4>
-                        <ul>
-                        <strong> Date of Birth </strong>: 4 July 1989
-                        </ul>
-                        <h4>About</h4>
-                        Satyadev Kancharana (born 4 July 1989) professionally known as Satyadev is an Indian actor 
-                        who primarily works in Telugu films. He made his acting debut with a supporting role in Mr. Perfect (2011) 
-                        and later appeared in Jyothi Lakshmi (2015), Kshanam and Mana Oori Ramayanam both (2016).
-                        Satyadev went onto establish himself with successful films including Bluff Master (2018), 
-                        Brochevarevarura, iSmart Shankar both (2019), Uma Maheswara Ugra Roopasya (2020) and Skylab (2021). 
-                        He made his Hindi film debut with Ram Setu (2022). For his performance in Uma Maheswara Ugra Roopasya, 
-                        he received SIIMA Award for Best Actor – Telugu nomination.
-                        <div class="main-dark-button"><a href="https://en.wikipedia.org/wiki/Satyadev_(actor)" target="_blank">About</a></div>
-                    </div>
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Dance Wance</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS <br> Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/dancewance.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Larynx warynx</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/Larynx.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Art salad</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/art.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Fashion</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/fashion.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    
+                    </ul>
                 </div>
+                
             </div>
         </div>
-    </div> -->
-
-<center><h1>Registration's yet to open</h1></center>
-    <!-- *** Subscribe *** -->
+    </div>
     
-    <!-- *** Footer *** -->
+    <div class="shows-events-schedule" style="margin: 6%; padding: 2%; background-image: url(./assets/images/sportsmen.jpg); ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2 style="color: white;">Sport - Men</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Cricket</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS <br> Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/cricket.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Volley Ball</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/volleyball.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Kabaddi</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/kabaddi.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Chess</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/chess.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="shows-events-schedule" style="margin: 6%; padding: 2%;  background-image: url(./assets/images/sportswomen.jpg); background-repeat: no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2 style="color: white;">Sports - Women</h2>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Throw Ball</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS <br> Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/throwball.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Tennikoit</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/tennikoit.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Badminton</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/badminton.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Kabaddi</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/kabaddi.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="title">
+                                        <h4>Chess</h4>
+                                        <span>--- slots Available</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="time"><span><i class="fa fa-clock-o"></i>Day<br>Time</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="place"><span><i class="fa fa-map-marker"></i>MITS<br>Madanapalle</span></div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="main-dark-button">
+                                        <a href="./html/chess.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
     <footer class="footer section" id="contact">
         <h2 class="section-title">Contact Us!</h2><br>
         <p class="footer-title">Get in Touch</p><br><br>
@@ -314,37 +802,39 @@ html{
             </div>
         </div>
     </footer>
-    <div>
-        <a href="#scroll"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
+    <div class="arrow">
+        <a href="#nav" class="up-arrow"><i class="fa fa-arrow-up"></i></a>
     </div>
     <div class="col-lg-6 col-sm-6">
         <div class="text-button">
-            <a href="create.html" > Created by <i class="fa fa-arrow-right"></i></a>
+            <a href="create.html"> Created by <i class="fa fa-arrow-right"></i></a>
         </div>
     </div>
-    
-    
 
     <!-- jQuery -->
+
+    <script>
+        // function scrollToSection() {
+        //     const headerOffset = document.getElementById('nav').offsetTop;
+        //     window.scrollTo({
+        //         top: headerOffset,
+        //         behavior: 'smooth'
+        //     });
+        // }
+
+    </script>
     <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
     <!-- Plugins -->
     <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
+    <!-- <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
-    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>  -->
+    <!-- <script src="assets/js/mixitup.js"></script>  -->
+    <!-- <script src="assets/js/accordions.js"></script> -->
     <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/quantity.js"></script>
-    
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
-  </body>
-
+</body>
 </html>
