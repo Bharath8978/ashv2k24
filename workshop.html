@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Tooplate">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
 
-    <title>ASHV - Cultural Events</title>
+    <title>ASHV - Theatre Events</title>
 
 
     <!-- Additional CSS Files -->
@@ -22,97 +24,104 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
-<!--
+    <!--
 
 Tooplate 2125 ArtXibition
 
 https://www.tooplate.com/view/2125-artxibition
 
 -->
-    </head>
-    <style>
-         html{
-            scroll-behavior: smooth;
-        }
-        #b {
-        font-weight: 900;
+</head>
+<style>
+    .page-heading-shows-events {
+    background-image: url(./assets/images/mits8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+    text-align: center;
+}
+    .col-lg-4 {
+        margin: 7%;
+        background-color: white;
+        padding: 0px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 300ms ease-in-out;
     }
-    .col-lg-4{
-            margin: 7%;
-            margin-top: 4%;
-            border-radius: 10px; 
-            padding: 0px;
-            background-color: white;
-        }
-        .col-lg-4:hover {
-            box-shadow: 0 0 30px 3px gray;
-            cursor: pointer;
+
+    .col-lg-4:hover {
+
+        box-shadow: 0 0 30px 3px gray;
+        cursor: pointer;
         transform: scale(1.05);
     }
-        .footer{
-    background-color: var(--second-color);
-    color: #a74242;
-    text-align: center;
-    font-weight: var(--font-semi);
-    padding: 3.5rem 0;
-}
-.footer-title {
-    font-size: 2rem;
-    margin-bottom: var(--mb-4);
-}
-.footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: var(--mb-4);
-}
-.social-item {
-    text-align: center;
-    margin: 0 var(--mb-2);
-}
-.skills-icon {
-    width: 10%; /* Adjust according to your preference */
-}
-.social-name {
-    font-size: 1rem;
-    color: #041b78;
-}
 
-.col-lg-12 img{
-    width: 350px;
-    height: auto;
-    margin-top: 70px;
-}
-.page-heading-shows-events {
-  background-image: url(./assets/images/mits6.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 110px 0px;
-  text-align: center;
-}
-.up-arrow {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #333;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    z-index: 1000;
-    transition: background-color 0.3s;
-}
-.thumb img{
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+    .footer {
+        background-color: var(--second-color);
+        color: #a74242;
+        text-align: center;
+        font-weight: var(--font-semi);
+        padding: 3.5rem 0;
     }
-.up-arrow:hover {
-    color: #ddcccc;
-}
-.main-nav .nav li {
+
+    .footer-title {
+        font-size: 2rem;
+        margin-bottom: var(--mb-4);
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--mb-4);
+    }
+
+    .social-item {
+        text-align: center;
+        margin: 0 var(--mb-2);
+    }
+
+    .skills-icon {
+        width: 10%;
+        /* Adjust according to your preference */
+    }
+
+    .social-name {
+        font-size: 1rem;
+        color: #041b78;
+    }
+
+    .col-lg-12 img {
+        width: 350px;
+        height: auto;
+        margin-top: 70px;
+    }
+    #b {
+        font-weight: 900;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .up-arrow {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #333;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        font-size: 20px;
+        z-index: 1000;
+        transition: background-color 0.3s;
+    }
+
+    .up-arrow:hover {
+        color: #ddcccc;
+    }
+    .main-nav .nav li {
             display: inline-block;
         }
         .main-nav img{
@@ -124,8 +133,6 @@ https://www.tooplate.com/view/2125-artxibition
             margin-top: 0 !important;
             width: auto; height: 4rem;margin-top: .5rem;
         }
-
-
         @media screen and (max-width:768px) {
             .main-nav img{
             position: absolute;
@@ -135,6 +142,9 @@ https://www.tooplate.com/view/2125-artxibition
             top: 1rem;
             margin-top: 0;
            
+        }
+        .page-heading-shows-events{
+            padding: 0%;
         }
         }
         @media screen and (max-width:768px) {
@@ -169,23 +179,24 @@ https://www.tooplate.com/view/2125-artxibition
     }
 }
 </style>
-    <body>
+
+<body>
     
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
     </div>
     <!-- ***** Preloader End ***** -->
-        
+
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky" id="main">
         <div class="contain">
             <div class="row">
                 <div class="col-12">
@@ -199,10 +210,10 @@ https://www.tooplate.com/view/2125-artxibition
                             <li class="non-tech"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="committee.html">Committee</a></li>
-                            <li><a href="technical.html">Technical Events</a></li>
+                            <li><a href="technical.html" id="b">Technical Events</a></li>
                             <li><a href="culturals.html">Culturals</a></li>
-                            <li><a href="theatre.html">Theatre</a></li>
-                            <li><a href="sports.html" id="b">Sports</a></li>
+                            <li><a href="theatre.html" >Theatre</a></li>
+                            <li><a href="sports.html">Sports</a></li>
                             <li><a href="register.html">Registration</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="accomodation.html">Accomodation</a></li>
@@ -217,25 +228,26 @@ https://www.tooplate.com/view/2125-artxibition
             </div>
         </div>
     </header>
-
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** About Us Page ***** -->
-    <div class="page-heading-shows-events" id="header_id">
+    <div class="page-heading-shows-events">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="./assets/images/ashv1.webp"  alt="Image description">
-                    <h2 style="text-shadow: 3px 3px 4px black;">Women Sports<h2>
+                    <img style="text-shadow: 3px 3px 4px black;" src="./assets/images/ashv1.webp"
+                        alt="Image description">
+                        <h2 style="text-shadow: 3px 3px 4px black;">Workshops </h2> 
+
                 </div>
             </div>
         </div>
     </div>
     <div style="background-color: rgba(0, 0, 0, 0.082);" class="tickets-page">
-        <div  class="container">
+        <div class="container">
             <div class="row">
-                <div  class="col-lg-12">
-                    <div style="background-color:transparent" class="search-box">
+                <div class="col-lg-12">
+                    <div class=" ">
                         <form id="subscribe" action="" method="get">
                             <div class="row">
                                 <div class="col-lg-5">
@@ -282,86 +294,55 @@ https://www.tooplate.com/view/2125-artxibition
                         </form>
                     </div>
                 </div>
-                <div style="margin-top: -2%;"  class="col-lg-4">
-                    <div class="ticket-item">
-                        <div class="thumb">
-                            <img src="assets/images/throwball.png" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.700/-</em></span>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <!-- <span><h6>Total Registration's - __ slots</h6></span> -->
-                            <h4>Throw Ball</h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i>---</li>
-                                <li><i class="fa fa-map-marker"></i>MITS</li>
-                            </ul>
-                            <div class="main">
-                                <a href="/html/throwball.html" class="button">Know more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-top: -2%;"   class="col-lg-4">
-                    <div class="ticket-item">
-                        <div class="thumb">
-                          <img src="assets/images/tennikoit.jpeg" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.300/-</em></span>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <!-- <span><h6>Total Registration's - __ slots</h6></span> -->
-                            <h4>Tennikoit</h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> ---</li>
-                                <li><i class="fa fa-map-marker"></i>MITS</li>
-                            </ul>
-                            <div class="main">
-                                <a href="/html/tennikoit.html" class="button">Know more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div style="margin-top: -2%;"   class="col-lg-4">
-                    <div class="ticket-item">
-                        <div class="thumb">
-                          <a href="143.com"> <img src="assets/images/batminton.jpg" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.--/-</em></span>
-                            </div></a>
-                        </div>
-                        <div class="down-content">
-                            <span><h6>Total Registration's - __ slots</h6></span>
-                            <h4>Badminton</h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> ---</li>
-                                <li><i class="fa fa-map-marker"></i>MITS</li>
-                            </ul>
-                            <div class="main">
-                                <a href="/html/badminton.html" class="button">Know more</a>
-                            </div>
-                        </div>
+                <!-- <div  class="col-lg-12">
+                    <div class="heading">
+                        <h2 style="margin-top: -2%;">Technical Events</h2>
                     </div>
                 </div> -->
-                <div class="col-lg-4">
+                <div style="margin-top: 4%;border-radius: 10px; padding: 0px;" class="col-lg-4 ">
                     <div class="ticket-item">
                         <div class="thumb">
-                            <img src="assets/images/chess.webp" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.300/-</em></span>
-                            </div>
+                            <img src="assets/images/webdevelopment.jpg" alt="">
+                                <div class="price">
+                                    <span>Register Now<br>Fee <em>Rs.500/-</em></span>
+                                </div>
+                           
                         </div>
-                        <div class="down-content">
-                            <!-- <span><h6>Total Registration's - __ slots</h6></span> -->
-                            <h4>Chess</h4>
+                        <div style="background-color: #ffff;" class="down-content">
+                            <span>
+                                <!-- <h6>Total Registration - _ _ slots</h6> -->
+                            </span>
+                            <h4>Full Stack Development</h4>
                             <ul>
-                                <li><i class="fa fa-clock-o"></i>--</li>
+                                <li><i class="fa fa-clock-o"></i>Date:--</li>
                                 <li><i class="fa fa-map-marker"></i>MITS</li>
                             </ul>
-                            <div class="main">
-                                <a href="/html/chess.html" class="button">Know more</a>
+                            <div class="main-dark-button">
+                                <a class="button" href="./html/fullstack.html">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 4%;border-radius: 10px; padding: 0px;" class="col-lg-4">
+                    <div class="ticket-item">
+                        <div class="thumb">
+                           <img src="assets/images/data.jpg" alt="">
+                                <div class="price">
+                                    <span>Register Now<br>Fee <em>Rs.500/-</em></span>
+                                </div>
+                            
+                        </div>
+                        <div style="background-color: #ffff;" class="down-content">
+                            <span>
+                                <!-- <h6>Total Registration - _ _ slots</h6> -->
+                            </span>
+                            <h4>Data Visualization Using Power BI</h4>
+                            <ul>
+                                <li><i class="fa fa-clock-o"></i>Date:--</li>
+                                <li><i class="fa fa-map-marker"></i>MITS</li>
+                            </ul>
+                            <div style="background-color: white" class="main-dark-button">
+                                <a class="button" href="./html/data.html">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -369,62 +350,23 @@ https://www.tooplate.com/view/2125-artxibition
                 <div class="col-lg-4">
                     <div class="ticket-item">
                         <div class="thumb">
-                            <img src="assets/images/carroms.jpeg" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.300/-</em></span>
-                            </div>
+                           <img src="assets/images/robot.webp" alt="">
+                                <div class="price">
+                                    <span>Register Now<br>Fee <em>Rs.500/-</em></span>
+                                </div>
+                         
                         </div>
-                        <div class="down-content">
-                            <!-- <span><h6>Total Registration's - __</h6></span> -->
-                            <h4>Carroms</h4>
+                        <div style="background-color: #ffff;" class="down-content">
+                            <span>
+                                <!-- <h6>Total Registration - _ _ slots</h6> -->
+                            </span>
+                            <h4>Robotics for EV applications</h4>
                             <ul>
-                                <li><i class="fa fa-clock-o"></i>--</li>
-                                <li><i class="fa fa-map-marker"></i>MITS</li>
+                                <li><i class="fa fa-clock-o"></i>Date:--</li>
+                                <li><i class="fa fa-map-marker"></i>MITS </li>
                             </ul>
-                            <div class="main">
-                                <a href="/html/carrom.html" class="button">Know more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-top: -2%;"   class="col-lg-4">
-                    <div class="ticket-item">
-                        <div class="thumb">
-                          <img src="assets/images/kabaddi.jpeg" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.700/-</em></span>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <!-- <span><h6>Total Registration's - __ slots</h6></span> -->
-                            <h4>Kabaddi</h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> ---</li>
-                                <li><i class="fa fa-map-marker"></i>MITS</li>
-                            </ul>
-                            <div class="main">
-                                <a href="/html/kabaddiw.html" class="button">Know more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style="margin-top: -2%;"   class="col-lg-4">
-                    <div class="ticket-item">
-                        <div class="thumb">
-                           <img src="assets/images/volleyball.jpg" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.600/-</em></span>
-                            </div>
-                        </div>
-                        <div class="down-content">
-                            <!-- <span><h6>Total Registration's - __ slots</h6></span> -->
-                            <h4>Volley Ball</h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> ---</li>
-                                <li><i class="fa fa-map-marker"></i>MITS</li>
-                            </ul>
-                            <div class="main">
-                                <a href="/html/volleyballw.html" class="button">Know more</a>
+                            <div class="main-dark-button">
+                                <a class="button" href="./html/robotics.html">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -432,50 +374,7 @@ https://www.tooplate.com/view/2125-artxibition
                 <!-- <div class="col-lg-4">
                     <div class="ticket-item">
                         <div class="thumb">
-                            <a href="143.com"><img src="assets/images/tech4.jpg" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.125/-</em></span>
-                            </div></a>
-                        </div>
-                        <div class="down-content">
-                            <span><h6>Total Registration's - 150 slots</h6></span>
-                            <h4>Drones</h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> Thursday: 06:40 PM to 11:40 PM</li>
-                                <li><i class="fa fa-map-marker"></i>123 Copacabana Beach, Rio de Janeiro</li>
-                            </ul>
-                            <div class="main">
-                                <a href="#popup1" class="button">Know more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="ticket-item">
-                        <div class="thumb">
-                            <a href="143.com"><img src="assets/images/tech5.jpg" alt="">
-                            <div class="price">
-                                <span>Register Now<br>Fee <em>Rs.125/-</em></span>
-                            </div></a>
-                        </div>
-                        <div class="down-content">
-                            <span><h6>Total Registration's - 150 slots</h6></span>
-                            <h4>Paper Presentation</h4>
-                            <ul>
-                                <li><i class="fa fa-clock-o"></i> Wednesday: 06:00 PM to 09:00 PM</li>
-                                <li><i class="fa fa-map-marker"></i>1122 Copacabana Beach, Rio de Janeiro</li>
-                            </ul>
-                            <div class="main">
-                                <a href="#popup1" class="button">Know more</a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="ticket-item">
-                        <div class="thumb">
-                            <a href="143.com"><img src="assets/images/tech6.jpg" alt="">
+                            <a href="143.com"><img src="assets/images/posterpresentation.jpg" alt="">
                             <div class="price">
                                 <span>Register Now<br>Fee <em>Rs.125/-</em></span>
                             </div></a>
@@ -487,12 +386,12 @@ https://www.tooplate.com/view/2125-artxibition
                                 <li><i class="fa fa-clock-o"></i> Saturday: 06:00 PM to 09:00 PM</li>
                                 <li><i class="fa fa-map-marker"></i>220 Copacabana Beach, Rio de Janeiro</li>
                             </ul>
-                            <div class="main">
-                                <a href="#popup1" class="button">Know more</a>
-                            </div>-->
+                            <div class="main-dark-button">
+                                <a href="ticket-details.html">Purchase Tickets</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="col-lg-12">
                     <div class="pagination">
                         <ul>
@@ -570,15 +469,15 @@ https://www.tooplate.com/view/2125-artxibition
             </div>
         </div>
     </footer>
-    <div class="arrow">
-        <a href="#header_id"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
-       </div>
-        </div>
+    </div>
     </div>
     <div class="col-lg-6 col-sm-6">
         <div class="text-button">
-            <a href="create.html" > Created by <i class="fa fa-arrow-right"></i></a>
+            <a href="create.html"> Created by <i class="fa fa-arrow-right"></i></a>
         </div>
+    </div>
+    <div class="arrow">
+        <a href="#main"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
     </div>
 
     <!-- jQuery -->
@@ -592,13 +491,23 @@ https://www.tooplate.com/view/2125-artxibition
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
     <script src="assets/js/accordions.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
-    
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/tech.js"></script>
-  </body>
+    <script>
+    function scrollToSection() {
+        const headerOffset = document.getElementById('header_id').offsetTop;
+        window.scrollTo({
+            top: headerOffset,
+            behavior: 'smooth'
+        });
+    }
+    </script>
+</body>
+
 </html>
