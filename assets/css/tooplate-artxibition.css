@@ -478,8 +478,8 @@ header
 
 @media (max-width: 2000px) {
   .header-area .main-nav .nav li {
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 6px;
   }
   .header-area .main-nav:before {
     display: none;
