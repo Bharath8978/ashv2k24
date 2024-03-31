@@ -476,10 +476,10 @@ header
   color: #656c74;
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 2000px) {
   .header-area .main-nav .nav li {
-    padding-left: 12px;
-    padding-right: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
   .header-area .main-nav:before {
     display: none;
