@@ -121,12 +121,31 @@
             height: 4rem;
             margin-top: .5rem;
         }
+        .container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.details-container {
+    display: inline-block;
+    background-color: #faf6e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.details-container h5 {
+    color: #9000ff;
+    padding: 10px;
+}
 
         @media screen and (max-width: 768px) {
             .main-nav img {
                 position: absolute;
             }
-
+            .details-container h5 {
+        font-size: 14px; /* Decreased font size for mobile view */
+    }
             #imgOne {
                 left: 1rem;
                 top: 1rem;
@@ -208,7 +227,16 @@
         </header>
     </section>
     <!-- ***** Header Area End ***** -->
-
+    <div class="container">
+        <div class="details-container">
+            <h5>Sports-Nikitha Valmiki - <a href="tel:+916302403221">click here</a></h5>
+            <h5>Technical-B. Jagan mohan reddy - <a href="tel:+919392365959">click here</a></h5>
+            <h5>Cultural-B. Prajwal - <a href="tel:+916305529025">click here</a></h5>
+            <h5>Theatre-D. G Saddam Hussian - <a href="tel:+916301553541">click here</a></h5>
+            <h5>Registration-A. Sai Sandeep - <a href="tel:+919885589330">click here</a></h5>
+        </div>
+    </div>
+    
     <!-- ***** Footer Area Start ***** -->
     <div id="foot">
         <footer   class="footer section" id="contact"><br><br><br>
