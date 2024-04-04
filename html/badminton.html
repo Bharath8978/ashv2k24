@@ -7,7 +7,7 @@
     <meta name="author" content="Tooplate">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 
-    <title>ASHV - Memes</title>
+    <title>ASHV - Badminton</title>
 
 
     <!-- Additional CSS Files -->
@@ -22,12 +22,12 @@
     <link rel="stylesheet" href="../assets/css/tooplate-artxibition.css">
 </head>
 <style>
-    html{
-        scroll-behavior: smooth;
-    }
     .col-lg-4{
          margin: 7%;
      }
+     html{
+            scroll-behavior: smooth;
+        }
      .footer{
  background-color: var(--second-color);
  color: #a74242;
@@ -52,15 +52,16 @@
 .skills-icon {
  width: 10%; /* Adjust according to your preference */
 }
+#phone-footer{
+    display: flex !important;
+    flex-direction: column !important;
+}
 .social-name {
  font-size: 1rem;
  color: #041b78;
 }
-.non-tech{
-    color: rgb(0, 0, 0);
-}
 #b{
-    font-weight: 900;
+    font-weight:900;
 }
 .up-arrow {
     position: fixed;
@@ -77,109 +78,76 @@
     z-index: 1000;
     transition: background-color 0.3s;
 }
+
+.up-arrow:hover {
+    color: #ddcccc;
+}
 .des{
     margin: 5%; 
     border: 1px solid grey; 
-    padding: 2%; background-color:rgb(227, 226, 226); 
-    overflow-y: scroll;
+    padding: 2%;
+     background-color:rgb(227, 226, 226); 
+     overflow-y: scroll;
      width:  90%;
      height: 500px;
 }
-.up-arrow:hover {
-    color: #ddcccc;
-}
-html{
-    scroll-behavior: smooth;
-}
-.main-nav .nav li {
-            display: inline-block;
-        }
-        .main-nav img{
+.main-nav img{
             position: absolute !important;
         }
         #imgOne{
-            left: 3rem ;
-            top: 0.5rem !important;
+            left: 0rem !important;
+            top: 1rem !important;
             margin-top: 0 !important;
-            width: auto; height: 4rem;margin-top: .5rem;
+            width: 4rem; height: 3rem;margin-top: .5rem;
         }
-
+        #imgTwo{
+            top:1rem !important;
+            left: 3.8rem !important;
+            margin-top: 0 !important;
+            width: 6rem; height: 3rem;margin-top: .5rem;
+        }
 
         @media screen and (max-width:768px) {
             .main-nav img{
             position: absolute;
         }
         #imgOne{
-            left: 1rem;
+            left: 2rem;
             top: 1rem;
             margin-top: 0;
            
         }
+        #imgTwo{
+            top:1rem;
+            left: 4.8rem;
+            margin-top: 0;
+           
         }
-        @media screen and (max-width:768px) {
-    .logo-container {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 10px;
-}
-
-.logo-container img {
-    margin-right: 10px;
-}
-.footer-social {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .skills-icon{
-        width: 35%;
-        
-    }
-
-    .social-item {
-        margin: 0;
-        margin-bottom: 0; 
-    }
-    #phone-footer{
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
-    .social-item span {
-        display: none;
-    }
-}
+        }
 </style>
-<body id="main_id">
-    <header class="header-area header-sticky" id="main_id">
-        <div class="contain">
+<body>
+    <header class="header-area header-sticky" id="main">
+        <div class="container">
             <div class="row">
                 <div class="col-12">
                     <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                            <img id="imgOne"  src="../assets/images/mits.png" alt="logo">
-                        
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav" >
-                            <li class="non-tech"><a href="../index.html">Home</a></li>
+                        <!-- ** Logo Start ** -->
+                        <img id="imgOne"  src="../assets/images/mits.png" alt="logo">
+                        <img id="imgTwo" src="../assets/images/logo2.jpg"alt="">                        <!-- ** Logo End ** -->
+                        <!-- ** Menu Start ** -->
+                        <ul class="nav">
+                            <li><a href="../index.html" >Home</a></li>
                             <li><a href="../about.html">About Us</a></li>
-                            <li><a href="../committee.html">Committee</a></li>
-                            <li><a href="../technical.html">Technical Events</a></li>
-                            <li><a href="../culturals.html">Culturals</a></li>
-                            <li><a href="../theatre.html" id="b">Theatre</a></li>
-                            <li><a href="../sports.html">Sports</a></li>
-                            <li><a href="../register.html">Registration</a></li>
+                            <li><a  href="../technical.html">Technical Events</a></li> 
+                            <li><a href="../non-technical.html">Culturals</a></li>
+                            <li class="non-tech"><a  id="b" href="../sports.html">Sports</a></li> 
                             <li><a href="../gallery.html">Gallery</a></li>
-                            <li><a href="../accommodation.html">Accommodation</a></li>
-                            <li><a href="../contactus.html">Contact us</a></li>
-                        </ul>
+                            <li><a href="#contact">Contact us</a></li> 
+                        </ul>      
                         <a class='menu-trigger'>
                             <span>Menu</span>
                         </a>
-                        <!-- ***** Menu End ***** -->
+                        <!-- ** Menu End ** -->
                     </nav>
                 </div>
             </div>
@@ -187,106 +155,22 @@ html{
     </header><br>
     <div class="main">
     </div><br>
-    <div  class="des" >
-        <h1 style="color: rgb(57, 55, 55);">Memes</h1><br>
-        <center><img style="max-width: 100%; height: auto;" class="image" src="../assets/images/meme.png" alt="Theatre"></center>
+    <div class="des">
+        <h1 style="color: rgb(57, 55, 55);">Badminton</h1><br>
+        <center><img style="max-width: 30%; height: auto;" class="image" src="../assets/images/batminton.jpg" alt="Badminton"></center>
         <br><br>
         <h4>Description</h4><br>
-        <h6>Fee:</h6>
-            <strong>Internal Participants : </strong>100/- (per head)<br>
-            <strong>External Participants : </strong>150/- (per head)<br><br>
         <div  class="in-des">
-            <h5>What to Expect: </h5><br><p>
-
-1.Offline Mode: No internet required, just bring your wit! <br>
-
-2.Healthy Comedy Only: Keep it light-hearted and fun! <br>
-
-3.On-the-Spot Themes: Challenge your creativity with themes given at the event! <br>
-
-4.Template Provided: We've got the canvas, you bring the laughter! <br>
-
-5.10 Minute Time Limit: Can you create a masterpiece in minutes? <br>
-
-6.Judging by Faculty Coordinator: Expert eyes will crown the champions! <br>
-
-7.Prizes Await: Cash prizes and participation certificates up for grabs!</p><br>
-  <h5>Rules to Remember: </h5><br>
-  <p>
-
-1. No Adult Content: Let's keep it PG, folks! <br>
-
-2. No Copyright Infringement: Originality is key! <br>
-
-3. Submission Guidelines: Follow the template and submit your creations promptly. <br>
-
-4. Judging Criteria: Originality and humor will win the day! <br>
-Join us for an unforgettable experience filled with laughter, creativity, and friendly competition. Let your memes speak volumes and leave the audience in stitches! <br>
-
-See you at Ashv 2024 - where talent races and memes reign supreme! <br>
-
-Don't miss out on the chance to showcase your meme-making prowess! Spread the word. <br>
-
-If accommodation needed extra charges will be applied. <br><br>
-
-
-<h6>Student coordinators: </h6><p><br>
-
-Shaik Karishma-7981851016 <br>
-
-P. Mohammed affan-8019743804 <br><br>
-
-<h6>Theatre committee coordinator: </h6><p><br>
-
-Saddam Hussain D.G-6301553541 </p>
-            <!-- <h6 >
-                SUB EVENTS
-            </h6>
-            <p>
-                1.Short film <br>
-                2.Drama <br>
-                3.Photography contest <br>
-                4.Memes contest <br>
-                5.Mime <br>
-                6.Mimicry <br>
-                7.Monoact <br>
-                8.Standup comedy <br>
-            </p><br>
-            <h5 >
-                RULES FOR SHORT FILM CONTEST
-            </h5>
-            <p>
-                1.Short film must be message oriented only. <br>
-                2.Maximum duration limit 30 minutes. <br>
-                3.Minimum duration limit 5 minutes. <br>
-                4.No adult scenes and 18+comedy. <br>
-                5. Teams should submit their videos in PENDRIVE only. <br>
-                6. Videos should be in .flv , .MP4 format. <br>
-                7. Decision of judges is final. <br>
-            </p><br>
-            <h5 >
-                RULES FOR DRAMA
-            </h5>
-            <p>
-                1.Maximum duration limit 10 minutes. <br>
-                2.No adult or 18+ Comedy. <br>
-            </p><br>
-            <h5 >
-                RULES FOR PHOTOGRAPHY CONTEST : 
-            </h5>
-            <p>
-                1.Concept is summer. <br>
-                2.Edited pictures not allowed. <br>
-                3. photo should contain time, date when you capture the photo. <br>
-                4.No filters allowed. <br>
-            </p><br> -->
-        </div>
-    </div>
+           
     <div>
-        <center><a href="https://docs.google.com/forms/d/1NHXWW9ZoGIkbQ1qKrb22WV_EGuX9KSNQFBf-ehVzqGY/edit?usp=drivesdk" target="_parent"><img style="width: 25%;" src="../assets/images/register.gif" alt="Register Now"></a></center>
+        </div>
+        </div>
+        </div>
+      
+        <center><a href="#"><img style="width: 25%;" src="../assets/images/register.gif" alt="Register Now"></a></center>
     </div>
     <br>
-    <!-- *** Footer *** -->
+    <!-- * Footer * -->
     <footer   class="footer section" id="contact"><br><br><br>
         <hr><h2 class="section-title">Contact Us!</h2><br>
         <p class="footer-title">Get in Touch</p><br><br>
@@ -346,10 +230,11 @@ Saddam Hussain D.G-6301553541 </p>
 </div>
 
     </footer>
+            
         </div>
     </div>
     <div class="arrow">
-        <a href="#main_id"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
+        <a href="#main"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
     </div>
     <script src="../assets/js/jquery-2.1.0.min.js"></script>
 
@@ -369,5 +254,7 @@ Saddam Hussain D.G-6301553541 </p>
     <!-- Global Init -->
     <script src="../assets/js/custom.js"></script>
     <script src="../assets/js/tech.js"></script>
+    
+    </script>
 </body>
 </html>
