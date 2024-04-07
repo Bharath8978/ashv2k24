@@ -486,7 +486,7 @@ header
   }
 }
 
-@media (max-width: 1188px) {
+@media (max-width: 1238px) {
   .header-area .main-nav .nav li a.active:after {
     display: none;
   }
@@ -585,7 +585,7 @@ header
   }
 }
 
-@media (min-width: 1188px) {
+@media (min-width: 1238px) {
   .header-area .main-nav .nav {
     display: flex !important;
   }

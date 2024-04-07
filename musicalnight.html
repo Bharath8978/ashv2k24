@@ -28,6 +28,21 @@ https://www.tooplate.com/view/2125-artxibition
 
 -->
 <style>
+    .up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
     #b{
         font-weight: 900;
     }
@@ -77,14 +92,7 @@ https://www.tooplate.com/view/2125-artxibition
   padding: 110px 0px;
   text-align: center;
 }
-@media screen and (max-width:768px) {
-    .hero{
-        margin-left: 0%;
-    }
-    .col-lg-4{
-        margin-left: 0%;
-    }
-}
+
 .main-nav .nav li {
             display: inline-block;
         }
@@ -97,8 +105,15 @@ https://www.tooplate.com/view/2125-artxibition
             margin-top: 0 !important;
             width: auto; height: 4rem;margin-top: .5rem;
         }
-
-
+        .left-image video{
+            width: 300px;
+            height: auto;
+        }
+        .left-image{
+            justify-content: center;
+            align-items: center;
+            margin-left: 50%;
+        }
         @media screen and (max-width:768px) {
             .main-nav img{
             position: absolute;
@@ -107,8 +122,12 @@ https://www.tooplate.com/view/2125-artxibition
             left: 1rem;
             top: 1rem;
             margin-top: 0;
-           
         }
+        }
+        @media screen and (max-width:990px){
+            .left-image{
+                margin-left: 0%;
+            }
         }
         @media screen and (max-width:768px) {
     .logo-container {
@@ -194,7 +213,7 @@ https://www.tooplate.com/view/2125-artxibition
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="committe.html">Committee</a></li>
                             <li><a href="technical.html">Technical Events</a></li>
-                            <li><a href="non-technical.html">Culturals</a></li>
+                            <li><a href="culturals.html">Culturals</a></li>
                             <li><a href="theatre.html">Theatre</a></li>
                             <li><a href="sports.html">Sports</a></li>
                             <li><a href="register.html">Registration</a></li>
@@ -256,26 +275,17 @@ https://www.tooplate.com/view/2125-artxibition
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
+    <center>
     <div class="ticket-details-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="left-image">
-                        <img src="assets/images/arun.jpg" class="hero" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="right-content">
-                        <h4>Arun Koundinya</h4>
-                        <ul>
-                        <strong> Date of Birth </strong>:21 July 1987
-                        </ul>
-                        <h4>About</h4>
-                        Arun Kaundinya is an Indian playback singer who predominantly works in the 
-                        Telugu film industry. He is best known for his hit songs "Ramuloo Ramulaa" from 
-                        the film Ala Vaikunthapurramuloo and "Butta Bomma" from the film Sarileru Neekevvaru.
-                        <div class="main-dark-button"><a href="https://nettv4u.com/celebrity/telugu/singer/arun-kaundinya" target="_blank">About</a></div>
+                        <video controls>
+                            <source src="assets/images/1.mp4" type="video/mp4">
+                          </video> 
+                        <h1 class="name">Arjun Vijay</h1>                         
                     </div>
                 </div>
             </div>
@@ -286,29 +296,29 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="row">
                 <div class="col-lg-8">
                     <div class="left-image">
-                        <img src="assets/images/sruthi.jpeg" class="hero" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="right-content">
-                        <h4>Sruthi Ranjani</h4>
-                        <ul>
-                        <strong> Date of Birth </strong>: 15 sept 1993
-                        </ul>
-                        <h4>About</h4>
-                        Sruthi Ranjani is also known as Sruthi is a Singer and Playback Singer from India. 
-                        Age 30 years (15 September 1993) born in Vijayawada, Andhra Pradesh, India. So far Sruthi 
-                        Ranjani has worked in Kollywood and Indian entertainment industries and her artwork has 
-                        been released in Telugu and Tamil language movies and web series.
-                        <div class="main-dark-button"><a href="https://untoldstoryof.com/sruthi-ranjani/" target="_blank">About</a></div>
+                        <video controls>
+                            <source src="assets/images/2.mp4" type="video/mp4">
+                          </video> 
+                        <h1 class="name">Parnika</h1>                         
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
-    <center><h1>Will be updated soon...</h1></center>
-
-
+    </div><div class="ticket-details-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="left-image">
+                        <video controls>
+                            <source src="assets/images/3.mp4" type="video/mp4">
+                          </video> 
+                        <h1 class="name">Sinduja Srinivasan</h1>                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
     <!-- *** Subscribe *** -->
     
     <!-- *** Footer *** -->
@@ -371,7 +381,7 @@ https://www.tooplate.com/view/2125-artxibition
 </div>
 
     </footer>
-    <div>
+    <div class="arrow">
         <a href="#scroll"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
     </div>
     <div class="col-lg-6 col-sm-6">
