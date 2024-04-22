@@ -141,20 +141,28 @@
 .details-container a:hover{
     color: #ff0000;
 }
-        @media screen and (max-width: 768px) {
-            .main-nav img {
-                position: absolute;
-            }
-            .details-container h5 {
-        font-size: 14px; /* Decreased font size for mobile view */
-    }
-            #imgOne {
-                left: 1rem;
-                top: 1rem;
-                margin-top: 0;
-            }
+        #imgTwo{
+            left: 13rem ;
+            top: 0.5rem !important;
+            margin-top: 0 !important;
+            width: auto; height: 4rem;margin-top: 0.5rem;
         }
-
+        @media screen and (max-width:768px) {
+            .main-nav img{
+            position: absolute;
+        }
+        #imgOne{
+            left: 1rem;
+            top: 1rem;
+            margin-top: 0;
+        }
+        .details-container h5 {
+        font-size: 14px;
+    }
+        #imgTwo{
+            left:12rem;
+        }
+        }
         @media only screen and (max-width: 600px) {
             .footer-social {
                 flex-direction: column;
@@ -206,6 +214,8 @@
                     <div class="col-12">
                         <nav class="main-nav">
                             <img id="imgOne" src="./assets/images/mits.png" alt="logo">
+                            <img id="imgTwo"  src="./assets//images//ashv1.webp">
+
                             <ul class="nav" >
                                 <li class="non-tech"><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
@@ -216,7 +226,7 @@
                                 <li><a href="sports.html">Sports</a></li>
                                 <li><a href="register.html">Registration</a></li>
                                 <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="accommodation.html">Accommodation</a></li>
+                                <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
                                 <li><a href="sponsors.html" >Sponsors</a></li>
                                 <li><a href="contactus.html" id="b">Contact us</a></li>
                             </ul>
