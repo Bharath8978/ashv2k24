@@ -893,47 +893,122 @@
             height: 100vh;
             /* overflow: auto; */
             background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);
+            transition: backdrop-filter 200ms ease-in-out;
             /* Black w/ opacity */
         }
 
         .popup-content {
             position: relative;
             margin: auto;
-            /* height: 100%; */
-            /* 15% from the top and centered */
-            padding: 20px;
-            /* height: 90%; */
-            margin-inline: auto;
-            /* width: 80%; */
-            /* Could be more or less, depending on screen size */
+            padding: 3px;
             max-width: 60vw;
-            background-color: #fff;
-            border-radius: 10px;
+            border-radius: 13px;
             text-align: center;
+            animation: banner-open 300ms ease-in-out;
+            background: linear-gradient(270deg, red, yellow, green, cyan, blue, magenta, red);
+            background-size: 800% 800%;
+            animation: backgroundGradient 15s ease infinite;
+        }
+        @keyframes backgroundGradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .popup-content img {
             width: 100%;
             height: auto;
             object-fit: contain;
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         .close-btn {
             position: absolute;
-            top: 10px;
-            right: 25px;
+            top: -15px;
+            right: -15px;
             color: #aaa;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(236, 44, 44);
+            border-radius: 50%;
             font-size: 28px;
             font-weight: bold;
             cursor: pointer;
+            color: white;
         }
 
         .close-btn:hover,
         .close-btn:focus {
-            color: black;
+            color: rgb(236, 44, 44);
+            background-color: white;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        @keyframes banner-close {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+        }
+
+        @keyframes banner-open {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes gradient-border {
+            0% {
+                background-image: radial-gradient(red, yellow);
+            }
+
+            25% {
+                background-image: radial-gradient(yellow, green);
+            }
+
+            50% {
+                background-image: radial-gradient(green, blue);
+            }
+
+            75% {
+                background-image: radial-gradient(blue, purple);
+            }
+
+            100% {
+                background-image: radial-gradient(purple, red);
+            }
+        }
+
+        .popup-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border-image-slice: 1;
         }
     </style>
 
@@ -942,7 +1017,7 @@
 <body>
     <div id="popup" class="popup">
         <div class="popup-content">
-            <span class="close-btn">&times;</span>
+            <span class="close-btn"><span>&times;</span></span>
             <img src="images/banner.jpeg" alt="Banner Image">
         </div>
     </div>
@@ -1643,19 +1718,28 @@
     <script>
         // Get the popup
         var popup = document.getElementById("popup");
+        var popup_content = document.getElementsByClassName("popup-content")[0];
 
         // Get the <span> element that closes the popup
         var closeBtn = document.getElementsByClassName("close-btn")[0];
 
         // When the user clicks on <span> (x), close the popup
         closeBtn.onclick = function () {
-            popup.style.display = "none";
+            popup_content.style.animation = "banner-close 0.3s forwards";
+            popup.style.backdropFilter = "blur(0px)";
+            setTimeout(() => {
+                popup.style.display = "none";
+            }, 300);
         }
 
         // When the user clicks anywhere outside of the popup, close it
         window.onclick = function (event) {
             if (event.target == popup) {
-                popup.style.display = "none";
+                popup_content.style.animation = "banner-close 0.3s forwards";
+                popup.style.backdropFilter = "blur(0px)";
+                setTimeout(() => {
+                    popup.style.display = "none";
+                }, 300);
             }
         }
 
