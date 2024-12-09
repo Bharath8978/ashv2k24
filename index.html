@@ -910,6 +910,7 @@
             background-size: 800% 800%;
             animation: backgroundGradient 15s ease infinite;
         }
+
         @keyframes backgroundGradient {
             0% {
                 background-position: 0% 50%;
@@ -1009,6 +1010,74 @@
             height: auto;
             border-radius: 10px;
             border-image-slice: 1;
+        }
+
+        .show-cards{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .show-card {
+            /* border: 2px solid black; */
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease-out;
+        }
+
+        .show-card:hover{
+            box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .show-card:hover a{
+            transform: scale(1.05);
+        }
+
+        .show-info {
+            background-color: beige;
+            padding: 2rem 1rem;
+            box-sizing: content-box;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .show-card a {
+            background-color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            width: fit-content;
+            transition: all 0.3s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .show-card a span{
+            /* position: relative; */
+            z-index: 1;
+            background-color: transparent;
+            color: white;
+        }
+        .show-card a span:hover{
+            color: black;
+        }
+
+        .show-card a:hover::before{
+            width: 100%;
+        }
+
+        .show-card a::before{
+            content: " ";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            background-color: white;
+            top: 0;
+            left: 0;
+            transition: all 0.3s ease-out;
         }
     </style>
 
@@ -1121,7 +1190,8 @@
 
     <!-- *** Owl Carousel Items ***-->
     <div class="show-events-carousel">
-        <div class="container responsive-container" style="margin-top: 9%; margin-bottom: 9%; ">
+        <div class="container responsive-container" style="margin-top: 5vh; margin-bottom: 5vh; ">
+            <h1 style="text-align: center;padding: 2rem;">Gallery</h1>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="owl-show-events owl-carousel" data-pause="false">
@@ -1158,8 +1228,14 @@
         </div>
     </div>
 
-    <center>
-        <div class="album">
+    <center style="height: 45vh;">
+        <h1>Album</h1>
+        <div class="album" style="
+                display: flex;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+            ">
             <button id="prev-btn" class="nav-btn prev-btn">
                 <i class="bi bi-arrow-left-circle"></i>
             </button>
@@ -1305,36 +1381,7 @@
             </button>
         </div>
     </center>
-    <!-- *** Amazing Venus ***-->
-    <div class="amazing-venues" style="margin: 100px 0px;">
-        <div class="container" style="background-color: rgba(0,0,0,0.082); padding: 5%;">
-            <!-- <center><img src="assets/images/ashv.jpg" class="poster"></center><br><br> -->
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="left-content">
-                        <h4>About Ashv 2k25</h4>
-                        <p style="font-weight: bold; color: brown;">The race of talent</p>
-                        <p style="text-align: justify;">"Experience the enormous excitement at 'Ashv: The Race
-                            of Talent', our vibrant two-day Techno-Cultural-Sports Fest! Witness the talents soar
-                            in technical and non-technical realms, alongside spirited sports showdowns. Delight
-                            your taste buds at diverse food stalls and engage in thrilling fun games. Don't forget
-                            to capture the magic with our exciting photo opportunities. Join us for an enriching
-                            event filled with talent, camaraderie, and boundless fun! Mark your calendars for an
-                            unforgettable experience!" </p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="right-content">
-                        <h5><i class="fa fa-map-marker"></i> Visit Us</h5><br>
-                        <span>Madanaplle Institute Of Technology & Science <br>Angallu , Madanapalle<br>Andhra
-                            Pradesh</span>
-                        <div class="text-button"><a href="https://maps.app.goo.gl/8WNQnPiSq81uR2Tp8">Need Directions? <i
-                                    class="fa fa-arrow-right"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- *** Venues & Tickets ***-->
     <section id="shows">
         <div class="venue-tickets">
@@ -1342,60 +1389,40 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-heading">
-                            <h1>Shows</h1>
+                            <h1 style="padding: 2rem;">Shows</h1>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="venue-item">
-                            <div class="thumb">
-                                <img src="assets/images/comingsoon.png" alt="">
-                            </div>
-                            <div class="down-content">
-
-                                <div class="right-content">
-                                    <h4>Celebrity Night</h4><br><br>
-                                    <div class="main-white-button">
-                                        <a href="">More details</a><br><br>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="show-cards">
+                    <div class="show-card">
+                        <div class="thumbnail">
+                            <img src="assets/images/comingsoon.png" alt="">
+                        </div>
+                        <div class="show-info">
+                            <h4>Celebrity Night</h4>
+                            <a href="celebrity.html"><span>More Details&rarr;</span></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="venue-item">
-                            <div class="thumb">
-                                <img src="assets/images/comingsoon.png" alt="">
-                            </div>
-                            <div class="down-content">
-
-                                <div class="right-content">
-                                    <h4>Musical Festival</h4><br><br>
-                                    <div class="main-white-button">
-                                        <a href="">More details</a><br><br>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="show-card">
+                        <div class="thumbnail">
+                            <img src="assets/images/comingsoon.png" alt="">
+                        </div>
+                        <div class="show-info">
+                            <h4>Theatre</h4>
+                            <a href="theatre.html"><span>More Details&rarr;</span></a>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="venue-item">
-                            <div class="thumb">
-                                <img src="assets/images/comingsoon.png" alt="">
-                            </div>
-                            <div class="down-content">
-
-                                <div class="right-content">
-                                    <h4>Theatre</h4><br><br>
-                                    <div class="main-white-button">
-                                        <a href="">More details</a><br><br>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="show-card">
+                        <div class="thumbnail">
+                            <img src="assets/images/comingsoon.png" alt="">
+                        </div>
+                        <div class="show-info">
+                            <h4>Celebrity Night</h4>
+                            <a href="celebrity.html"><span>More Details&rarr;</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -1451,11 +1478,13 @@
                                 <h4>Sports</h4>
                             </a>
                             <div class="main-white-button">
-                                <center><a href="sports.html" style="background-color: #656c74; color: white;">More details</a><br><br>
+                                <center><a href="sports.html" style="background-color: #656c74; color: white;">More
+                                        details</a><br><br>
                                 </center>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1487,6 +1516,36 @@
             </div>
         </div>
     </div> -->
+    <!-- *** Amazing Venus ***-->
+    <div class="amazing-venues" style="margin: 100px 0px;">
+        <div class="container" style="background-color: rgba(0,0,0,0.082); padding: 5%;">
+            <!-- <center><img src="assets/images/ashv.jpg" class="poster"></center><br><br> -->
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="left-content">
+                        <h4>About Ashv 2k25</h4>
+                        <p style="font-weight: bold; color: brown;">The race of talent</p>
+                        <p style="text-align: justify;">"Experience the enormous excitement at 'Ashv: The Race
+                            of Talent', our vibrant two-day Techno-Cultural-Sports Fest! Witness the talents soar
+                            in technical and non-technical realms, alongside spirited sports showdowns. Delight
+                            your taste buds at diverse food stalls and engage in thrilling fun games. Don't forget
+                            to capture the magic with our exciting photo opportunities. Join us for an enriching
+                            event filled with talent, camaraderie, and boundless fun! Mark your calendars for an
+                            unforgettable experience!" </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="right-content">
+                        <h5><i class="fa fa-map-marker"></i> Visit Us</h5><br>
+                        <span>Madanaplle Institute Of Technology & Science <br>Angallu , Madanapalle<br>Andhra
+                            Pradesh</span>
+                        <div class="text-button"><a href="https://maps.app.goo.gl/8WNQnPiSq81uR2Tp8">Need Directions? <i
+                                    class="fa fa-arrow-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- *** Footer *** -->
 
@@ -1744,7 +1803,7 @@
 
         // Show the popup when the page loads
         window.onload = function () {
-            popup.style.display = "flex";
+            //popup.style.display = "flex";
         }
     </script>
     <script src="assets/js/jquery-2.1.0.min.js"></script>
