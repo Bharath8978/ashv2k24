@@ -1012,7 +1012,7 @@
             border-image-slice: 1;
         }
 
-        .show-cards{
+        .show-cards {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -1026,11 +1026,11 @@
             transition: box-shadow 0.3s ease-out;
         }
 
-        .show-card:hover{
+        .show-card:hover {
             box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .show-card:hover a{
+        .show-card:hover a {
             transform: scale(1.05);
         }
 
@@ -1055,21 +1055,22 @@
             overflow: hidden;
         }
 
-        .show-card a span{
-            /* position: relative; */
+        .show-card a span {
+            position: relative;
             z-index: 1;
             background-color: transparent;
             color: white;
         }
-        .show-card a span:hover{
+
+        .show-card a:hover span {
             color: black;
         }
 
-        .show-card a:hover::before{
+        .show-card a:hover::before {
             width: 100%;
         }
 
-        .show-card a::before{
+        .show-card a::before {
             content: " ";
             position: absolute;
             width: 0%;
