@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Tooplate">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/ashv1.webp" type="image/x-icon">
     <title>ASHV - Gallery</title>
 
@@ -22,100 +24,125 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
-<!--
+    <!--
 
 Tooplate 2125 ArtXibition
 
 https://www.tooplate.com/view/2125-artxibition
 
 -->
-    </head>
-    <style>
-        html{
-            scroll-behavior: smooth;
-        }
-       .col-lg-4{
-            margin: 7%;
-        }
-        .footer{
-    background-color: var(--second-color);
-    color: #a74242;
-    text-align: center;
-    font-weight: var(--font-semi);
-    padding: 3.5rem 0;
-}
-.footer-title {
-    font-size: 2rem;
-    margin-bottom: var(--mb-4);
-}
-.footer-social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: var(--mb-4);
-}
-.social-item {
-    text-align: center;
-    margin: 0 var(--mb-2);
-}
-.skills-icon {
-    width: 10%; /* Adjust according to your preference */
-}
-.social-name {
-    font-size: 1rem;
-    color: #041b78;
-}
-.gallery {
-    overflow-x: auto;
-    margin: 5%; /* Enable horizontal scrolling */
-}
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
 
-.year {
-    display: block; /* Change to block-level element */
-    clear: both; /* Clear the float */
-    margin-bottom: 20px; /* Add space between years */
-}
+    .col-lg-4 {
+        margin: 7%;
+    }
 
-.year h2 {
-    margin-bottom: 10px;
-}
+    .footer {
+        background-color: var(--second-color);
+        color: #a74242;
+        text-align: center;
+        font-weight: var(--font-semi);
+        padding: 3.5rem 0;
+    }
 
-.images {
-    overflow-x: auto; /* Enable horizontal scrolling for images */
-    white-space: nowrap; /* Prevent line breaks */
-}
+    .footer-title {
+        font-size: 2rem;
+        margin-bottom: var(--mb-4);
+    }
 
-.images img {
-    width: 200px;
-    margin-right: 10px;
-    display: inline-block; /* Ensure images appear inline */
-    vertical-align: top; /* Align images to the top */
-    border: 2px solid #ddd; /* Add border */
-    border-radius: 5px; /* Add border radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    transition: transform 0.3s ease; /* Add transition effect */
-}
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: var(--mb-4);
+    }
 
-.images img:hover {
-    transform: scale(1.05); /* Add hover effect to scale images */
-}
-.col-lg-12 img{
-    width: 350px;
-    height: auto;
-    margin-top: 70px;
-}
+    .social-item {
+        text-align: center;
+        margin: 0 var(--mb-2);
+    }
 
-.page-heading-shows-events {
-  background-image: url(./assets/images/mits7.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 110px 0px;
-  text-align: center;
-}
-#b{
-    font-weight: 900;
-}
-.up-arrow {
+    .skills-icon {
+        width: 10%;
+        /* Adjust according to your preference */
+    }
+
+    .social-name {
+        font-size: 1rem;
+        color: #041b78;
+    }
+
+    .gallery {
+        overflow-x: auto;
+        margin: 5%;
+        /* Enable horizontal scrolling */
+    }
+
+    .year {
+        display: block;
+        /* Change to block-level element */
+        clear: both;
+        /* Clear the float */
+        margin-bottom: 20px;
+        /* Add space between years */
+    }
+
+    .year h2 {
+        margin-bottom: 10px;
+    }
+
+    .images {
+        overflow-x: auto;
+        /* Enable horizontal scrolling for images */
+        white-space: nowrap;
+        /* Prevent line breaks */
+    }
+
+    .images img {
+        width: 200px;
+        margin-right: 10px;
+        display: inline-block;
+        /* Ensure images appear inline */
+        vertical-align: top;
+        /* Align images to the top */
+        border: 2px solid #ddd;
+        /* Add border */
+        border-radius: 5px;
+        /* Add border radius */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Add box shadow */
+        transition: transform 0.3s ease;
+        /* Add transition effect */
+    }
+
+    .images img:hover {
+        transform: scale(1.05);
+        /* Add hover effect to scale images */
+    }
+
+    .col-lg-12 img {
+        width: 350px;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    .page-heading-shows-events {
+        background-image: url(./assets/images/mits7.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 110px 0px;
+        text-align: center;
+    }
+
+    #b {
+        font-weight: 900;
+    }
+
+    .up-arrow {
         position: fixed;
         bottom: 20px;
         right: 20px;
@@ -134,90 +161,105 @@ https://www.tooplate.com/view/2125-artxibition
     .up-arrow:hover {
         color: #ddcccc;
     }
+
     .main-nav .nav li {
-            display: inline-block;
-        }
-        .main-nav img{
-            position: absolute !important;
-        }
-        #imgOne{
-            left: 3rem ;
-            top: 0.5rem !important;
-            margin-top: 0 !important;
-            width: auto; height: 4rem;margin-top: .5rem;
-        }
+        display: inline-block;
+    }
+
+    .main-nav img {
+        position: absolute !important;
+    }
+
+    #imgOne {
+        left: 3rem;
+        top: 0.5rem !important;
+        margin-top: 0 !important;
+        width: auto;
+        height: 4rem;
+        margin-top: .5rem;
+    }
 
 
-        #imgTwo{
-            left: 13rem ;
-            top: 0.5rem !important;
-            margin-top: 0 !important;
-            width: auto; height: 4rem;margin-top: 0.5rem;
-        }
-        @media screen and (max-width:768px) {
-            .main-nav img{
+    #imgTwo {
+        left: 13rem;
+        top: 0.5rem !important;
+        margin-top: 0 !important;
+        width: auto;
+        height: 4rem;
+        margin-top: 0.5rem;
+    }
+
+    @media screen and (max-width:768px) {
+        .main-nav img {
             position: absolute;
         }
-        #imgOne{
+
+        #imgOne {
             left: 1rem;
             top: 1rem;
             margin-top: 0;
         }
-        #imgTwo{
-            left:12rem;
+
+        #imgTwo {
+            left: 12rem;
         }
+    }
+
+    @media screen and (max-width:768px) {
+        .logo-container {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 10px;
         }
-        @media screen and (max-width:768px) {
-    .logo-container {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 10px;
-}
 
-.logo-container img {
-    margin-right: 10px;
-}
-.footer-social {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .skills-icon{
-        width: 35%;
-        
-    }
+        .logo-container img {
+            margin-right: 10px;
+        }
 
-    .social-item {
-        margin: 0;
-        margin-bottom: 0; 
-    }
-    #phone-footer{
-        display: flex !important;
-        flex-direction: column !important;
-    }
+        .footer-social {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .social-item span {
-        display: none;
+        .skills-icon {
+            width: 35%;
+
+        }
+
+        .social-item {
+            margin: 0;
+            margin-bottom: 0;
+        }
+
+        #phone-footer {
+            display: flex !important;
+            flex-direction: column !important;
+        }
+
+        .social-item span {
+            display: none;
+        }
     }
-}
 </style>
-    <body>
-    
+
+<body>
+
     <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
     </div>
     <!-- ***** Preloader End ***** -->
-        
+
     <!-- ***** Header Area Start ***** -->
     <header class="header-area header-sticky" id="scroll">
         <div class="contain">
@@ -225,13 +267,13 @@ https://www.tooplate.com/view/2125-artxibition
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                            <img id="imgOne"  src="./assets/images/mits.png" alt="logo">
-                            <img id="imgTwo"  src="./assets//images//ashv1.webp">
+                        <img id="imgOne" src="./assets/images/mits.png" alt="logo">
+                        <img id="imgTwo" src="./assets//images//ashv1.webp">
 
-                        
+
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
-                        <ul class="nav" >
+                        <ul class="nav">
                             <li class="non-tech"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a href="committee.html">Committee</a></li>
@@ -242,7 +284,7 @@ https://www.tooplate.com/view/2125-artxibition
                             <li><a href="register.html">Registration</a></li>
                             <li><a href="gallery.html" id="b">Gallery</a></li>
                             <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
-                            <li><a href="sponsors.html" >Sponsors</a></li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
                             <li><a href="contactus.html">Contact us</a></li>
                         </ul>
                         <a class='menu-trigger'>
@@ -261,44 +303,45 @@ https://www.tooplate.com/view/2125-artxibition
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="./assets/images/ashv1.webp"  alt="Image description">
+                    <img src="./assets/images/ashv1.webp" alt="Image description">
                     <h2 style="text-shadow: 3px 3px 4px black;">Gallery</h2>
-                    <span style="text-shadow: 3px 3px 4px black;">The Ashv gallery represents our cherished memories from years gone by, which we hold dear forever.</span>
+                    <span style="text-shadow: 3px 3px 4px black;">The Ashv gallery represents our cherished memories
+                        from years gone by, which we hold dear forever.</span>
                 </div>
             </div>
         </div>
     </div>
-     <div class="col-lg-12">
-    <div class="gallery">
-        <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k23 <br>
-            <h2 ></h2>
-            <div class="images">
-                <img src="./assets/images/2k231.jpg" alt="Image 1">
-                <img src="./assets/images/2k232.jpg" alt="Image 2">
-                <img src="./assets/images/2k234.jpg" alt="Image 1">
-                <img src="./assets/images/2k235.jpg" alt="Image 1">
-                <img src="./assets/images/2k236.jpg" alt="Image 2">
-                <img src="./assets/images/2k237.jpg" alt="Image 1">
-                <img src="./assets/images/2k239.jpg" alt="Image 1">
-                <img src="./assets/images/2k2310.jpg" alt="Image 2">
-                <img src="./assets/images/2k2311.jpg" alt="Image 1">
-                <img src="./assets/images/2k2313.jpg" alt="Image 1">
-                <img src="./assets/images/2k2314.jpg" alt="Image 2">
-                <img src="./assets/images/2k2315.jpg" alt="Image 1">
-                <img src="./assets/images/2k2316.jpg" alt="Image 1">
-                
+    <div class="col-lg-12">
+        <div class="gallery">
+            <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k23 <br>
+                <h2></h2>
+                <div class="images">
+                    <img src="./assets/images/2k231.jpg" alt="Image 1">
+                    <img src="./assets/images/2k232.jpg" alt="Image 2">
+                    <img src="./assets/images/2k234.jpg" alt="Image 1">
+                    <img src="./assets/images/2k235.jpg" alt="Image 1">
+                    <img src="./assets/images/2k236.jpg" alt="Image 2">
+                    <img src="./assets/images/2k237.jpg" alt="Image 1">
+                    <img src="./assets/images/2k239.jpg" alt="Image 1">
+                    <img src="./assets/images/2k2310.jpg" alt="Image 2">
+                    <img src="./assets/images/2k2311.jpg" alt="Image 1">
+                    <img src="./assets/images/2k2313.jpg" alt="Image 1">
+                    <img src="./assets/images/2k2314.jpg" alt="Image 2">
+                    <img src="./assets/images/2k2315.jpg" alt="Image 1">
+                    <img src="./assets/images/2k2316.jpg" alt="Image 1">
 
-                
-                <!-- Add more images for the year 2023 -->
+
+
+                    <!-- Add more images for the year 2023 -->
+                </div>
             </div>
-        </div>
-        <br>
-        
+            <br>
+
         </div>
 
         <div class="gallery">
             <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k19 <br>
-                <h2 ></h2>
+                <h2></h2>
                 <div class="images">
                     <img src="./assets/images/2k191.jpg" alt="Image 1">
                     <img src="./assets/images/2k192.jpg" alt="Image 2">
@@ -310,161 +353,167 @@ https://www.tooplate.com/view/2125-artxibition
                     <img src="./assets/images/2k198.jpg" alt="Image 2">
                     <img src="./assets/images/2k199.jpg" alt="Image 1">
                     <img src="./assets/images/2k1910.jpg" alt="Image 1">
-                   
+
                     <!-- Add more images for the year 2023 -->
                 </div>
             </div>
             <br>
-            
-            </div>
 
-            <div class="gallery">
-                <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k18 <br>
-                    <h2 ></h2>
-                    <div class="images">
-                        <img src="./assets/images/2k181.jpg" alt="Image 1">
-                        <img src="./assets/images/2k181.jpg" alt="Image 2">
-                        <img src="./assets/images/2k183.jpg" alt="Image 1">
-                        <img src="./assets/images/2k184.jpg" alt="Image 1">
-                        <img src="./assets/images/2k185.jpg" alt="Image 2">
-                        <img src="./assets/images/2k186.jpg" alt="Image 1">
-                        <img src="./assets/images/2k187.jpg" alt="Image 1">
-                        <img src="./assets/images/2k187.jpg" alt="Image 2">
-                
-                        
-        
-                        
-                        <!-- Add more images for the year 2023 -->
-                    </div>
+        </div>
+
+        <div class="gallery">
+            <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k18 <br>
+                <h2></h2>
+                <div class="images">
+                    <img src="./assets/images/2k181.jpg" alt="Image 1">
+                    <img src="./assets/images/2k181.jpg" alt="Image 2">
+                    <img src="./assets/images/2k183.jpg" alt="Image 1">
+                    <img src="./assets/images/2k184.jpg" alt="Image 1">
+                    <img src="./assets/images/2k185.jpg" alt="Image 2">
+                    <img src="./assets/images/2k186.jpg" alt="Image 1">
+                    <img src="./assets/images/2k187.jpg" alt="Image 1">
+                    <img src="./assets/images/2k187.jpg" alt="Image 2">
+
+
+
+
+                    <!-- Add more images for the year 2023 -->
                 </div>
-                <br>
-                
+            </div>
+            <br>
+
+        </div>
+        <div class="gallery">
+            <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k17 <br>
+                <h2></h2>
+                <div class="images">
+                    <img src="./assets/images/2k177.jpg" alt="Image 1">
+                    <img src="./assets/images/2k171.jpg" alt="Image 2">
+                    <img src="./assets/images/2k172.jpg" alt="Image 1">
+                    <img src="./assets/images/2k173.jpg" alt="Image 1">
+                    <img src="./assets/images/2k174.jpg" alt="Image 2">
+                    <img src="./assets/images/2k175.jpg" alt="Image 1">
+                    <img src="./assets/images/2k176.jpg" alt="Image 1">
+
+
+
+
+                    <!-- Add more images for the year 2023 -->
                 </div>
-                <div class="gallery">
-                    <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k17 <br>
-                        <h2 ></h2>
-                        <div class="images">
-                            <img src="./assets/images/2k177.jpg" alt="Image 1">
-                            <img src="./assets/images/2k171.jpg" alt="Image 2">
-                            <img src="./assets/images/2k172.jpg" alt="Image 1">
-                            <img src="./assets/images/2k173.jpg" alt="Image 1">
-                            <img src="./assets/images/2k174.jpg" alt="Image 2">
-                            <img src="./assets/images/2k175.jpg" alt="Image 1">
-                            <img src="./assets/images/2k176.jpg" alt="Image 1">
-                          
-                            
-            
-                            
-                            <!-- Add more images for the year 2023 -->
-                        </div>
-                    </div>
-                    <br>
-                    
-                    </div>
-                    <div class="gallery">
-                        <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k16 <br>
-                            <h2 ></h2>
-                            <div class="images">
-                                <img src="./assets/images/2k161.jpg" alt="Image 1">
-                                <img src="./assets/images/2k162.jpg" alt="Image 2">
-                                <img src="./assets/images/2k163.jpg" alt="Image 1">
-                                <img src="./assets/images/2k164.jpg" alt="Image 1">
-                                <img src="./assets/images/2k165.jpg" alt="Image 2">
-                                <img src="./assets/images/2k166.jpg" alt="Image 1">
-                                <img src="./assets/images/2k167.jpg" alt="Image 1">
-                                <img src="./assets/images/2k168.jpg" alt="Image 2">
-                                <img src="./assets/images/2k169.jpg" alt="Image 1">
-                                <img src="./assets/images/2k1610.jpg" alt="Image 1">
-                            
-                                <!-- Add more images for the year 2023 -->
-                            </div>
-                        </div>
-                        <br>
-                        
-                        </div>
-                        <div class="gallery">
-                            <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k15 <br>
-                                <h2 ></h2>
-                                <div class="images">
-                                    <img src="./assets/images/2k151.jpg" alt="Image 1">
-                                    <img src="./assets/images/2k152.jpg" alt="Image 2">
-                                    <img src="./assets/images/2k153.jpg" alt="Image 1">
-                                    <img src="./assets/images/2k154.jpg" alt="Image 1">
-                                    <img src="./assets/images/2k155.jpg" alt="Image 2">
-                              
-                                    <!-- Add more images for the year 2023 -->
-                                </div>
-                            </div>
-                            <br>
-                            </div>
-                            </div>
-                            <footer   class="footer section" id="contact"><br><br><br>
-                                <hr><h2 class="section-title">Contact Us!</h2><br>
-                                <p class="footer-title">Get in Touch</p><br><br>
-                                <div class="footer-social">
-                                    <div class="social-item">
-                                        <a href="https://www.instagram.com/ashv2k24?igsh=Z3ZuN2NlZ2VwYTJi" target="_blank">
-                                            <img class="skills-icon" src="../assets/images/insta.jpg" alt="Instagram" />
-                                            <span class="social-name">Instagram</span>
-                                        </a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href="https://www.linkedin.com/events/ashv-theraceoftalent7179117847011319808/" target="_blank">
-                                            <img class="skills-icon" src="../assets/images/linkedin.webp" alt="Twitter" />
-                                            <span class="social-name">Linkedin&nbsp;&nbsp;</span>
-                                        </a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href="tel:+919885589330" target="_blank">
-                                            <img class="skills-icon" src="../assets/images/phone.jpg" alt="Phone" />
-                                            <span class="social-name">Phone&nbsp;&nbsp;&nbsp;</span>
-                                        </a>
-                                    </div>
-                                    <div class="social-item">
-                                        <a href="https://fb.me/e/wH5oN1IyV" target="_blank">
-                                            <img class="skills-icon" src="../assets/images/facebook.jpg" alt="Facebook" />
-                                            <span class="social-name">Facebook</span>
-                                        </a>
-                                    </div><br>
-                                    <div class="social-item">
-                                        <a href="https://wa.me/919885589330" target="_blank">
-                                            <img class="skills-icon" src="../assets/images/whatsapp.jpg" alt="whatsapp" />
-                                            <span class="social-name">whatsapp</span>
-                                        </a>
-                                    </div>
-                                    </div><br><br>
-                                    <div class="footer-social" id="phone-footer">
-                                    <div>
-                                            <span class="social-name">Sports - &nbsp;&nbsp;&nbsp;<a href="tel:+916302403221" target="_blank">6302403221</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                        </a>
-                                    </div>
-                                    <div >
-                                        <span class="social-name">Technical - &nbsp;&nbsp;&nbsp;<a href="tel:+919392365959" target="_blank">9392365959</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                                    </a>
-                                </div>
-                                <div >
-                                    <span class="social-name">Cultural - &nbsp;&nbsp;&nbsp;<a href="tel:+916305529025" target="_blank">6305529025</span>&nbsp;&nbsp;
-                                </a>
-                            </div>
-                            <div >
-                                <span class="social-name">Theatre - &nbsp;&nbsp;&nbsp;<a href="tel:+916301553541" target="_blank">6301553541</span>&nbsp;&nbsp;
-                            </a>
-                        </div>
-                        <div >
-                            <span class="social-name">Registrations - &nbsp;&nbsp;&nbsp;<a href="tel:+919885589330" target="_blank">9885589330</span>&nbsp;&nbsp;
-                        </a>
-                        </div>
-                        </div>
-                        
-                            </footer>
-                            <div>
-                                <a href="#scroll"  class="up-arrow"><i class="fa fa-arrow-up"></i></a>
-                            </div>
-                                    <div class="col-lg-6 col-sm-6">
-                                        <div class="text-button">
-                                            <a href="create.html" > Created by <i class="fa fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
+            </div>
+            <br>
+
+        </div>
+        <div class="gallery">
+            <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k16 <br>
+                <h2></h2>
+                <div class="images">
+                    <img src="./assets/images/2k161.jpg" alt="Image 1">
+                    <img src="./assets/images/2k162.jpg" alt="Image 2">
+                    <img src="./assets/images/2k163.jpg" alt="Image 1">
+                    <img src="./assets/images/2k164.jpg" alt="Image 1">
+                    <img src="./assets/images/2k165.jpg" alt="Image 2">
+                    <img src="./assets/images/2k166.jpg" alt="Image 1">
+                    <img src="./assets/images/2k167.jpg" alt="Image 1">
+                    <img src="./assets/images/2k168.jpg" alt="Image 2">
+                    <img src="./assets/images/2k169.jpg" alt="Image 1">
+                    <img src="./assets/images/2k1610.jpg" alt="Image 1">
+
+                    <!-- Add more images for the year 2023 -->
+                </div>
+            </div>
+            <br>
+
+        </div>
+        <div class="gallery">
+            <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k15 <br>
+                <h2></h2>
+                <div class="images">
+                    <img src="./assets/images/2k151.jpg" alt="Image 1">
+                    <img src="./assets/images/2k152.jpg" alt="Image 2">
+                    <img src="./assets/images/2k153.jpg" alt="Image 1">
+                    <img src="./assets/images/2k154.jpg" alt="Image 1">
+                    <img src="./assets/images/2k155.jpg" alt="Image 2">
+
+                    <!-- Add more images for the year 2023 -->
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <footer class="footer section" id="contact"><br><br><br>
+        <hr>
+        <h2 class="section-title">Contact Us!</h2><br>
+        <p class="footer-title">Get in Touch</p><br><br>
+        <div class="footer-social">
+            <div class="social-item">
+                <a href="https://www.instagram.com/ashv2k24?igsh=Z3ZuN2NlZ2VwYTJi" target="_blank">
+                    <img class="skills-icon" src="../assets/images/insta.jpg" alt="Instagram" />
+                    <span class="social-name">Instagram</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://www.linkedin.com/events/ashv-theraceoftalent7179117847011319808/" target="_blank">
+                    <img class="skills-icon" src="../assets/images/linkedin.webp" alt="Twitter" />
+                    <span class="social-name">Linkedin&nbsp;&nbsp;</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="tel:+919398983918" target="_blank">
+                    <img class="skills-icon" src="../assets/images/phone.jpg" alt="Phone" />
+                    <span class="social-name">Phone&nbsp;&nbsp;&nbsp;</span>
+                </a>
+            </div>
+            <div class="social-item">
+                <a href="https://fb.me/e/wH5oN1IyV" target="_blank">
+                    <img class="skills-icon" src="../assets/images/facebook.jpg" alt="Facebook" />
+                    <span class="social-name">Facebook</span>
+                </a>
+            </div><br>
+            <div class="social-item">
+                <a href="https://wa.me/919398983918" target="_blank">
+                    <img class="skills-icon" src="../assets/images/whatsapp.jpg" alt="whatsapp" />
+                    <span class="social-name">whatsapp</span>
+                </a>
+            </div>
+        </div><br><br>
+        <div class="footer-social" id="phone-footer">
+            <div>
+                <span class="social-name">Sports - &nbsp;&nbsp;&nbsp;<a href="tel:+918688616407"
+                        target="_blank">8688616407</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+            </div>
+            <div>
+                <span class="social-name">Technical - &nbsp;&nbsp;&nbsp;<a href="tel:+918978346504"
+                        target="_blank">8978346504</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+            </div>
+            <div>
+                <span class="social-name">Cultural - &nbsp;&nbsp;&nbsp;<a href="tel:+916305529025"
+                        target="_blank">6305529025</span>&nbsp;&nbsp;
+                </a>
+            </div>
+            <div>
+                <span class="social-name">Theatre - &nbsp;&nbsp;&nbsp;<a href="tel:+919652698204"
+                        target="_blank">9652698204</span>&nbsp;&nbsp;
+                </a>
+            </div>
+            <div>
+                <span class="social-name">Registrations - &nbsp;&nbsp;&nbsp;<a href="tel:+919398983918"
+                        target="_blank">9398983918</span>&nbsp;&nbsp;
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <div>
+        <a href="#scroll" class="up-arrow"><i class="fa fa-arrow-up"></i></a>
+    </div>
+    <div class="col-lg-6 col-sm-6">
+        <div class="text-button">
+            <a href="create.html"> Created by <i class="fa fa-arrow-right"></i></a>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
@@ -477,11 +526,11 @@ https://www.tooplate.com/view/2125-artxibition
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
     <script src="assets/js/accordions.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
-    
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/tech.js"></script>
