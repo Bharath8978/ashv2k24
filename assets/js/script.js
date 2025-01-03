@@ -184,9 +184,7 @@ document.querySelector(".conclave-btn").addEventListener("click", () => {
 });
 
 //footer reach us button
-document
-	.getElementById("reach-us-button")
-	.addEventListener("click", function () {
-		window.location.href =
-			"https://www.google.com/maps/place/Madanapalle+Institute+of+Technology+%26+Sciences/@13.6170422,78.4942268,17z";
-	});
+document.querySelector('#reach-us-button').addEventListener('click', () => {
+	console.log('Reach us clicked!');
+	window.open("https://www.google.com/maps/search/?api=1&query=Madanapalle+Institute+of+Technology+and+Science", "_blank");
+});

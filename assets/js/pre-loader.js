@@ -11,6 +11,6 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             loader.style.display = "none"; // Hide the loader after a certain amount of time
             document.body.style.overflow = "auto"; // Enable scrolling
-        }, 300); // Delay
+        }, 1); // Delay
     }
 });
