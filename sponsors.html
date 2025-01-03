@@ -2,588 +2,271 @@
 <html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sponsers</title>
+	<link rel="icon" href="assets/img/ashv-theraceoftalent.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="assets/styles/res-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Tooplate">
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/images/ashv1.webp" type="image/x-icon">
-    <title>Ashv 2k24</title>
+		body {
+			background: linear-gradient(#003366, #0033669f);
+		}
 
+		.sponser img {
+			margin: 10%;
+			width: 85%;
+			height: auto;
+		}
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		#mobile-pic {
+			display: none;
+		}
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+		#title {
+			display: none;
+		}
 
-    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+		@media (max-width: 975px) {
+			body {
+				flex-direction: column;
+				height: auto;
+				background-color: #af2d68;
+			}
 
-    <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
-    <!--
+			#mobile-pic {
+				width: 90%;
+				display: block;
+				padding: 10px;
+				margin: 10px;
+			}
 
-Tooplate 2125 ArtXibition
+			#desktop-pic {
+				display: none;
+			}
 
-https://www.tooplate.com/view/2125-artxibition
-
--->
-    <style>
-        .des {
-            margin: 5%;
-            border: 1px solid grey;
-            padding: 2%;
-            background-color: rgb(227, 226, 226);
-            overflow-y: scroll;
-            width: 90%;
-            height: 400px;
-        }
-
-        .up-arrow {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #333;
-            color: #fff;
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            line-height: 40px;
-            border-radius: 50%;
-            font-size: 20px;
-            z-index: 1000;
-            transition: background-color 0.3s;
-        }
-
-        .up-arrow:hover {
-            color: #ddcccc;
-        }
-
-        #b {
-            font-weight: 900;
-        }
-
-        .col-lg-4 {
-            margin: 7%;
-        }
-
-        .footer {
-            background-color: var(--second-color);
-            color: #a74242;
-            text-align: center;
-            font-weight: var(--font-semi);
-            padding: 3.5rem 0;
-        }
-
-        .footer-title {
-            font-size: 2rem;
-            margin-bottom: var(--mb-4);
-        }
-
-        .footer-social {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: var(--mb-4);
-        }
-
-        .social-item {
-            text-align: center;
-            margin: 0 var(--mb-2);
-        }
-
-        .skills-icon {
-            width: 10%;
-            /* Adjust according to your preference */
-        }
-
-        .social-name {
-            font-size: 1rem;
-            color: #041b78;
-        }
-
-        .hero {
-            width: 400px;
-            height: auto;
-            margin-left: 50%;
-        }
-
-        .col-lg-4 {
-            margin-left: 30%;
-        }
-
-        .page-heading-shows-events {
-            background-image: url(./assets/images/mits8.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding: 110px 0px;
-            text-align: center;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* .arrange {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-}
-
-.arrange img {
-    margin-right: 20px;
-    width: 400px;
-} */
-        .main-nav .nav li {
-            display: inline-block;
-        }
-
-        .main-nav img {
-            position: absolute !important;
-        }
-
-        #imgOne {
-            left: 3rem;
-            top: 0.5rem !important;
-            margin-top: 0 !important;
-            width: auto;
-            height: 4rem;
-            margin-top: .5rem;
-        }
-
-        .sponsers {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: row;
-        }
-
-        .sponsers img {
-            width: 300px;
-            height: auto;
-            padding: 30px;
-        }
-
-        #imgTwo {
-            left: 13rem;
-            top: 0.5rem !important;
-            margin-top: 0 !important;
-            width: auto;
-            height: 4rem;
-            margin-top: 0.5rem;
-        }
-
-        @media screen and (max-width:768px) {
-            .main-nav img {
-                position: absolute;
+			/* #title{
+                display: block;
             }
-
-            #imgOne {
-                left: 1rem;
-                top: 1rem;
-                margin-top: 0;
+            .title-con{
+                display: block;
+                background-color: #0F4684;
             }
+             */
+		}
 
-            #imgTwo {
-                left: 12rem;
-            }
-        }
+		@media screen and (max-width:600px) {
+			.sponser {
+				margin-top: 15vh;
+			}
+		}
 
-        @media screen and (max-width:768px) {
-            .hero {
-                margin-left: 0%;
-            }
+		.sponser {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 
-            .col-lg-4 {
-                margin-left: 0%;
-            }
-        }
+		/* Nav */
+		@media (max-width: 768px) {
+			nav {
+        	position: absolute;
+        	top: 0;
+        	right: 0;
+        	width: 100%;
+        	height: auto;
+        	z-index: 10 !important;
+        	padding: 2rem;
+        	transition: all 0.3s ease-in-out;
+        	transform: translateY(-100%);
+        	background: linear-gradient(#003366, #0033669f);
+        	box-shadow: 0 0 10px 10px #0033669f;
+    	}
 
-        @media screen and (max-width:768px) {
-            .logo-container {
-                display: flex;
-                align-items: center;
-                position: absolute;
-                top: 0;
-                left: 10px;
-            }
+      .ashv-hamburger {
+        display: none;
+        cursor: pointer;
+        z-index: 10;
+      }
 
-            .logo-container img {
-                margin-right: 10px;
-            }
+      nav.active {
+        display: block;
+        transform: translateY(0);
+      }
 
-            .footer-social {
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            }
+			.ashv-hamburger {
+				display: block;
+				top: 1rem;
+				right: 1rem;
+				font-size: 2rem;
+				color: #ffd700;
+			}
 
-            .skills-icon {
-                width: 35%;
+			nav ul {
+				flex-direction: column;
+				width: 100%;
+				padding: 0;
+			}
 
-            }
+      nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+      }
 
-            .social-item {
-                margin: 0;
-                margin-bottom: 0;
-            }
+      .event-hover ul {
+        display: none;
+      }
 
-            .social-item span {
-                display: none;
-            }
-
-            #phone-footer {
-                display: flex !important;
-                flex-direction: column !important;
-            }
-        }
-
-        .sponsors-btn {
-            background-color: #007BFF;
-            /* Blue */
-            border: none;
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
-            margin: 20px 0;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .sponsors-btn:hover {
-            background-color: #0056b3;
-            /* Darker blue */
-            transform: scale(1.05);
-        }
-
-        .sponsors-btn:active {
-            background-color: #004080;
-            /* Even darker blue */
-            transform: scale(1);
-        }
-
-        .popup {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            z-index: 100000;
-            align-items: center;
-            justify-content: center;
-            /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100vh;
-            /* overflow: auto; */
-            background-color: rgba(0, 0, 0, 0.5);
-            /* Black w/ opacity */
-        }
-
-        .popup-content {
-            position: relative;
-            margin: auto;
-            /* height: 100%; */
-            /* 15% from the top and centered */
-            padding: 20px;
-            /* height: 90%; */
-            margin-inline: auto;
-            /* width: 80%; */
-            /* Could be more or less, depending on screen size */
-            /* max-width: 60vw; */
-            padding-inline: 1vw;
-            background-color: #fff;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .popup-content img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            border-radius: 10px;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            color: #aaa;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .close-btn:hover,
-        .close-btn:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+      .event-hover:hover ul {
+        display: block;
+      }
+    }
+	</style>
 </head>
 
 <body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
-    <!-- ***** Pre HEader ***** -->
-    <!-- <div class="pre-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <span>Hey! The Show Is Starting In 5 Days.</span>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="text-button">
-                        <a href="rent-venue.html">Contact Us Now! <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
+	<!-- <div class="title-con">
+        <h2 id="title">
+            Our Sponsers
+        </h2>
     </div> -->
+	<header>
+		<div class="mits-logo">
+			<img src="assets/img/MITS.png" alt="">
+			<div class="title">
+				<div class="upper">MITS</div>
+				<hr>
+				<div class="lower">MADANAPALLE</div>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="committee.html">Committee</a></li>
+				<li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg"
+							width="16" height="16" style="font-weight: 700;" fill="currentColor"
+							class="bi bi-chevron-down" viewBox="0 0 16 16">
+							<path fill-rule="evenodd"
+								d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+						</svg></a>
+					<ul class="sub-menu">
+						<li><a href="eventTiles.html#technical">Technical</a></li>
+						<li><a href="eventTiles.html#theatre">Theatre</a></li>
+						<li><a href="eventTiles.html#cultural">Cultural</a></li>
+						<li><a href="eventTiles.html#sports">Sports</a></li>
+						<li><a href="eventTiles.html#bonus">Bonus Bonaza</a></li>
+					</ul>
+				</li>
+				<li><a href="registrations.html">Registrations</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="sponsors.html" class="selected">Sponsors</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="two6-years-logo">
+			<img src="assets/img/25_years 1.png" alt="" class="year-logo">
+		</div>
+		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="7vh" class="ashv-hamburger"
+			id="hamburger">
+			<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+			<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+			<g id="SVGRepo_iconCarrier">
+				<path d="M4 18L20 18" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+				<path d="M4 12L20 12" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+				<path d="M4 6L20 6" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+			</g>
+		</svg>
+	</header>
+	<div class="sponser">
+		<img src="assets/images/20.jpg" alt="2024 Sponsers" id="desktop-pic">
+		<img src="assets/images/pic1.png" alt="2024 Sponsers" id="mobile-pic">
+		<img src="assets/images/pic2.png" alt="2024 Sponsers" id="mobile-pic">
+	</div>
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky" id="scroll">
-        <div class="contain">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <img id="imgOne" src="./assets/images/mits.png" alt="logo">
-                        <img id="imgTwo" src="./assets//images//ashv1.webp">
+	<!-- Footer -->
+	<footer class="footer common-background">
+		<h2 class="footer-heading">Contact Us!</h2>
+		<div class="footer-container">
+			<div class="footer-left">
+				<div class="social-and-contacts">
+					<ul class="social-links">
+						<li>
+							<a href="https://www.instagram.com/ashv2k25?igsh=NXp2djdvZHV4eHYy">
+								<i class="fab fa-instagram"></i> Instagram
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/school/madanapalle-institute-of-technology-&-science/">
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href="https://fb.me/e/wH5oN1IyV">
+								<i class="fab fa-facebook"></i> Facebook
+							</a>
+						</li>
+						<li>
+							<a href="https://wa.me/919398983918">
+								<i class="fab fa-whatsapp"></i> WhatsApp
+							</a>
+						</li>
+					</ul>
 
+					<div class="technical-contacts">
+						<p><strong>Technical: </strong> 8978346504</p>
+						<p><strong>Cultural: </strong> 8143767320</p>
+						<p><strong>Sports: </strong> 9502631137</p>
+						<p><strong>Theatre: </strong> 9652698204</p>
+						<p><strong>Registrations: </strong> 9398983918</p>
+					</div>
+				</div>
 
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="non-tech"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="committee.html">Committee</a></li>
-                            <li><a href="technical.html">Technical Events</a></li>
-                            <li><a href="culturals.html">Culturals</a></li>
-                            <li><a href="theatre.html">Theatre</a></li>
-                            <li><a href="sports.html">Sports</a></li>
-                            <li><a href="register.html">Registration</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <!-- <li><a href="accommodation.html" >Accommodation</a></li> -->
-                            <li><a href="sponsors.html" id="b">Sponsors</a></li>
-                            <li><a href="contactus.html">Contact us</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+				<button onclick="document.location='creators.html'" class="cta-button">
+                    Meet the Creators <i class="fas fa-arrow-right"></i>
+                </button>
+			</div>
 
-    <!-- ***** About Us Page ***** -->
-    <div class="page-heading-shows-events">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 style="text-shadow: 3px 3px 4px black;">Our Sponsors</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <center>
-        <button id="sponsors-btn" class="sponsors-btn">Click here to see 2024 sponsors</button>
-    </center>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn">&times;</span>
-            <img src="images/sponsors.jpg" alt="Sponsors Image">
-        </div>
-    </div>
+			<div class="footer-right">
+				<div class="map-and-reach-us">
+					<div class="map-container">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31865.074342890974!2d78.49422682941045!3d13.617042201220594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1735365545296!5m2!1sen!2sin"
+							width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
 
-    <div class="sponsers">
-        <!-- <img src="./assets/images/sponser1.jpg">
-        <img src="./assets/images/sponser2.jpg">
-        <img src="./assets/images/sponser3.jpg">
-        <img src="./assets/images/sponser29.jpg">
-        <img src="./assets/images/sponser4.jpg">
-        <img src="./assets/images/sponser32.jpg">
-        <img src="./assets//images//sponser24.jpg">
-        <img src="./assets//images//sponser5.jpeg">
-        <img src="./assets/images/sponser6.jpg">
-        <img src="./assets/images/sponser7.jpg">
-        <img src="./assets/images/sponser8.jpg">
-        <img src="./assets/images/sponser27.jpg">
-        <img src="./assets/images/sponser9.jpg">
-        <img src="./assets/images/sponser30.jpg">
-        <img src="./assets/images/sponser10.jpg">
-        <img src="./assets/images/sponser11.jpg">
-        <img src="./assets/images/sponser12.jpg">
-        <img src="./assets/images/sponser13.jpg">
-        <img src="./assets/images/sponser14.jpg">
-        <img src="./assets/images/sponser15.jpg">
-        <img src="./assets/images/sponser31.jpg">
-        <img src="./assets/images/sponser16.jpg">
-        <img src="./assets/images/sponser17.jpg">
-        <img src="./assets/images/sponser18.jpg">
-        <img src="./assets/images/sponser26.jpg">
-        <img src="./assets/images/sponser21.jpg">
-        <img src="./assets/images/sponser19.jpg">
-        <img src="./assets/images/sponser20.jpg">
-        <img src="./assets/images/sponser22.jpg">
-        <img src="./assets/images/sponser23.jpg">
-        <img src="./assets/images/sponser25.jpg"> -->
-    </div>
-    <!-- <h1 style="text-align: center;">Techincal Sponsor</h1>
-    <div class="sponsers">
-        <div>
-            <img src="./assets/images/sponser28.jpg">
-        </div>
-    </div> -->
-    <!-- *** Subscribe *** -->
-    <!-- *** Footer *** -->
-    <footer class="footer section" id="contact"><br><br><br>
-        <hr>
-        <h2 class="section-title">Contact Us!</h2><br>
-        <p class="footer-title">Get in Touch</p><br><br>
-        <div class="footer-social">
-            <div class="social-item">
-                <a href="https://www.instagram.com/ashv2k24?igsh=Z3ZuN2NlZ2VwYTJi" target="_blank">
-                    <img class="skills-icon" src="../assets/images/insta.jpg" alt="Instagram" />
-                    <span class="social-name">Instagram</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/events/ashv-theraceoftalent7179117847011319808/" target="_blank">
-                    <img class="skills-icon" src="../assets/images/linkedin.webp" alt="Twitter" />
-                    <span class="social-name">Linkedin&nbsp;&nbsp;</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="tel:+919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/phone.jpg" alt="Phone" />
-                    <span class="social-name">Phone&nbsp;&nbsp;&nbsp;</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://fb.me/e/wH5oN1IyV" target="_blank">
-                    <img class="skills-icon" src="../assets/images/facebook.jpg" alt="Facebook" />
-                    <span class="social-name">Facebook</span>
-                </a>
-            </div><br>
-            <div class="social-item">
-                <a href="https://wa.me/919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/whatsapp.jpg" alt="whatsapp" />
-                    <span class="social-name">whatsapp</span>
-                </a>
-            </div>
-        </div><br><br>
-        <div class="footer-social" id="phone-footer">
-            <div>
-                <span class="social-name">Sports - &nbsp;&nbsp;&nbsp;<a href="tel:+918688616407"
-                        target="_blank">8688616407</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Technical - &nbsp;&nbsp;&nbsp;<a href="tel:+918978346504"
-                        target="_blank">8978346504</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Cultural - &nbsp;&nbsp;&nbsp;<a href="tel:+916305529025"
-                        target="_blank">6305529025</span>&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Theatre - &nbsp;&nbsp;&nbsp;<a href="tel:+919652698204"
-                        target="_blank">9652698204</span>&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Registrations - &nbsp;&nbsp;&nbsp;<a href="tel:+919398983918"
-                        target="_blank">9398983918</span>&nbsp;&nbsp;
-                </a>
-            </div>
-        </div>
+					<div class="reach-us">
+						<h3>Reach Us</h3>
+						<p>Madanapalle Institute of Technology & Science</p>
+						<p>Post Box No: 14, Kadiri Road</p>
+						<p>Angallu (V), Madanapalle-517325</p>
+						<p>Annamayya District, Andhra Pradesh, India.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-    </footer>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script>
+    	const hamburger = document.getElementById('hamburger');
+    	const nav = document.querySelector('nav');
 
-    <div>
-        <a href="#scroll" class="up-arrow"><i class="fa fa-arrow-up"></i></a>
-    </div>
-    <div class="col-lg-6 col-sm-6">
-        <div class="text-button">
-            <a href="create.html"> Created by <i class="fa fa-arrow-right"></i></a>
-        </div>
-    </div>
-
-
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-    <script src="assets/js/mixitup.js"></script>
-    <script src="assets/js/accordions.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/quantity.js"></script>
-
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-    <script>
-        // Get the popup
-        var popup = document.getElementById("popup");
-
-        // Get the button that opens the popup
-        var btn = document.getElementById("sponsors-btn");
-
-        // Get the <span> element that closes the popup
-        var closeBtn = document.getElementsByClassName("close-btn")[0];
-
-        // When the user clicks the button, open the popup 
-        btn.onclick = function () {
-            popup.style.display = "flex";
-        }
-
-        // When the user clicks on <span> (x), close the popup
-        closeBtn.onclick = function () {
-            popup.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the popup, close it
-        window.onclick = function (event) {
-            if (event.target == popup) {
-                popup.style.display = "none";
-            }
-        }
-    </script>
-
+    	hamburger.addEventListener('click', () => {
+      	nav.classList.toggle('active');
+    });
+	</script>
 </body>
 
 </html>

@@ -2,1825 +2,388 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Tooplate">
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
-
-    <title>Ashv 2k25</title>
-    <link rel="shortcut icon" href="./assets/images/ashv1.webp" type="image/x-icon">
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
-
-    <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        .footer {
-            background-color: var(--second-color);
-            color: #a74242;
-            text-align: center;
-            font-weight: var(--font-semi);
-            padding: 3.5rem 0;
-        }
-
-        .footer-title {
-            font-size: 2rem;
-            margin-bottom: var(--mb-4);
-        }
-
-        .footer-social {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: var(--mb-4);
-        }
-
-        .social-item {
-            text-align: center;
-            margin: 0 var(--mb-2);
-        }
-
-        .skills-icon {
-            width: 10%;
-            /* Adjust according to your preference */
-        }
-
-        .social-name {
-            font-size: 1rem;
-            color: #041b78;
-        }
-
-        .ashv {
-            width: 400px;
-            height: auto;
-        }
-
-        .mits {
-            width: 80px;
-            height: auto;
-        }
-
-        #b {
-            font-weight: 900;
-        }
-
-        .up-arrow {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #333;
-            color: #fff;
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            line-height: 40px;
-            border-radius: 50%;
-            font-size: 20px;
-            z-index: 1000;
-            transition: background-color 0.3s;
-        }
-
-        .up-arrow:hover {
-            color: #ddcccc;
-        }
-
-
-
-        .main-nav .nav {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            /* Center the navigation items */
-        }
-
-
-        .main-nav .nav li:last-child {
-            margin-right: 0;
-        }
-
-        .main-nav .nav li a {
-            color: #333;
-            text-transform: uppercase;
-            font-weight: bold;
-            transition: color 0.3s ease;
-            display: inline-block;
-        }
-
-        .main-nav .nav li a:hover {
-            color: #ff6b6b;
-        }
-
-        .main-nav .nav li {
-            display: inline-block;
-        }
-
-        .main-nav img {
-            position: absolute !important;
-        }
-
-        #imgOne {
-            left: 3rem;
-            top: 0.5rem !important;
-            margin-top: 0 !important;
-            width: auto;
-            height: 4rem;
-            margin-top: .5rem;
-        }
-
-        #imgTwo {
-            left: 13rem;
-            top: 0.5rem !important;
-            margin-top: 0 !important;
-            width: auto;
-            height: 4rem;
-            margin-top: 0.5rem;
-        }
-
-        @media screen and (max-width:768px) {
-            .main-nav img {
-                position: absolute;
-            }
-
-            #imgOne {
-                left: 1rem;
-                top: 1rem;
-                margin-top: 0;
-            }
-
-            #imgTwo {
-                left: 12rem;
-            }
-        }
-
-        .footer {
-            background-color: var(--second-color);
-            color: #a74242;
-            text-align: center;
-            font-weight: var(--font-semi);
-            padding: 3.5rem 0;
-        }
-
-        .footer-title {
-            font-size: 2rem;
-            margin-bottom: var(--mb-4);
-        }
-
-        .footer-social {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: var(--mb-4);
-        }
-
-        .social-item {
-            text-align: center;
-            margin: 0 var(--mb-2);
-        }
-
-        .skills-icon {
-            width: 10%;
-            /* Adjust according to your preference */
-        }
-
-        .social-name {
-            font-size: 1rem;
-            color: #041b78;
-        }
-
-        .ashv {
-            width: 400px;
-            height: auto;
-        }
-
-        .mits {
-            width: 80px;
-            height: auto;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        /* album */
-
-        .paper {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            perspective: 1500px;
-
-        }
-
-        .front,
-        .back {
-            background-color: white;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            transform-origin: left;
-            transition: transform 0.5s;
-        }
-
-        .front {
-            z-index: 1;
-            backface-visibility: hidden;
-        }
-
-        .back {
-            z-index: 0;
-        }
-
-        .front-content,
-        .back-content {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .back-content {
-            transform: rotateY(180deg)
-        }
-
-        /* Paper flip effect */
-        .flipped .front,
-        .flipped .back {
-            transform: rotateY(-180deg);
-        }
-
-        /* Controller Buttons */
-        button {
-            border: none;
-            background-color: transparent;
-            cursor: pointer;
-            margin: 10px;
-            transition: transform 0.5s;
-        }
-
-        button:focus {
-            outline: none;
-        }
-
-        button:hover i {
-            color: #636363;
-        }
-
-        i {
-            font-size: 50px;
-            color: gray;
-        }
-
-        /* Paper stack order */
-        #p1 {
-            z-index: 10;
-        }
-
-        #p2 {
-            z-index: 9;
-        }
-
-        #p3 {
-            z-index: 8;
-        }
-
-        #p4 {
-            z-index: 7;
-        }
-
-        #p5 {
-            z-index: 6;
-        }
-
-        #p6 {
-            z-index: 5;
-        }
-
-        #p7 {
-            z-index: 4;
-        }
-
-        #p8 {
-            z-index: 3;
-        }
-
-        #p9 {
-            z-index: 2;
-        }
-
-        #p10 {
-            z-index: 1;
-        }
-
-
-
-        /* Make the album container relative to position the buttons inside it */
-        .album {
-            position: relative;
-            width: 50%;
-            /* Ensure it takes up the full width of the parent */
-        }
-
-        /* Style the previous button */
-        /* Previous button */
-        #prev-btn {
-            position: absolute;
-            top: 50%;
-            left: 20%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0);
-            border: none;
-            /* border-radius: 50%; */
-            /* width: 50px; */
-            /* height: 50px; */
-            /* font-size: 20px; */
-            color: transparent;
-            cursor: pointer;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
-
-        /* Next button */
-        #next-btn {
-            position: absolute;
-            top: 50%;
-            right: 20%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0);
-            border: none;
-            /* border-radius: 50%; */
-            /* width: 50px; */
-            /* height: 50px; */
-            /* font-size: 20px; */
-            color: transparent;
-            cursor: pointer;
-            z-index: 10;
-            transition: all 0.3s ease-in-out;
-        }
-
-        /* Hover effect */
-        /* #prev-btn:hover,
-        #next-btn:hover {
-            background-color: rgba(255, 165, 0, 0.7);
-            /* Orange glow effect */
-        /* transform: translateY(-50%) scale(1.1); */
-        /* Slight zoom-in effect */
-        /* } */
-
-        /* Focus effect */
-        /* #prev-btn:focus,
-        #next-btn:focus {
-            outline: none;
-            /* Remove default focus outline */
-        /* box-shadow: 0 0 10px rgba(255, 165, 0, 0.9); */
-        /* Highlight with a glowing effect */
-        /* } */
-
-
-        /* Optional: Adjust icon size if necessary */
-        #prev-btn i,
-        #next-btn i {
-            font-size: 40px;
-            color: #17a2b8;
-        }
-
-        #album-front {
-            height: 230px;
-            width: 6000px;
-        }
-
-        @media screen and (max-width:768px) {
-            .logo-container {
-                display: flex;
-                align-items: center;
-                position: absolute;
-                top: 0;
-                left: 10px;
-            }
-
-            .logo-container img {
-                margin-right: 10px;
-            }
-
-            .poster {
-                width: 300px;
-                height: auto;
-            }
-        }
-
-        @media screen and (max-width:768px) {
-            .logo-container {
-                display: flex;
-                align-items: center;
-                position: absolute;
-                top: 0;
-                left: 10px;
-            }
-
-            .logo-container img {
-                margin-right: 10px;
-            }
-
-            .footer-social {
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .skills-icon {
-                width: 35%;
-
-            }
-
-            .social-item {
-                margin: 0;
-                margin-bottom: 0;
-            }
-
-            #phone-footer {
-                display: flex !important;
-                flex-direction: column !important;
-            }
-
-            .social-item span {
-                display: none;
-            }
-        }
-
-        /* Base styles */
-        .book {
-            width: 550px;
-            /* Default size */
-            padding-top: 90px;
-            position: relative;
-            /* height: 500px; */
-            transition: transform 0.5s;
-        }
-
-        .paper img {
-            width: 550px;
-            /* Default size */
-            height: auto;
-            /* Maintain aspect ratio */
-        }
-
-        /* Responsive styles */
-
-        /* Max-width: 1100px */
-        @media (max-width: 1100px) {
-            .book {
-                width: 450px;
-            }
-
-            .paper img {
-                width: 450px;
-            }
-
-            #album-front {
-                height: 200px;
-            }
-
-            #album-front {
-                width: 5500px;
-            }
-        }
-
-        /* Max-width: 1050px */
-        @media (max-width: 1050px) {
-            .book {
-                width: 430px;
-            }
-
-            .paper img {
-                width: 430px;
-            }
-
-            #album-front {
-                width: 4300px;
-            }
-        }
-
-        /* Max-width: 1000px */
-        @media (max-width: 1000px) {
-            .book {
-                width: 400px;
-            }
-
-            .paper img {
-                width: 400px;
-            }
-
-            #album-front {
-                height: 170px;
-                width: 4300px;
-            }
-        }
-
-        /* Max-width: 950px */
-        @media (max-width: 950px) {
-            .book {
-                width: 400px;
-            }
-
-            .paper img {
-                width: 400px;
-            }
-
-            #album-front {
-                width: 4200px;
-            }
-        }
-
-        /* Max-width: 900px */
-        @media (max-width: 900px) {
-            .book {
-                width: 370px;
-            }
-
-            .paper img {
-                width: 370px;
-            }
-
-            #album-front {
-                height: 170px;
-            }
-
-            #album-front {
-                width: 4200px;
-            }
-        }
-
-        /* Max-width: 850px */
-        @media (max-width: 850px) {
-            .book {
-                width: 350px;
-            }
-
-            .paper img {
-                width: 350px;
-            }
-
-            #album-front {
-                height: 170px;
-            }
-
-            #album-front {
-                width: 4200px;
-            }
-        }
-
-        /* Max-width: 800px */
-        @media (max-width: 800px) {
-            .book {
-                width: 330px;
-            }
-
-            .paper img {
-                width: 330px;
-            }
-        }
-
-        /* Max-width: 750px */
-        @media (max-width: 750px) {
-            .book {
-                width: 320px;
-            }
-
-            .paper img {
-                width: 320px;
-            }
-        }
-
-        /* Max-width: 700px */
-        @media (max-width: 700px) {
-            .book {
-                width: 310px;
-            }
-
-            .paper img {
-                width: 310px;
-            }
-        }
-
-        /* Max-width: 650px */
-        @media (max-width: 650px) {
-            .book {
-                width: 300px;
-            }
-
-            .paper img {
-                width: 300px;
-            }
-        }
-
-        /* Max-width: 600px */
-        @media (max-width: 600px) {
-            .book {
-                width: 275px;
-            }
-
-            .paper img {
-                width: 275px;
-            }
-        }
-
-        /* Max-width: 550px */
-        @media (max-width: 550px) {
-            .book {
-                width: 250px;
-            }
-
-            .paper img {
-                width: 250px;
-            }
-
-            #album-front {
-                height: 150px;
-            }
-
-            #album-front {
-                width: 4000px;
-            }
-        }
-
-        /* Max-width: 500px */
-        @media (max-width: 500px) {
-            .book {
-                width: 230px;
-            }
-
-            .paper img {
-                width: 230px;
-            }
-
-            .album {
-                width: 300px;
-            }
-
-            #prev-btn {
-                transform: translateX(-160px) !important;
-            }
-
-            #next-btn {
-                transform: translateX(160px) !important;
-            }
-        }
-
-        /* Max-width: 450px */
-        @media (max-width: 450px) {
-            .book {
-                width: 200px;
-            }
-
-            .paper img {
-                width: 200px;
-            }
-
-            #album-front {
-                height: 130px;
-            }
-
-            #album-front {
-                width: 3800px;
-            }
-
-            .album {
-                width: 200px;
-            }
-        }
-
-        /* Max-width: 400px */
-        @media (max-width: 400px) {
-            .book {
-                width: 175px;
-            }
-
-            .paper img {
-                width: 175px;
-            }
-
-            #album-front {
-                height: 110px;
-            }
-
-            #album-front {
-                width: 3600px;
-            }
-
-            #prev-btn {
-                transform: translateX(-120px) !important;
-            }
-
-            #next-btn {
-                transform: translateX(120px) !important;
-            }
-        }
-
-        /* Max-width: 350px */
-        @media (max-width: 350px) {
-            .book {
-                width: 150px;
-            }
-
-            .paper img {
-                width: 150px;
-            }
-
-            #album-front {
-                height: 100px;
-            }
-
-            #album-front {
-                width: 3400px;
-            }
-
-            #prev-btn {
-                transform: translateX(-100px) !important;
-            }
-
-            #next-btn {
-                transform: translateX(100px) !important;
-            }
-        }
-
-        /* Max-width: 300px */
-        @media (max-width: 300px) {
-            .book {
-                width: 130px;
-            }
-
-            .paper img {
-                width: 130px;
-            }
-
-            #album-front {
-                height: 90px;
-            }
-
-            #album-front {
-                width: 3200px;
-            }
-
-            #prev-btn {
-                transform: translateX(-70px) !important;
-            }
-
-            #next-btn {
-                transform: translateX(70px) !important;
-            }
-        }
-
-        /* Max-width: 250px */
-        @media (max-width: 250px) {
-            .book {
-                width: 100px;
-            }
-
-            .paper img {
-                width: 100px;
-            }
-
-            #album-front {
-                height: 70px;
-            }
-
-            #album-front {
-                width: 2900px;
-            }
-
-            #prev-btn {
-                transform: translateX(-50px) !important;
-            }
-
-            #next-btn {
-                transform: translateX(50px) !important;
-            }
-        }
-
-        /* Max-width: 200px */
-        @media (max-width: 200px) {
-            .book {
-                width: 60px;
-            }
-
-            .paper img {
-                width: 60px;
-            }
-        }
-
-        /* Max-width: 150px */
-        @media (max-width: 150px) {
-            .book {
-                width: 30px;
-            }
-
-            .paper img {
-                width: 30px;
-            }
-        }
-
-        /* Max-width: 100px */
-        @media (max-width: 100px) {
-            .book {
-                width: 20px;
-            }
-
-            .paper img {
-                width: 20px;
-            }
-        }
-
-        .album {
-            position: relative;
-            width: 100vw;
-        }
-
-        .nav-btn {
-            /* position: absolute;0 */
-            /* top: 50%; */
-            /* transform: translateY(-50%); */
-            background-color: #fff;
-            /* Adjust as needed */
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            z-index: 10;
-        }
-
-        .prev-btn {
-            left: 0;
-        }
-
-        .next-btn {
-            right: 0;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        .popup {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            z-index: 100000;
-            align-items: center;
-            justify-content: center;
-            /* Sit on top */
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100vh;
-            /* overflow: auto; */
-            background-color: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(8px);
-            transition: backdrop-filter 200ms ease-in-out;
-            /* Black w/ opacity */
-        }
-
-        .popup-content {
-            position: relative;
-            margin: auto;
-            padding: 3px;
-            max-width: 60vw;
-            border-radius: 13px;
-            text-align: center;
-            animation: banner-open 300ms ease-in-out;
-            background: linear-gradient(270deg, red, yellow, green, cyan, blue, magenta, red);
-            background-size: 800% 800%;
-            animation: backgroundGradient 15s ease infinite;
-        }
-
-        @keyframes backgroundGradient {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .popup-content img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            border-radius: 15px;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: -15px;
-            right: -15px;
-            color: #aaa;
-            aspect-ratio: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 30px;
-            height: 30px;
-            background-color: rgb(236, 44, 44);
-            border-radius: 50%;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            color: white;
-        }
-
-        .close-btn:hover,
-        .close-btn:focus {
-            color: rgb(236, 44, 44);
-            background-color: white;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        @keyframes banner-close {
-            from {
-                transform: scale(1);
-                opacity: 1;
-            }
-
-            to {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-        }
-
-        @keyframes banner-open {
-            from {
-                opacity: 0;
-                transform: scale(0.8);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        @keyframes gradient-border {
-            0% {
-                background-image: radial-gradient(red, yellow);
-            }
-
-            25% {
-                background-image: radial-gradient(yellow, green);
-            }
-
-            50% {
-                background-image: radial-gradient(green, blue);
-            }
-
-            75% {
-                background-image: radial-gradient(blue, purple);
-            }
-
-            100% {
-                background-image: radial-gradient(purple, red);
-            }
-        }
-
-        .popup-content img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            border-image-slice: 1;
-        }
-
-        .show-cards {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            row-gap: 3vh;
-        }
-
-        .show-card {
-            /* border: 2px solid black; */
-            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            border-radius: 10px;
-            transition: box-shadow 0.3s ease-out;
-        }
-
-        .show-card:hover {
-            box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .show-card:hover a {
-            transform: scale(1.05);
-        }
-
-        .show-info {
-            background-color: beige;
-            padding: 2rem 1rem;
-            box-sizing: content-box;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .show-card a {
-            background-color: black;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 10px;
-            display: inline-block;
-            width: fit-content;
-            transition: all 0.3s ease-out;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .show-card a span {
-            position: relative;
-            z-index: 1;
-            background-color: transparent;
-            color: white;
-        }
-
-        .show-card a:hover span {
-            color: black;
-        }
-
-        .show-card a:hover::before {
-            width: 100%;
-        }
-
-        .show-card a::before {
-            content: " ";
-            position: absolute;
-            width: 0%;
-            height: 100%;
-            background-color: white;
-            top: 0;
-            left: 0;
-            transition: all 0.3s ease-out;
-        }
-    </style>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ashv 2k25 - The race of talent</title>
+	<link rel="shortcut icon" href="assets/img/ashv-theraceoftalent.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/styles/res-style.css">
+	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="assets/styles/pre-loader.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+	<style>
+		.hero-title {
+			font-size: 2rem;
+			color: #FFD700;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+			margin-block: 1.5rem;
+		}
+
+		.ashv,
+		.explore-events,
+		.hero-title {
+			z-index: 3;
+		}
+	</style>
 </head>
 
 <body>
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close-btn"><span>&times;</span></span>
-            <img src="images/banner.jpeg" alt="Banner Image">
-        </div>
-    </div>
+	<!-- Preloader -->
+	<div class="loader">
+		<div id="preloader-container">
+			<div id="preloader_1">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<img src="./assets/img/ashv-theraceoftalent.png	" alt="Loader Image">
+		</div>
+	</div>
+	<header>
+		<div class="mits-logo">
+			<img src="assets/img/MITS.png" alt="" loading="eager">
+			<div class="title">
+				<div class="upper">MITS</div>
+				<hr>
+				<div class="lower">MADANAPALLE</div>
+			</div>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/" class="selected">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="committee.html">Committee</a></li>
+				<li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg"
+							width="16" height="16" style="font-weight: 700;" fill="currentColor"
+							class="bi bi-chevron-down" viewBox="0 0 16 16">
+							<path fill-rule="evenodd"
+								d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+						</svg></a>
+					<ul class="sub-menu">
+						<li><a href="eventTiles.html#technical">Technical</a></li>
+						<li><a href="eventTiles.html#theatre">Theatre</a></li>
+						<li><a href="eventTiles.html#cultural">Cultural</a></li>
+						<li><a href="eventTiles.html#sports">Sports</a></li>
+						<li><a href="eventTiles.html#bonus">Bonus Bonaza</a></li>
+					</ul>
+				</li>
+				<li><a href="registrations.html">Registrations</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="sponsors.html">Sponsors</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="two6-years-logo">
+			<img src="assets/img/25_years 1.png" alt="" class="year-logo" loading="eager">
+		</div>
+		<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="7vh" class="ashv-hamburger"
+			id="hamburger">
+			<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+			<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+			<g id="SVGRepo_iconCarrier">
+				<path d="M4 18L20 18" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+				<path d="M4 12L20 12" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+				<path d="M4 6L20 6" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+			</g>
+		</svg>
+	</header>
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>x
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
+	<main class="main">
 
-    <!-- ***** Pre HEader ***** -->
-    <!-- <div class="pre-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-6">
-                    <span>Hey! The Show is Starting in few Days.</span>
-                </div>
-                <div class="col-lg-6 col-sm-6">
-                    <div class="text-button">
-                        <a href="">Contact Us Now! <i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     -->
-    <!-- ***** Header Area Start ***** -->
-    <section id="nav">
-        <header class="header-area header-sticky">
-            <div class="contain">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="main-nav">
-                            <!-- ***** Logo Start ***** -->
-                            <img id="imgOne" src="./assets/images/mits.png" alt="logo">
-                            <img id="imgTwo" src="./assets//images//ashv1.webp">
+		<!-- Hero Section -->
+		<div class="hero">
+			<div class="timer-container">
+				<div class="timer-div">
+					<div class="timer" id="days">10</div>
+					<div class="timer-label">Days</div>
+				</div>
+				<div class="timer-div">
+					<div class="timer" id="hours">10</div>
+					<div class="timer-label">Hours</div>
+				</div>
+				<div class="timer-div">
+					<div class="timer" id="minutes">10</div>
+					<div class="timer-label">Minutes</div>
+				</div>
+				<div class="timer-div">
+					<div class="timer" id="seconds">10</div>
+					<div class="timer-label">Seconds</div>
+				</div>
+			</div>
+			<img src="assets/img/ashv-theraceoftalent.png" alt="" class="ashv" loading="eager">
+			<h1 class="hero-title">21-22 | Feb | 2k25</h1>
+			<img class="left-horse horse" src="assets/img/horse.png" alt="" loading="eager">
+			<img class="right-horse horse" src="assets/img/horse.png" alt="" loading="eager">
+			<img class="cloud-background" src="assets/img/bg clouds.png" alt="" loading="eager">
+			<div class="cloud-overlay"></div>
+			<a href="eventTiles.html" class="explore-events">Explore Events</a>
+		</div>
 
+		<!-- Gallery -->
+		<section class="gallery-section">
+			<h1 class="gallery-title">Gallery</h1>
+			<div class="gallery-slider">
+				<button class="nav-btn galprev-btn" id="prev"><i class="bi bi-arrow-left-circle-fill"></i></button>
+				<div class="gallery-container">
+					<div class="gallery">
+						<img src="assets/img/2k191.jpg" alt="Image 1">
+						<img src="assets/img/2k195.jpg" alt="Image 2">
+						<img src="assets/img/main3.jpg" alt="Image 3">
+						<img src="assets/img/main4.jpg" alt="Image 4">
+						<img src="assets/img/main5.jpg" alt="Image 5">
+						<img src="assets/img/main6.jpg" alt="Image 6">
+					</div>
+				</div>
+				<button class="nav-btn galnext-btn" id="next"><i class="bi bi-arrow-right-circle-fill"></i></button>
+			</div>
+		</section>
 
-                            <!-- ***** Logo End ***** -->
-                            <!-- ***** Menu Start ***** -->
-                            <ul class="nav">
-                                <li class="non-tech"><a href="index.html" id="b">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="committee.html">Committee</a></li>
-                                <li><a href="technical.html">Technical Events</a></li>
-                                <li><a href="culturals.html">Culturals</a></li>
-                                <li><a href="theatre.html">Theatre</a></li>
-                                <li><a href="sports.html">Sports</a></li>
-                                <li><a href="register.html">Registration</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
-                                <li><a href="sponsors.html">Sponsors</a></li>
-                                <li><a href="contactus.html">Contact us</a></li>
-                            </ul>
-                            <a class='menu-trigger'>
-                                <span>Menu</span>
-                            </a>
-                            <!-- ***** Menu End ***** -->
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section>
-    <!-- ***** Header Area End ***** -->
-    <!-- ***** Main Banner Area Start ***** -->
-    <div class="main-banner">
-        <div class="counter-content">
-            <ul>
-                <li style="text-shadow: 3px 3px 4px black;">Days<span id="days"
-                        style="text-shadow: 3px 3px 4px black;"></span></li>
-                <li style="text-shadow: 3px 3px 4px black;">Hours<span id="hours"
-                        style="text-shadow: 3px 3px 4px black;"></span></li>
-                <li style="text-shadow: 3px 3px 4px black;">Minutes<span id="minutes"
-                        style="text-shadow: 3px 3px 4px black;"></span></li>
-                <li style="text-shadow: 3px 3px 4px black;">Seconds<span id="seconds"
-                        style="text-shadow: 3px 3px 4px black;"></span></li>
-            </ul>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="main-content">
-                        <img src="./assets/images/ashv1.webp" class="ashv">
-                        <h2 style="text-shadow: 3px 3px 4px black; justify-self: center;">Ashv 2k25</h2>
-                        <h3 style="color: whitesmoke; text-shadow: 3px 3px 4px black; justify-self: center;"> 21 & 22
-                            February 2k25</h3><br>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Main Banner Area End ***** -->
+		<!-- Album -->
+		<section class="album-section">
+			<h1 class="album-title">Album</h1>
+			<div class="album-slider">
+				<button class="nav-btn albprev-btn"><i class="bi bi-arrow-left-circle"></i></button>
+				<div class="book" id="flipbook">
+					<!-- Dynamic Pages will be inserted here -->
+				</div>
+				<button class="nav-btn albnext-btn"><i class="bi bi-arrow-right-circle"></i></button>
+			</div>
+		</section>
 
-    <!-- *** Owl Carousel Items ***-->
-    <div class="show-events-carousel">
-        <div class="container responsive-container" style="margin-top: 5vh; margin-bottom: 5vh; ">
-            <h1 style="text-align: center;padding: 2rem;">Gallery</h1>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="owl-show-events owl-carousel" data-pause="false">
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/2k195.jpg" alt="image 1"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/2k191.jpg" alt="image 2"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/main3.jpg" alt="image 3"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/main4.jpg" alt="image 4"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/main5.jpg" alt="image 5"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/main6.jpg" alt="image 6"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/main7.jpg" alt="image 7"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/main8.jpg" alt="image 8"></a>
-                        </div>
-                        <div class="item">
-                            <a href="event-details.html"><img src="assets/images/main9.jpg" alt="image 9"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<!-- Shows -->
+		<section class="shows-section">
+			<h1 class="shows-title">Shows</h1>
+			<div class="shows-grid">
+				<div class="show">
+					<img src="https://img.freepik.com/premium-photo/exclamation-mark-among-question-marksaffirmation-concept-3d-render_507676-2268.jpg"
+						alt="Celebrity Night" class="show-image">
+					<div class="show-content">
+						<h2 class="show-title">Celebrity Night</h2>
+						<button class="know-more-btn">Know More</button>
+					</div>
+				</div>
 
-    <center style="height: 45vh;">
-        <h1>Album</h1>
-        <div class="album" style="
-                display: flex;
-                height: 100%;
-                align-items: center;
-                justify-content: center;
-            ">
-            <button id="prev-btn" class="nav-btn prev-btn">
-                <i class="bi bi-arrow-left-circle"></i>
-            </button>
+				<div class="show">
+					<img src="old/assets/images/musicalnight (1).jpg" alt="Musical Night" class="show-image">
+					<div class="show-content">
+						<h2 class="show-title">Musical Night</h2>
+						<button class="know-more-btn">Know More</button>
+					</div>
+				</div>
 
-            <!-- Book -->
-            <div id="book" class="book">
-                <!-- Paper 1 -->
-                <div id="p1" class="paper">
-                    <div class="front">
-                        <div id="f1" class="front-content">
-                            <img src="images/1.jpg" id="album-front" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b1" class="back-content">
-                            <img src="images/2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 2 -->
-                <div id="p2" class="paper">
-                    <div class="front">
-                        <div id="f2" class="front-content">
-                            <img src="images/3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b2" class="back-content">
-                            <img src="images/4.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p3" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/6.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p4" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/7.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/8.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p5" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/9.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/10.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p6" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/11.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/12.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p7" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/13.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/14.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p8" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/15.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/16.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p9" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/17.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/18.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <!-- Paper 3 -->
-                <div id="p10" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <img src="images/19.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <div id="b3" class="back-content">
-                            <img src="images/20.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+				<div class="show">
+					<img src="old/assets/images/theatre.jpg" alt="Theatre" class="show-image">
+					<div class="show-content">
+						<h2 class="show-title">Amusement Stalls</h2>
+						<button class="know-more-btn">Know More</button>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                <!-- Next Button -->
-            </div>
+		<!-- Events -->
+		<section class="events-section">
+			<div class="container-event">
+				<div class="carousel-wrapper-event">
+					<button class="nav-btn-event prev-event">←</button>
+					<div class="carousel-event">
+						<div class="card">
+							<img src="assets/img/homeCards/TECHNICAL.png" alt="Technical">
+							<h3>Technical</h3>
+						</div>
+						<div class="card">
+							<img src="assets/img/homeCards/CULTURAL.png" alt="Cultural">
+							<h3>Cultural</h3>
+						</div>
+						<div class="card">
+							<img src="assets/img/homeCards/THEATRE.png" alt="Theatre">
+							<h3>Theatre</h3>
+						</div>
+						<div class="card">
+							<img src="assets/img/homeCards/ATHLETICS1.png" alt="Athletics">
+							<h3>Athletics</h3>
+						</div>
+						<div class="card">
+							<img src="assets/img/homeCards/SPORTS.png" alt="Sports">
+							<h3>Sports</h3>
+						</div>
+						<div class="card">
+							<img src="assets/img/homeCards/BONUS.png" alt="Bonus Bananza">
+							<h3>Bonus Bananza</h3>
+						</div>
+					</div>
+					<button class="nav-btn-event next-event">→</button>
+					<button class="auto-scroll-toggle">Auto Scroll: Off</button>
+				</div>
+				<a href="eventTiles.html" class="explore-btn">Explore Events</a>
+			</div>
+		</section>
 
-            <button id="next-btn" class="nav-btn next-btn">
-                <i class="bi bi-arrow-right-circle"></i>
-            </button>
-        </div>
-    </center>
+		<!-- About Ashv -->
+		<section class="ashv-section">
+			<div class="ashv-card">
+				<div class="ashv-content">
+					<div class="left-content">
+						<h2>About Ashv 2k25</h2>
+						<p class="ashv-subtitle">The race of talent</p>
+						<p class="ashv-desc">
+							"Experience the enormous excitement at 'Ashv: The Race of Talent', our vibrant two-day
+							Techno-Cultural-Sports Fest! Witness the talents soar in technical and non-technical realms,
+							alongside spirited sports showdowns. Delight your taste buds at diverse food stalls and
+							engage in thrilling fun games. Don't forget to capture the magic with our exciting photo
+							opportunities. Join us for an enriching event filled with talent, camaraderie, and boundless
+							fun! Mark your calendars for an unforgettable experience!"
+						</p>
+					</div>
 
-    <!-- *** Venues & Tickets ***-->
-    <section id="shows">
-        <div class="venue-tickets">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-heading">
-                            <h1 style="padding: 2rem;">Shows</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="show-cards">
-                    <div class="show-card">
-                        <div class="thumbnail">
-                            <img src="assets/images/comingsoon.png" alt="">
-                        </div>
-                        <div class="show-info">
-                            <h4>Celebrity Night</h4>
-                            <a href="celebrity.html"><span>More Details&rarr;</span></a>
-                        </div>
-                    </div>
-                    <div class="show-card">
-                        <div class="thumbnail">
-                            <img src="assets/images/comingsoon.png" alt="">
-                        </div>
-                        <div class="show-info">
-                            <h4>Theatre</h4>
-                            <a href="theatre.html"><span>More Details&rarr;</span></a>
-                        </div>
-                    </div>
-                    <div class="show-card">
-                        <div class="thumbnail">
-                            <img src="assets/images/comingsoon.png" alt="">
-                        </div>
-                        <div class="show-info">
-                            <h4>Celebrity Night</h4>
-                            <a href="celebrity.html"><span>More Details&rarr;</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+					<div class="right-content">
+						<h3 class="visit-title">Visit Us</h3>
+						<div class="clg-ad">
+							<p>Madanaplle Institute of Technology & Science</p>
+							<p>Angallu, Madanapalle</p>
+							<p>Andhra Pradesh</p>
+						</div>
+						<button class="directions-btn">
+							Need Directions? <span>→</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="bottom-button">
+					<button class="conclave-btn">Conclave</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<h2 class="footer-heading">Contact Us!</h2>
+		<div class="footer-container">
+			<div class="footer-left">
+				<div class="social-and-contacts">
+					<ul class="social-links">
+						<li>
+							<a href="https://www.instagram.com/ashv2k25?igsh=NXp2djdvZHV4eHYy">
+								<i class="fab fa-instagram"></i> Instagram
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/school/madanapalle-institute-of-technology-&-science/">
+								<i class="fab fa-linkedin"></i> LinkedIn
+							</a>
+						</li>
+						<li>
+							<a href="https://fb.me/e/wH5oN1IyV">
+								<i class="fab fa-facebook"></i> Facebook
+							</a>
+						</li>
+						<li>
+							<a href="https://wa.me/919398983918">
+								<i class="fab fa-whatsapp"></i> WhatsApp
+							</a>
+						</li>
+					</ul>
+
+					<div class="technical-contacts">
+						<p><strong>Technical: </strong> 8978346504</p>
+						<p><strong>Cultural: </strong> 8143767320</p>
+						<p><strong>Sports: </strong> 9502631137</p>
+						<p><strong>Theatre: </strong> 9652698204</p>
+						<p><strong>Registrations: </strong> 9398983918</p>
+					</div>
+				</div>
+
+				<button onclick="document.location='creators.html'" class="cta-button">
+					Meet the Creators <i class="fas fa-arrow-right"></i>
+				</button>
+			</div>
 
 
-    <!-- *** Coming Events ***-->
-    <div class="coming-events">
-        <div class="left-button">
-            <div class="main-white-button">
-                <a href=""></a>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="event-item">
-                        <div class="thumb">
-                            <a href="technical.html"><img src="assets/images/tech.jpg" alt=""></a>
-                        </div>
-                        <div class="down-content">
-                            <a href="technical.html">
-                                <h4>Technical Events</h4>
-                            </a>
-                            <div class="main-white-button">
-                                <center><a href="technical.html" style="background-color: #656c74; color: white;">More
-                                        details</a><br><br></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="event-item">
-                        <div class="thumb">
-                            <a href=""><img src="assets/images/comingsoon.png" alt=""></a>
-                        </div>
-                        <div class="down-content">
-                            <a href="">
-                                <h4>Culturals</h4>
-                            </a>
-                            <div class="main-white-button">
-                                <center><a href="" style="background-color: #656c74; color: white;">More
-                                        details</a><br><br></center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="event-item">
-                        <div class="thumb">
-                            <a href="sports.html"><img src="assets/images/event-03.jpg" alt=""></a>
-                        </div>
-                        <div class="down-content">
-                            <a href="sports.html">
-                                <h4>Sports</h4>
-                            </a>
-                            <div class="main-white-button">
-                                <center><a href="sports.html" style="background-color: #656c74; color: white;">More
-                                        details</a><br><br>
-                                </center>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			<!-- Map and Reach Us (visible only on desktop) -->
+			<div class="map-and-reach-us">
+				<div class="map-container">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31865.074342890974!2d78.49422682941045!3d13.617042201220594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1735365545296!5m2!1sen!2sin"
+						width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+				<div class="reach-us">
+					<h3>Reach Us</h3>
+					<p>Madanapalle Institute of Technology & Science</p>
+					<p>Post Box No: 14, Kadiri Road</p>
+					<p>Angallu (V), Madanapalle-517325</p>
+					<p>Annamayya District, Andhra Pradesh, India.</p>
+				</div>
+			</div>
 
+			<!-- Reach Us Button (visible only on mobile) -->
+			<button id="reach-us-button" class="cta-button">
+				Reach Us <i class="fas fa-map-marker-alt"></i>
+			</button>
+		</div>
+	</footer>
 
-    <!-- *** Subscribe *** -->
-    <!-- <div class="subscribe">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h4>Purchase Tickets</h4>
-                </div>
-                <div class="col-lg-8">
-                    <form id="subscribe" action="" method="get">
-                        <div class="row">
-                          <div class="col-lg-9">
-                            <fieldset>
-                              <input name="email" type="text" id="email" pattern="[^ @]@[^ @]" placeholder="Enter name" required="">
-                            </fieldset>
-                          </div>
-                          <div class="col-lg-3">
-                            <fieldset>
-                              <button type="submit" id="form-submit" class="main-dark-button">Buy</button>
-                            </fieldset>
-                          </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- *** Amazing Venus ***-->
-    <div class="amazing-venues" style="margin: 100px 0px;">
-        <div class="container" style="background-color: rgba(0,0,0,0.082); padding: 5%;">
-            <!-- <center><img src="assets/images/ashv.jpg" class="poster"></center><br><br> -->
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="left-content">
-                        <h4>About Ashv 2k25</h4>
-                        <p style="font-weight: bold; color: brown;">The race of talent</p>
-                        <p style="text-align: justify;">"Experience the enormous excitement at 'Ashv: The Race
-                            of Talent', our vibrant two-day Techno-Cultural-Sports Fest! Witness the talents soar
-                            in technical and non-technical realms, alongside spirited sports showdowns. Delight
-                            your taste buds at diverse food stalls and engage in thrilling fun games. Don't forget
-                            to capture the magic with our exciting photo opportunities. Join us for an enriching
-                            event filled with talent, camaraderie, and boundless fun! Mark your calendars for an
-                            unforgettable experience!" </p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="right-content">
-                        <h5><i class="fa fa-map-marker"></i> Visit Us</h5><br>
-                        <span>Madanaplle Institute Of Technology & Science <br>Angallu , Madanapalle<br>Andhra
-                            Pradesh</span>
-                        <div class="text-button"><a href="https://maps.app.goo.gl/8WNQnPiSq81uR2Tp8">Need Directions? <i
-                                    class="fa fa-arrow-right"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div id="popup" class="popup">
+		<div class="popup-content">
+			<span class="close">&times;</span>
+			<img id="popup-image" src="" alt="Show Image">
+			<h1 id="popup-title"></h1>
+			<p id="popup-description"></p>
+		</div>
+	</div>
 
-    <!-- *** Footer *** -->
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script src="./assets/js/script.js"></script>
+	<script src="./assets/js/album.js"></script>
+	<script src="./assets/js/pre-loader.js"></script>
+	<script>
+		const shows = [
+			{
+				title: "Celebrity Night",
+				description: "Join us for a star-studded evening with celebrities from various fields. Enjoy performances, interactions, and much more.",
+				image: "https://img.freepik.com/premium-photo/exclamation-mark-among-question-marksaffirmation-concept-3d-render_507676-2268.jpg"
+			},
+			{
+				title: "Musical Night",
+				description: "Experience an enchanting night filled with melodious tunes and captivating performances by renowned artists.",
+				image: "old/assets/images/musicalnight (1).jpg"
+			},
+			{
+				title: "Amusement Stalls",
+				description: "Explore a variety of amusement stalls offering fun games, delicious food, and exciting activities for all ages.",
+				image: "old/assets/images/theatre.jpg"
+			}
+		];
 
-    <footer class="footer section" id="contact"><br><br><br>
-        <hr>
-        <h2 class="section-title">Contact Us!</h2><br>
-        <p class="footer-title">Get in Touch</p><br><br>
-        <div class="footer-social">
-            <div class="social-item">
-                <a href="https://www.instagram.com/ashv2k25?igsh=Z3ZuN2NlZ2VwYTJi" target="_blank">
-                    <img class="skills-icon" src="../assets/images/insta.jpg" alt="Instagram" />
-                    <span class="social-name">Instagram</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/events/ashv-theraceoftalent7179117847011319808/" target="_blank">
-                    <img class="skills-icon" src="../assets/images/linkedin.webp" alt="Twitter" />
-                    <span class="social-name">Linkedin&nbsp;&nbsp;</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="tel:+919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/phone.jpg" alt="Phone" />
-                    <span class="social-name">Phone&nbsp;&nbsp;&nbsp;</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://fb.me/e/wH5oN1IyV" target="_blank">
-                    <img class="skills-icon" src="../assets/images/facebook.jpg" alt="Facebook" />
-                    <span class="social-name">Facebook</span>
-                </a>
-            </div><br>
-            <div class="social-item">
-                <a href="https://wa.me/919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/whatsapp.jpg" alt="whatsapp" />
-                    <span class="social-name">whatsapp</span>
-                </a>
-            </div>
-        </div><br><br>
-        <div class="footer-social" id="phone-footer">
-            <div>
-                <span class="social-name">Sports - &nbsp;&nbsp;&nbsp;<a href="tel:+918688616407"
-                        target="_blank">8688616407</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Technical - &nbsp;&nbsp;&nbsp;<a href="tel:+918978346504"
-                        target="_blank">8978346504</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Cultural - &nbsp;&nbsp;&nbsp;<a href="tel:+916305529025"
-                        target="_blank">6305529025</span>&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Theatre - &nbsp;&nbsp;&nbsp;<a href="tel:+919652698204"
-                        target="_blank">9652698204</span>&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Registrations - &nbsp;&nbsp;&nbsp;<a href="tel:+919398983918"
-                        target="_blank">9398983918</span>&nbsp;&nbsp;
-                </a>
-            </div>
-        </div>
+		const popup = document.getElementById('popup');
+		const popupImage = document.getElementById('popup-image');
+		const popupTitle = document.getElementById('popup-title');
+		const popupDescription = document.getElementById('popup-description');
+		const closeBtn = document.querySelector('.close');
 
-    </footer>
-    <div class="arrow">
-        <a href="#nav" class="up-arrow"><i class="fa fa-arrow-up"></i></a>
-    </div>
-    <div class="col-lg-6 col-sm-6">
-        <div class="text-button">
-            <a href="create.html"> Created by <i class="fa fa-arrow-right"></i></a>
-        </div>
-    </div>
+		closeBtn.addEventListener('click', () => {
+			popup.style.display = 'none';
+		});
 
-    <!-- jQuery -->
+		window.addEventListener('click', (event) => {
+			if (event.target === popup) {
+				popup.style.display = 'none';
+			}
+		});
 
-    <script>
-        const prevBtn = document.querySelector("#prev-btn");
-        const nextBtn = document.querySelector("#next-btn");
-        const book = document.querySelector("#book");
-
-        const paper1 = document.querySelector("#p1");
-        const paper2 = document.querySelector("#p2");
-        const paper3 = document.querySelector("#p3");
-        const paper4 = document.querySelector("#p4");
-        const paper5 = document.querySelector("#p5");
-        const paper6 = document.querySelector("#p6");
-        const paper7 = document.querySelector("#p7");
-        const paper8 = document.querySelector("#p8");
-        const paper9 = document.querySelector("#p9");
-        const paper10 = document.querySelector("#p10");
-
-        // Event Listener
-        prevBtn.addEventListener("click", goPrevPage);
-        nextBtn.addEventListener("click", goNextPage);
-
-        // Business Logic
-        let currentLocation = 1;
-        let numOfPapers = 10;
-        let maxLocation = numOfPapers + 1;
-
-        function openBook() {
-            book.style.transform = "translateX(50%)";
-            prevBtn.style.transform = "translateX(-180px)";
-            nextBtn.style.transform = "translateX(180px)";
-        }
-
-        function closeBook(isAtBeginning) {
-            if (isAtBeginning) {
-                book.style.transform = "translateX(0%)";
-            } else {
-                book.style.transform = "translateX(100%)";
-            }
-
-            prevBtn.style.transform = "translateX(0px)";
-            nextBtn.style.transform = "translateX(0px)";
-        }
-
-        function goNextPage() {
-            if (currentLocation < maxLocation) {
-                switch (currentLocation) {
-                    case 1:
-                        openBook();
-                        paper1.classList.add("flipped");
-                        paper1.style.zIndex = 1;
-                        break;
-                    case 2:
-                        paper2.classList.add("flipped");
-                        paper2.style.zIndex = 2;
-                        break;
-                    case 3:
-                        paper3.classList.add("flipped");
-                        paper3.style.zIndex = 3;
-                        break;
-                    case 4:
-                        paper4.classList.add("flipped");
-                        paper4.style.zIndex = 4;
-                        break;
-                    case 5:
-                        paper5.classList.add("flipped");
-                        paper5.style.zIndex = 5;
-                        break;
-                    case 6:
-                        paper6.classList.add("flipped");
-                        paper6.style.zIndex = 6;
-                        break;
-                    case 7:
-                        paper7.classList.add("flipped");
-                        paper7.style.zIndex = 7;
-                        break;
-                    case 8:
-                        paper8.classList.add("flipped");
-                        paper8.style.zIndex = 8;
-                        break;
-                    case 9:
-                        paper9.classList.add("flipped");
-                        paper9.style.zIndex = 9;
-                        break;
-                    case 10:
-                        paper10.classList.add("flipped");
-                        paper10.style.zIndex = 10;
-                        closeBook(false);
-                        break;
-                    default:
-                        throw new Error("unkown state");
-                }
-                currentLocation++;
-            }
-        }
-
-        function goPrevPage() {
-            if (currentLocation > 1) {
-                switch (currentLocation) {
-                    case 2:
-                        closeBook(true);
-                        paper1.classList.remove("flipped");
-                        paper1.style.zIndex = 10;
-                        break;
-                    case 3:
-                        paper2.classList.remove("flipped");
-                        paper2.style.zIndex = 9;
-                        break;
-                    case 4:
-                        paper3.classList.remove("flipped");
-                        paper3.style.zIndex = 8;
-                        break;
-                    case 5:
-                        paper4.classList.remove("flipped");
-                        paper4.style.zIndex = 7;
-                        break;
-                    case 6:
-                        paper5.classList.remove("flipped");
-                        paper5.style.zIndex = 6;
-                        break;
-                    case 7:
-                        paper6.classList.remove("flipped");
-                        paper6.style.zIndex = 5;
-                        break;
-                    case 8:
-                        paper7.classList.remove("flipped");
-                        paper7.style.zIndex = 4;
-                        break;
-                    case 9:
-                        paper8.classList.remove("flipped");
-                        paper8.style.zIndex = 3;
-                        break;
-                    case 10:
-                        paper9.classList.remove("flipped");
-                        paper9.style.zIndex = 2;
-                        break;
-                    case 11:
-                        openBook();
-                        paper10.classList.remove("flipped");
-                        paper10.style.zIndex = 1;
-                        break;
-                    default:
-                        throw new Error("unkown state");
-                }
-
-                currentLocation--;
-            }
-        }
-
-    </script>
-    <script>
-        // Get the popup
-        var popup = document.getElementById("popup");
-        var popup_content = document.getElementsByClassName("popup-content")[0];
-
-        // Get the <span> element that closes the popup
-        var closeBtn = document.getElementsByClassName("close-btn")[0];
-
-        // When the user clicks on <span> (x), close the popup
-        closeBtn.onclick = function () {
-            popup_content.style.animation = "banner-close 0.3s forwards";
-            popup.style.backdropFilter = "blur(0px)";
-            setTimeout(() => {
-                popup.style.display = "none";
-            }, 300);
-        }
-
-        // When the user clicks anywhere outside of the popup, close it
-        window.onclick = function (event) {
-            if (event.target == popup) {
-                popup_content.style.animation = "banner-close 0.3s forwards";
-                popup.style.backdropFilter = "blur(0px)";
-                setTimeout(() => {
-                    popup.style.display = "none";
-                }, 300);
-            }
-        }
-
-        // Show the popup when the page loads
-        window.onload = function () {
-            //popup.style.display = "flex";
-        }
-    </script>
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <!-- <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>  -->
-    <!-- <script src="assets/js/mixitup.js"></script>  -->
-    <!-- <script src="assets/js/accordions.js"></script> -->
-    <script src="assets/js/owl-carousel.js"></script>
-
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
+		document.querySelectorAll('.know-more-btn').forEach((button, index) => {
+			button.addEventListener('click', () => {
+				const show = shows[index];
+				popupImage.src = show.image;
+				popupTitle.textContent = show.title;
+				popupDescription.textContent = show.description;
+				popup.style.display = 'flex';
+			});
+		});
+	</script>
 </body>
 
 </html>

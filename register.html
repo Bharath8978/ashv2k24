@@ -9,18 +9,18 @@
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
         rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/images/ashv1.webp" type="image/x-icon">
-    <title>Ashv 2k24 - Registration</title>
+    <link rel="shortcut icon" href="./old/assets/images/ashv1.webp" type="image/x-icon">
+    <title>Ashv 2K25 - Registration</title>
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="old/assets/css/bootstrap.min.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="old/assets/css/font-awesome.css">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
+    <link rel="stylesheet" type="text/css" href="old/assets/css/owl-carousel.css">
 
-    <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
+    <link rel="stylesheet" href="old/assets/css/tooplate-artxibition.css">
     <!--
 
 Tooplate 2125 ArtXibition
@@ -310,6 +310,107 @@ https://www.tooplate.com/view/2125-artxibition
             margin-left: 3rem;
         }
     }
+
+    :root {
+        --color-primary: #003366;
+        --color-secondary: #ffefa9;
+        --color-accent: #FFD700;
+        --color-text: #fff;
+        --color-text-dark: #000;
+        --color-overlay: rgba(0, 0, 0, 0.5);
+        --color-shadow: #0033669f;
+        --color-hover: #08437f;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(#003366, #0033669f);
+        box-shadow: 0 0 10px 10px #0033669f;
+        z-index: 1;
+    }
+
+    .mits-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .mits-logo img {
+        height: 80%;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .title .upper {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #FFD700;
+    }
+
+    .title hr {
+        width: 100%;
+        border: 1px solid #FFD700;
+    }
+
+    .title .lower {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: "Poppins";
+        transition: color 0.3s;
+        white-space: nowrap;
+    }
+
+    nav ul li a:hover {
+        color: var(--color-accent);
+    }
+
+    .sub-menu {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: var(--color-overlay);
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    .selected {
+        color: var(--color-accent);
+    }
 </style>
 
 
@@ -332,43 +433,43 @@ https://www.tooplate.com/view/2125-artxibition
 
 
     <!-- ***** Header Area Start ***** -->
-    <section id="nav">
-        <header class="header-area header-sticky">
-            <div class="contain">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="main-nav">
-                            <!-- ***** Logo Start ***** -->
-                            <img id="imgOne" src="./assets/images/mits.png" alt="logo">
-                            <img id="imgTwo" src="./assets//images//ashv1.webp">
-
-                            <!-- ***** Logo End ***** -->
-                            <!-- ***** Menu Start ***** -->
-                            <ul class="nav">
-                                <li class="non-tech"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="committee.html">Committee</a></li>
-                                <li><a href="technical.html">Technical Events</a></li>
-                                <li><a href="culturals.html">Culturals</a></li>
-                                <li><a href="theatre.html">Theatre</a></li>
-                                <li><a href="sports.html">Sports</a></li>
-                                <li><a href="register.html" id="b">Registration</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
-                                <li><a href="sponsors.html">Sponsors</a></li>
-                                <li><a href="contactus.html">Contact us</a></li>
-                            </ul>
-                            <a class='menu-trigger'>
-                                <span>Menu</span>
-                            </a>
-                            <!-- ***** Menu End ***** -->
-                        </nav>
-                    </div>
-                </div>
+    <header>
+        <div class="mits-logo">
+            <img src="assets/img/MITS.png" alt="">
+            <div class="title">
+                <div class="upper">MITS</div>
+                <hr>
+                <div class="lower">MADANAPALLE</div>
             </div>
-        </header>
-    </section>
-
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="event-hover"><a href="#">Events
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="font-weight: 700;"
+                            fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                        </svg></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Technical</a></li>
+                        <li><a href="#">Theatre</a></li>
+                        <li><a href="#">Cultural</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Bonus Bonaza</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Registrations</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Sponsors</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="two6-years-logo">
+            <img src="assets/img/25_years 1.png" alt="" class="year-logo">
+        </div>
+    </header>
     <!-- ***** About Us Page ***** -->
     <div class="page-heading-shows-events">
         <div class="container">
@@ -399,7 +500,7 @@ https://www.tooplate.com/view/2125-artxibition
                     <p><strong>IFSC Code</strong>: CNRB0004491</p>
                     <p><strong>Address</strong>: CTM Road , Madanapalli</p>
                 </div>
-                <div class="scanner"><img src="/assets/images/phonepe.jpg" class="phonepe"></div>
+                <div class="scanner"><img src="/old/assets/images/phonepe.jpg" class="phonepe"></div>
             </div>
             </div>
         </div>
@@ -437,7 +538,7 @@ https://www.tooplate.com/view/2125-artxibition
                 <div>
                     <center><a
                             href="https://docs.google.com/forms/d/1BapR7A66FNdw8IbrdR3ZWhQK-JgHNHpLIJ12zQ4rDA4/edit?usp=drivesdk"><img
-                                style="width: 25%; margin:2% 37.5% 2% 50.5%" src="../assets/images/register.gif"
+                                style="width: 25%; margin:2% 37.5% 2% 50.5%" src="../old/assets/images/register.gif"
                                 alt="Register Now"></a></center>
                 </div>
 
@@ -446,7 +547,7 @@ https://www.tooplate.com/view/2125-artxibition
     </div>
     </div>
     <div class="shows-events-schedule"
-        style="margin: 6%; padding: 2%; background-image: url(./assets/images/tech.jpg);">
+        style="margin: 6%; padding: 2%; background-image: url(./old/assets/images/tech.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -672,7 +773,7 @@ https://www.tooplate.com/view/2125-artxibition
     </div>
 
     <div class="shows-events-schedule"
-        style="margin: 6%; padding: 2%; background-image: url(./assets/images/cultural.jpg);  background-repeat: no-repeat; background-size: cover; ">
+        style="margin: 6%; padding: 2%; background-image: url(./old/assets/images/cultural.jpg);  background-repeat: no-repeat; background-size: cover; ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -849,7 +950,7 @@ https://www.tooplate.com/view/2125-artxibition
         </div>
     </div>
     <div class="shows-events-schedule"
-        style="margin: 6%; padding: 2%; background-image: url(./assets/images/theatre2.jpg);  background-repeat: no-repeat; background-size: cover; ">
+        style="margin: 6%; padding: 2%; background-image: url(./old/assets/images/theatre2.jpg);  background-repeat: no-repeat; background-size: cover; ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -986,7 +1087,7 @@ https://www.tooplate.com/view/2125-artxibition
 
 
     <div class="shows-events-schedule"
-        style="margin: 6%; padding: 2%; background-image: url(./assets/images/sportsmen.jpg); ">
+        style="margin: 6%; padding: 2%; background-image: url(./old/assets/images/sportsmen.jpg); ">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -1119,7 +1220,7 @@ https://www.tooplate.com/view/2125-artxibition
     </div>
 
     <div class="shows-events-schedule"
-        style="margin: 6%; padding: 2%;  background-image: url(./assets/images/sportswomen.jpg); background-repeat: no-repeat; background-size: cover;">
+        style="margin: 6%; padding: 2%;  background-image: url(./old/assets/images/sportswomen.jpg); background-repeat: no-repeat; background-size: cover;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -1300,31 +1401,31 @@ https://www.tooplate.com/view/2125-artxibition
         <div class="footer-social">
             <div class="social-item">
                 <a href="https://www.instagram.com/ashv2k24?igsh=Z3ZuN2NlZ2VwYTJi" target="_blank">
-                    <img class="skills-icon" src="../assets/images/insta.jpg" alt="Instagram" />
+                    <img class="skills-icon" src="../old/assets/images/insta.jpg" alt="Instagram" />
                     <span class="social-name">Instagram</span>
                 </a>
             </div>
             <div class="social-item">
                 <a href="https://www.linkedin.com/events/ashv-theraceoftalent7179117847011319808/" target="_blank">
-                    <img class="skills-icon" src="../assets/images/linkedin.webp" alt="Twitter" />
+                    <img class="skills-icon" src="../old/assets/images/linkedin.webp" alt="Twitter" />
                     <span class="social-name">Linkedin&nbsp;&nbsp;</span>
                 </a>
             </div>
             <div class="social-item">
                 <a href="tel:+919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/phone.jpg" alt="Phone" />
+                    <img class="skills-icon" src="../old/assets/images/phone.jpg" alt="Phone" />
                     <span class="social-name">Phone&nbsp;&nbsp;&nbsp;</span>
                 </a>
             </div>
             <div class="social-item">
                 <a href="https://fb.me/e/wH5oN1IyV" target="_blank">
-                    <img class="skills-icon" src="../assets/images/facebook.jpg" alt="Facebook" />
+                    <img class="skills-icon" src="../old/assets/images/facebook.jpg" alt="Facebook" />
                     <span class="social-name">Facebook</span>
                 </a>
             </div><br>
             <div class="social-item">
                 <a href="https://wa.me/919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/whatsapp.jpg" alt="whatsapp" />
+                    <img class="skills-icon" src="../old/assets/images/whatsapp.jpg" alt="whatsapp" />
                     <span class="social-name">whatsapp</span>
                 </a>
             </div>
@@ -1379,18 +1480,33 @@ https://www.tooplate.com/view/2125-artxibition
         // }
 
     </script>
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="old/assets/js/jquery-2.1.0.min.js"></script>
     <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <!-- <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>  -->
-    <!-- <script src="assets/js/mixitup.js"></script>  -->
-    <!-- <script src="assets/js/accordions.js"></script> -->
-    <script src="assets/js/owl-carousel.js"></script>
+    <script src="old/assets/js/scrollreveal.min.js"></script>
+    <!-- <script src="old/assets/js/waypoints.min.js"></script>
+    <script src="old/assets/js/jquery.counterup.min.js"></script>
+    <script src="old/assets/js/imgfix.min.js"></script>  -->
+    <!-- <script src="old/assets/js/mixitup.js"></script>  -->
+    <!-- <script src="old/assets/js/accordions.js"></script> -->
+    <script src="old/assets/js/owl-carousel.js"></script>
 
     <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
+    <script src="old/assets/js/custom.js"></script>
+
+    <script>
+        document
+            .querySelector(".event-hover")
+            .addEventListener("mouseover", function () {
+                document.querySelector(".sub-menu").style.display = "flex";
+                document.querySelector(".sub-menu").style.animation =
+                    "sub-menu-animation 0.3s ease-in-out forwards";
+            });
+        document
+            .querySelector(".event-hover")
+            .addEventListener("mouseout", function () {
+                document.querySelector(".sub-menu").style.display = "none";
+            });
+    </script>
 
 </body>
 

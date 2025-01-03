@@ -2,36 +2,16 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Tooplate">
-    <link
-        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="./assets/images/ashv1.webp" type="image/x-icon">
-    <title>ASHV - Gallery</title>
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/owl-carousel.css">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link rel="stylesheet" href="assets/css/tooplate-artxibition.css">
-    <!--
-
-Tooplate 2125 ArtXibition
-
-https://www.tooplate.com/view/2125-artxibition
-
--->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ashv 2k25 - The race of talent</title>
+	<link rel="shortcut icon" href="assets/img/ashv-theraceoftalent.png" type="image/x-icon">
+	<link rel="stylesheet" href="assets/styles/res-style.css">
+	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 </head>
+
 <style>
     html {
         scroll-behavior: smooth;
@@ -41,49 +21,17 @@ https://www.tooplate.com/view/2125-artxibition
         margin: 7%;
     }
 
-    .footer {
-        background-color: var(--second-color);
-        color: #a74242;
-        text-align: center;
-        font-weight: var(--font-semi);
-        padding: 3.5rem 0;
-    }
-
-    .footer-title {
-        font-size: 2rem;
-        margin-bottom: var(--mb-4);
-    }
-
-    .footer-social {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: var(--mb-4);
-    }
-
-    .social-item {
-        text-align: center;
-        margin: 0 var(--mb-2);
-    }
-
-    .skills-icon {
-        width: 10%;
-        /* Adjust according to your preference */
-    }
-
-    .social-name {
-        font-size: 1rem;
-        color: #041b78;
-    }
-
     .gallery {
         overflow-x: auto;
         margin: 5%;
+        z-index: 1;
         /* Enable horizontal scrolling */
     }
 
     .year {
         display: block;
+        font-size: 2rem;
+        color: #ffd700 !important;
         /* Change to block-level element */
         clear: both;
         /* Clear the float */
@@ -97,9 +45,15 @@ https://www.tooplate.com/view/2125-artxibition
 
     .images {
         overflow-x: auto;
+        overflow-y: hidden;
         /* Enable horizontal scrolling for images */
         white-space: nowrap;
         /* Prevent line breaks */
+        z-index: 1;
+    }
+
+    .gallery {
+        width: 90vw;
     }
 
     .images img {
@@ -117,6 +71,7 @@ https://www.tooplate.com/view/2125-artxibition
         /* Add box shadow */
         transition: transform 0.3s ease;
         /* Add transition effect */
+        z-index: 1000;
     }
 
     .images img:hover {
@@ -124,18 +79,42 @@ https://www.tooplate.com/view/2125-artxibition
         /* Add hover effect to scale images */
     }
 
+    @media screen and (max-width:600px) {
+        .images img {
+            width: 50vw !important;
+        }
+
+        .gallery {
+            width: 90% !important;
+        }
+    }
+
     .col-lg-12 img {
         width: 350px;
+        margin: 60px 0px 30px 0px;
         height: auto;
-        margin-top: 70px;
+    }
+
+    .text {
+        width: 45%;
+        margin: auto;
+        padding: 8px;
+        font-size: 20px;
     }
 
     .page-heading-shows-events {
-        background-image: url(./assets/images/mits7.jpg);
+        background-image: url(assets/img/galleryBG.png);
         background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         padding: 110px 0px;
         text-align: center;
+        min-height: 100vh;
+    }
+
+    .page-heading-shows-events h2 {
+        font-size: 40px;
+        font-weight: 900;
     }
 
     #b {
@@ -187,6 +166,27 @@ https://www.tooplate.com/view/2125-artxibition
         width: auto;
         height: 4rem;
         margin-top: 0.5rem;
+    }
+
+    .gallery::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb {
+        background-color: #ffd700;
+        /* Thumb color */
+        border-radius: 4px;
+    }
+
+    .gallery::-webkit-scrollbar-thumb:hover {
+        background-color: #00ccff;
+        /* Hover effect */
+    }
+
+    .gallery::-webkit-scrollbar-track {
+        background-color: #f4f4f4;
+        /* Track color */
+        border-radius: 4px;
     }
 
     @media screen and (max-width:768px) {
@@ -242,71 +242,100 @@ https://www.tooplate.com/view/2125-artxibition
         .social-item span {
             display: none;
         }
+
+        .text {
+            width: 98%;
+            margin: auto;
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        .col-lg-12 img {
+            width: 350px;
+            margin: 40px 0px 30px 0px;
+            height: auto;
+        }
+    }
+
+    :root {
+        --color-primary: #003366;
+        --color-secondary: #ffefa9;
+        --color-accent: #FFD700;
+        --color-text: #fff;
+        --color-text-dark: #000;
+        --color-overlay: rgba(0, 0, 0, 0.5);
+        --color-shadow: #0033669f;
+        --color-hover: #08437f;
+    }
+
+    body {
+        background: linear-gradient(#003366, #9334ff9f);
     }
 </style>
 
 <body>
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky" id="scroll">
-        <div class="contain">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <img id="imgOne" src="./assets/images/mits.png" alt="logo">
-                        <img id="imgTwo" src="./assets//images//ashv1.webp">
-
-
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="non-tech"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="committee.html">Committee</a></li>
-                            <li><a href="technical.html">Technical Events</a></li>
-                            <li><a href="culturals.html">Culturals</a></li>
-                            <li><a href="theatre.html">Theatre</a></li>
-                            <li><a href="sports.html">Sports</a></li>
-                            <li><a href="register.html">Registration</a></li>
-                            <li><a href="gallery.html" id="b">Gallery</a></li>
-                            <!-- <li><a href="accommodation.html">Accommodation</a></li> -->
-                            <li><a href="sponsors.html">Sponsors</a></li>
-                            <li><a href="contactus.html">Contact us</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
+    <header>
+        <div class="mits-logo">
+            <img src="assets/img/MITS.png" alt="">
+            <div class="title">
+                <div class="upper">MITS</div>
+                <hr>
+                <div class="lower">MADANAPALLE</div>
             </div>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="committee.html">Committee</a></li>
+                <li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" style="font-weight: 700;" fill="currentColor"
+                            class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                        </svg></a>
+                    <ul class="sub-menu">
+                        <li><a href="eventTiles.html#technical">Technical</a></li>
+                        <li><a href="eventTiles.html#theatre">Theatre</a></li>
+                        <li><a href="eventTiles.html#cultural">Cultural</a></li>
+                        <li><a href="eventTiles.html#sports">Sports</a></li>
+                        <li><a href="eventTiles.html#bonus">Bonus Bonaza</a></li>
+                    </ul>
+                </li>
+                <li><a href="registrations.html">Registrations</a></li>
+                <li><a href="gallery.html" class="selected">Gallery</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="two6-years-logo">
+            <img src="assets/img/25_years 1.png" alt="" class="year-logo">
+        </div>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="7vh" class="ashv-hamburger"
+            id="hamburger">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path d="M4 18L20 18" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 12L20 12" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+                <path d="M4 6L20 6" stroke="#FFD700" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </svg>
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** About Us Page ***** -->
+   <!-- Gallery -->
     <div class="page-heading-shows-events">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img src="./assets/images/ashv1.webp" alt="Image description">
-                    <h2 style="text-shadow: 3px 3px 4px black;">Gallery</h2>
-                    <span style="text-shadow: 3px 3px 4px black;">The Ashv gallery represents our cherished memories
-                        from years gone by, which we hold dear forever.</span>
+                    <img src="old/assets/images/ashv1.webp" alt="Image description">
+                    <h2 style="text-shadow: 3px 3px 4px black; color: #ffd700;">Gallery</h2>
+                    <p class="text" style="text-shadow: 3px 3px 4px black; color: white;">The Ashv Gallery is a treasure
+                        trove of cherished memories,
+                        capturing the spirit and essence of our journey through the years. Each moment preserved here
+                        tells a story we hold close to our hearts, celebrating the legacy of Ashv forever.</p>
                 </div>
             </div>
         </div>
@@ -316,19 +345,19 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k23 <br>
                 <h2></h2>
                 <div class="images">
-                    <img src="./assets/images/2k231.jpg" alt="Image 1">
-                    <img src="./assets/images/2k232.jpg" alt="Image 2">
-                    <img src="./assets/images/2k234.jpg" alt="Image 1">
-                    <img src="./assets/images/2k235.jpg" alt="Image 1">
-                    <img src="./assets/images/2k236.jpg" alt="Image 2">
-                    <img src="./assets/images/2k237.jpg" alt="Image 1">
-                    <img src="./assets/images/2k239.jpg" alt="Image 1">
-                    <img src="./assets/images/2k2310.jpg" alt="Image 2">
-                    <img src="./assets/images/2k2311.jpg" alt="Image 1">
-                    <img src="./assets/images/2k2313.jpg" alt="Image 1">
-                    <img src="./assets/images/2k2314.jpg" alt="Image 2">
-                    <img src="./assets/images/2k2315.jpg" alt="Image 1">
-                    <img src="./assets/images/2k2316.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k231.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k232.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k234.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k235.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k236.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k237.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k239.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k2310.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k2311.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k2313.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k2314.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k2315.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k2316.jpg" alt="Image 1">
 
 
 
@@ -343,16 +372,16 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k19 <br>
                 <h2></h2>
                 <div class="images">
-                    <img src="./assets/images/2k191.jpg" alt="Image 1">
-                    <img src="./assets/images/2k192.jpg" alt="Image 2">
-                    <img src="./assets/images/2k193.jpg" alt="Image 1">
-                    <img src="./assets/images/2k194.jpg" alt="Image 1">
-                    <img src="./assets/images/2k195.jpg" alt="Image 2">
-                    <img src="./assets/images/2k196.jpg" alt="Image 1">
-                    <img src="./assets/images/2k197.jpg" alt="Image 1">
-                    <img src="./assets/images/2k198.jpg" alt="Image 2">
-                    <img src="./assets/images/2k199.jpg" alt="Image 1">
-                    <img src="./assets/images/2k1910.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k191.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k192.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k193.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k194.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k195.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k196.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k197.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k198.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k199.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k1910.jpg" alt="Image 1">
 
                     <!-- Add more images for the year 2023 -->
                 </div>
@@ -365,14 +394,14 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k18 <br>
                 <h2></h2>
                 <div class="images">
-                    <img src="./assets/images/2k181.jpg" alt="Image 1">
-                    <img src="./assets/images/2k181.jpg" alt="Image 2">
-                    <img src="./assets/images/2k183.jpg" alt="Image 1">
-                    <img src="./assets/images/2k184.jpg" alt="Image 1">
-                    <img src="./assets/images/2k185.jpg" alt="Image 2">
-                    <img src="./assets/images/2k186.jpg" alt="Image 1">
-                    <img src="./assets/images/2k187.jpg" alt="Image 1">
-                    <img src="./assets/images/2k187.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k181.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k181.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k183.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k184.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k185.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k186.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k187.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k187.jpg" alt="Image 2">
 
 
 
@@ -387,13 +416,13 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k17 <br>
                 <h2></h2>
                 <div class="images">
-                    <img src="./assets/images/2k177.jpg" alt="Image 1">
-                    <img src="./assets/images/2k171.jpg" alt="Image 2">
-                    <img src="./assets/images/2k172.jpg" alt="Image 1">
-                    <img src="./assets/images/2k173.jpg" alt="Image 1">
-                    <img src="./assets/images/2k174.jpg" alt="Image 2">
-                    <img src="./assets/images/2k175.jpg" alt="Image 1">
-                    <img src="./assets/images/2k176.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k177.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k171.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k172.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k173.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k174.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k175.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k176.jpg" alt="Image 1">
 
 
 
@@ -408,16 +437,16 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k16 <br>
                 <h2></h2>
                 <div class="images">
-                    <img src="./assets/images/2k161.jpg" alt="Image 1">
-                    <img src="./assets/images/2k162.jpg" alt="Image 2">
-                    <img src="./assets/images/2k163.jpg" alt="Image 1">
-                    <img src="./assets/images/2k164.jpg" alt="Image 1">
-                    <img src="./assets/images/2k165.jpg" alt="Image 2">
-                    <img src="./assets/images/2k166.jpg" alt="Image 1">
-                    <img src="./assets/images/2k167.jpg" alt="Image 1">
-                    <img src="./assets/images/2k168.jpg" alt="Image 2">
-                    <img src="./assets/images/2k169.jpg" alt="Image 1">
-                    <img src="./assets/images/2k1610.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k161.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k162.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k163.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k164.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k165.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k166.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k167.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k168.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k169.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k1610.jpg" alt="Image 1">
 
                     <!-- Add more images for the year 2023 -->
                 </div>
@@ -429,11 +458,11 @@ https://www.tooplate.com/view/2125-artxibition
             <div class="year" style="font-weight: bold; color:rgb(230, 17, 134);">Ashv 2k15 <br>
                 <h2></h2>
                 <div class="images">
-                    <img src="./assets/images/2k151.jpg" alt="Image 1">
-                    <img src="./assets/images/2k152.jpg" alt="Image 2">
-                    <img src="./assets/images/2k153.jpg" alt="Image 1">
-                    <img src="./assets/images/2k154.jpg" alt="Image 1">
-                    <img src="./assets/images/2k155.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k151.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k152.jpg" alt="Image 2">
+                    <img src="old/assets/images/2k153.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k154.jpg" alt="Image 1">
+                    <img src="old/assets/images/2k155.jpg" alt="Image 2">
 
                     <!-- Add more images for the year 2023 -->
                 </div>
@@ -441,96 +470,99 @@ https://www.tooplate.com/view/2125-artxibition
             <br>
         </div>
     </div>
-    <footer class="footer section" id="contact"><br><br><br>
-        <hr>
-        <h2 class="section-title">Contact Us!</h2><br>
-        <p class="footer-title">Get in Touch</p><br><br>
-        <div class="footer-social">
-            <div class="social-item">
-                <a href="https://www.instagram.com/ashv2k24?igsh=Z3ZuN2NlZ2VwYTJi" target="_blank">
-                    <img class="skills-icon" src="../assets/images/insta.jpg" alt="Instagram" />
-                    <span class="social-name">Instagram</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/events/ashv-theraceoftalent7179117847011319808/" target="_blank">
-                    <img class="skills-icon" src="../assets/images/linkedin.webp" alt="Twitter" />
-                    <span class="social-name">Linkedin&nbsp;&nbsp;</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="tel:+919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/phone.jpg" alt="Phone" />
-                    <span class="social-name">Phone&nbsp;&nbsp;&nbsp;</span>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://fb.me/e/wH5oN1IyV" target="_blank">
-                    <img class="skills-icon" src="../assets/images/facebook.jpg" alt="Facebook" />
-                    <span class="social-name">Facebook</span>
-                </a>
-            </div><br>
-            <div class="social-item">
-                <a href="https://wa.me/919398983918" target="_blank">
-                    <img class="skills-icon" src="../assets/images/whatsapp.jpg" alt="whatsapp" />
-                    <span class="social-name">whatsapp</span>
-                </a>
-            </div>
-        </div><br><br>
-        <div class="footer-social" id="phone-footer">
-            <div>
-                <span class="social-name">Sports - &nbsp;&nbsp;&nbsp;<a href="tel:+918688616407"
-                        target="_blank">8688616407</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Technical - &nbsp;&nbsp;&nbsp;<a href="tel:+918978346504"
-                        target="_blank">8978346504</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Cultural - &nbsp;&nbsp;&nbsp;<a href="tel:+916305529025"
-                        target="_blank">6305529025</span>&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Theatre - &nbsp;&nbsp;&nbsp;<a href="tel:+919652698204"
-                        target="_blank">9652698204</span>&nbsp;&nbsp;
-                </a>
-            </div>
-            <div>
-                <span class="social-name">Registrations - &nbsp;&nbsp;&nbsp;<a href="tel:+919398983918"
-                        target="_blank">9398983918</span>&nbsp;&nbsp;
-                </a>
-            </div>
-        </div>
+    <footer class="footer">
+        <h2 class="footer-heading">Contact Us!</h2>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="social-and-contacts">
+                    <ul class="social-links">
+                        <li>
+                            <a href="https://www.instagram.com/ashv2k25?igsh=NXp2djdvZHV4eHYy">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/school/madanapalle-institute-of-technology-&-science/">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://fb.me/e/wH5oN1IyV">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/919398983918">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </li>
+                    </ul>
 
+                    <div class="technical-contacts">
+                        <p><strong>Technical: </strong> 8978346504</p>
+                        <p><strong>Cultural: </strong> 8143767320</p>
+                        <p><strong>Sports: </strong> 9502631137</p>
+                        <p><strong>Theatre: </strong> 9652698204</p>
+                        <p><strong>Registrations: </strong> 9398983918</p>
+                    </div>
+                </div>
+
+                <button onclick="document.location='creators.html'" class="cta-button">
+                    Meet the Creators <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+
+            <!-- Map and Reach Us (visible only on desktop) -->
+            <div class="map-and-reach-us">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31865.074342890974!2d78.49422682941045!3d13.617042201220594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2677c83886ad7%3A0xad73159e2bddda33!2sMadanapalle%20institute%20of%20technology%20and%20Sciences!5e0!3m2!1sen!2sin!4v1735365545296!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="reach-us">
+                    <h3>Reach Us</h3>
+                    <p>Madanapalle Institute of Technology & Science</p>
+                    <p>Post Box No: 14, Kadiri Road</p>
+                    <p>Angallu (V), Madanapalle-517325</p>
+                    <p>Annamayya District, Andhra Pradesh, India.</p>
+                </div>
+            </div>
+
+            <!-- Reach Us Button (visible only on mobile) -->
+            <!-- <button id="reach-us-button" class="reach-us-button" style="display: none;">
+			Reach Us <i class="fas fa-map-marker-alt"></i>
+		  </button> -->
+            <button id="reach-us-button" class="cta-button">
+                Reach Us <i class="fas fa-map-marker-alt"></i>
+            </button>
+        </div>
     </footer>
-    <div>
-        <a href="#scroll" class="up-arrow"><i class="fa fa-arrow-up"></i></a>
-    </div>
-    <div class="col-lg-6 col-sm-6">
-        <div class="text-button">
-            <a href="create.html"> Created by <i class="fa fa-arrow-right"></i></a>
-        </div>
-    </div>
 
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script>
+        document
+            .querySelector(".event-hover")
+            .addEventListener("mouseover", function () {
+                document.querySelector(".sub-menu").style.display = "flex";
+            });
+        document
+            .querySelector(".event-hover")
+            .addEventListener("mouseout", function () {
+                document.querySelector(".sub-menu").style.display = "none";
+            });
+        let width = screen.width;
+        if (width < 600) document.querySelector("nav").style.transform = "translateY(-100%)";
+        document.querySelector("#hamburger").addEventListener("click", function () {
+            console.log(document.querySelector("nav").style.transform);
+            if (document.querySelector("nav").style.transform === "translateY(-100%)") {
+                document.querySelector("nav").style.transform = "translateY(0%)";
+            }
+            else {
+                document.querySelector("nav").style.transform = "translateY(-100%)";
+            }
+        });
+    </script>
+</body>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-    <script src="assets/js/mixitup.js"></script>
-    <script src="assets/js/accordions.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/tech.js"></script>
+</html>
