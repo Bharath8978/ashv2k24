@@ -59,22 +59,22 @@ document.querySelector("#hamburger").addEventListener("click", function () {
 	}
 });
 
-let lastScrollTop = 0;
-const header = document.querySelector("header");
+// let lastScrollTop = 0;
+// const header = document.querySelector("header");
 
-window.addEventListener("scroll", function () {
-	const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-	if (scrollTop > lastScrollTop) {
-		// Scroll down
-		header.style.top = "-100px"; // Adjust the value as needed
-		header.style.transition = "top 0.3s ease-in-out";
-	} else {
-		// Scroll up
-		header.style.top = "0";
-		header.style.transition = "top 0.3s ease-in-out";
-	}
-	lastScrollTop = scrollTop;
-});
+// window.addEventListener("scroll", function () {
+// 	const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// 	if (scrollTop > lastScrollTop) {
+// 		// Scroll down
+// 		header.style.top = "-100px"; // Adjust the value as needed
+// 		header.style.transition = "top 0.3s ease-in-out";
+// 	} else {
+// 		// Scroll up
+// 		header.style.top = "0";
+// 		header.style.transition = "top 0.3s ease-in-out";
+// 	}
+// 	lastScrollTop = scrollTop;
+// });
 
 window.onload = () => {
 	document.querySelector(".loader").style.display = "none";
