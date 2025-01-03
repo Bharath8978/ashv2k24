@@ -1363,6 +1363,37 @@
 	        img.setAttribute("loading", "lazy");
         });
     </script>
+    <script>
+        // First, hide all dropdown content initially except Co-Conveners
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropdownContents = document.querySelectorAll('.dropdown-content');
+            dropdownContents.forEach(content => {
+                if (content.id !== 'co-con') {
+                    content.style.display = 'none';
+                }
+            });
+        });
+
+        // Handle dropdown toggle clicks
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dropdown => {
+            dropdown.addEventListener('click', () => {
+                const content = dropdown.nextElementSibling;
+                const isActive = dropdown.classList.contains('active');
+        
+                // Toggle active class
+                dropdown.classList.toggle('active');
+        
+                // Show content when active, hide when inactive except Co-Conveners
+                if (content.id !== 'co-con') {
+                    content.style.display = isActive ? 'none' : 'flex';
+                }
+                else if(content.id === 'co-con') {
+                    content.style.display = isActive ? 'flex' : 'none';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

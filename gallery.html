@@ -275,7 +275,7 @@
 </style>
 
 <body>
-        <!-- Preloader -->
+    <!-- Preloader -->
 	<div class="loader">
 		<div id="preloader-container">
 			<div id="preloader_1">
@@ -576,6 +576,9 @@
             else {
                 document.querySelector("nav").style.transform = "translateY(-100%)";
             }
+        });
+        document.querySelectorAll("img").forEach((img) => {
+	    img.setAttribute("loading", "lazy");
         });
     </script>
     	<script src="./assets/js/pre-loader.js"></script>
