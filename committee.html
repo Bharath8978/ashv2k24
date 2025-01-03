@@ -618,7 +618,7 @@
 
 <body>
     <!-- Preloader -->
-	<div class="loader">
+	<!-- <div class="loader">
 		<div id="preloader-container">
 			<div id="preloader_1">
 				<span></span>
@@ -629,7 +629,7 @@
 			</div>
 			<img src="./assets/img/ashv-theraceoftalent.png	" alt="Loader Image">
 		</div>
-	</div>
+	</div> -->
 	<!-- Header -->
     <div class="loader">
 		<div id="preloader-container">
@@ -1141,7 +1141,7 @@
                 { "name": "Chaithanya Lakshmi", "dept": "EEE", "comi": "Sports", "image": "assets/images/member/lakshmi.png" },
                 { "name": "A. Chandu", "dept": "EEE", "comi": "Sports", "image": "assets/images/member/chandu.jpg" },
                 { "name": "S. Janardhan Yadav", "dept": "EEE", "comi": "Sports", "image": "assets/images/member/janardhan.jpg" },
-                { "name": "K. Tharun", "dept": "CST", "comi": "Markrting & PR", "image": "assets/images/member/tharun.jpg" },
+                { "name": "K. Tharun", "dept": "CST", "comi": "Marketing & PR", "image": "assets/images/member/tharun.jpg" },
                 { "name": "Venkata Sai Dhanush", "dept": "", "comi": "Theatre", "image": "assets/images/member/venkata.jpg" },
                 
                 { "name": "P.S. Partha Saradhi", "dept": "ME", "comi": "Sound&Lighting", "image": "assets/images/member/partha.jpg" },
@@ -1365,12 +1365,15 @@
                 document.querySelector("nav").style.transform = "translateY(-100%)";
             }
         });
-
-        document.getElementById("reach-us-button").addEventListener("click", function () {
-            window.location.href =
-                "https://www.google.com/maps/place/Madanapalle+Institute+of+Technology+%26+Sciences/@13.6170422,78.4942268,17z";
+        
+        document.querySelector('#reach-us-button').addEventListener('click', () => {
+	        console.log('Reach us clicked!');
+	        window.open("https://www.google.com/maps/search/?api=1&query=Madanapalle+Institute+of+Technology+and+Science", "_blank");
         });
-
+        
+        document.querySelectorAll("img").forEach((img) => {
+	        img.setAttribute("loading", "lazy");
+        });
     </script>
 </body>
 
