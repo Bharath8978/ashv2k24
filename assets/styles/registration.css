@@ -247,7 +247,7 @@ html, body {
 }
 
 .event-card1 h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #041B78;
   text-align: left;
   padding: 8px;
@@ -472,7 +472,7 @@ html, body {
     }
 
     .event-footer {
-      margin-top: 10px;
+      margin-top: 12px;
       justify-content: space-between;
     }
   
@@ -566,7 +566,7 @@ html, body {
   align-items: center;
 }
 .event-details1 h3 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: #041B78;
   width: 243px;
   text-align:center;
@@ -668,7 +668,7 @@ html, body {
 
   .event-details1 h3 {
       width: 100%;
-      font-size: 1.3rem;
+      /* font-size: 1.3rem; */
   }
 
   .event-buttons {
