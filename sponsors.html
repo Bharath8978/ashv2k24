@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="assets/styles/style.css">
 	<link rel="stylesheet" href="assets/styles/res-style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="assets/styles/pre-loader.css">
 	<style>
 		* {
@@ -79,29 +80,29 @@
 		/* Nav */
 		@media (max-width: 768px) {
 			nav {
-        	position: absolute;
-        	top: 0;
-        	right: 0;
-        	width: 100%;
-        	height: auto;
-        	z-index: 10 !important;
-        	padding: 2rem;
-        	transition: all 0.3s ease-in-out;
-        	transform: translateY(-100%);
-        	background: linear-gradient(#003366, #0033669f);
-        	box-shadow: 0 0 10px 10px #0033669f;
-    	}
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 100%;
+				height: auto;
+				z-index: 10 !important;
+				padding: 2rem;
+				transition: all 0.3s ease-in-out;
+				transform: translateY(-100%);
+				background: linear-gradient(#003366, #0033669f);
+				box-shadow: 0 0 10px 10px #0033669f;
+			}
 
-      .ashv-hamburger {
-        display: none;
-        cursor: pointer;
-        z-index: 10;
-      }
+			.ashv-hamburger {
+				display: none;
+				cursor: pointer;
+				z-index: 10;
+			}
 
-      nav.active {
-        display: block;
-        transform: translateY(0);
-      }
+			nav.active {
+				display: block;
+				transform: translateY(0);
+			}
 
 			.ashv-hamburger {
 				display: block;
@@ -117,20 +118,67 @@
 				padding: 0;
 			}
 
-      nav ul li {
-        width: 100%;
-        text-align: center;
-        padding: 1rem;
-      }
+			nav ul li {
+				width: 100%;
+				text-align: center;
+				padding: 1rem;
+			}
 
-      .event-hover ul {
-        display: none;
-      }
+			.event-hover ul {
+				display: none;
+			}
 
-      .event-hover:hover ul {
-        display: block;
-      }
-    }
+			.event-hover:hover ul {
+				display: block;
+			}
+		}
+
+		.popup {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			height: 100vh;
+			transform: translate(-50%, -50%);
+			background-color: white;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			z-index: 1000;
+		}
+
+		.popup.active {
+			display: flex;
+		}
+
+		.popup-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+
+		body {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.sponsors {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+			padding: 2rem 1rem;
+		}
+
+		.sponsors img {
+			width: 200px;
+			border-radius: 10px;
+		}
+
+		#show-sponsors{
+			margin: 10px 0;
+		}
 	</style>
 </head>
 
@@ -140,20 +188,20 @@
             Our Sponsers
         </h2>
     </div> -->
-	    <!-- Preloader -->
-		<div class="loader">
-			<div id="preloader-container">
-				<div id="preloader_1">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<img src="./assets/img/ashv-theraceoftalent.png	" alt="Loader Image">
+	<!-- Preloader -->
+	<div class="loader">
+		<div id="preloader-container">
+			<div id="preloader_1">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
+			<img src="./assets/img/ashv-theraceoftalent.png	" alt="Loader Image">
 		</div>
-		<!-- Header -->
+	</div>
+	<!-- Header -->
 	<header>
 		<div class="mits-logo">
 			<img src="assets/img/MITS.png" alt="">
@@ -202,12 +250,23 @@
 			</g>
 		</svg>
 	</header>
-	<div class="sponser">
-		<img src="assets/images/20.jpg" alt="2024 Sponsers" id="desktop-pic">
-		<img src="assets/images/pic1.png" alt="2024 Sponsers" id="mobile-pic">
-		<img src="assets/images/pic2.png" alt="2024 Sponsers" id="mobile-pic">
+	<h2 style="color: white; margin-top: 15vh;">Sponsors</h2>
+	<div class="sponsors">
+		<img src="old/assets/images/sponser2.jpg" alt="">
+		<img src="old/assets/images/sponser3.jpg" alt="">
+		<img src="old/assets/images/sponser4.jpg" alt="">
+		<img src="old/assets/images/sponser24.jpg" alt="">
 	</div>
-
+	<button id="show-sponsors" class="cta-button" style="align-self: center; justify-self: center;">2024
+		Sponsors</button>
+	<div id="sponsor-popup" class="popup">
+		<span id="popup-close" class="popup-close">&times;</span>
+		<div class="sponser">
+			<img src="assets/images/20.jpg" alt="2024 Sponsers" id="desktop-pic">
+			<img src="assets/images/pic1.png" alt="2024 Sponsers" id="mobile-pic">
+			<img src="assets/images/pic2.png" alt="2024 Sponsers" id="mobile-pic">
+		</div>
+	</div>
 	<!-- Footer -->
 	<footer class="footer">
 		<h2 class="footer-heading">Contact Us!</h2>
@@ -280,12 +339,30 @@
 	<script src="./assets/js/script.js"></script>
 	<script src="./assets/js/pre-loader.js"></script>
 	<script>
-    	const hamburger = document.getElementById('hamburger');
-    	const nav = document.querySelector('nav');
+		const hamburger = document.getElementById('hamburger');
+		const nav = document.querySelector('nav');
 
-    	hamburger.addEventListener('click', () => {
-      	nav.classList.toggle('active');
-    });
+		hamburger.addEventListener('click', () => {
+			nav.classList.toggle('active');
+		});
+
+		const showSponsorsButton = document.getElementById('show-sponsors');
+		const sponsorPopup = document.getElementById('sponsor-popup');
+		const popupClose = document.getElementById('popup-close');
+
+		showSponsorsButton.addEventListener('click', () => {
+			sponsorPopup.classList.add('active');
+		});
+
+		popupClose.addEventListener('click', () => {
+			sponsorPopup.classList.remove('active');
+		});
+
+		window.addEventListener('click', (event) => {
+			if (event.target === sponsorPopup) {
+				sponsorPopup.classList.remove('active');
+			}
+		});
 	</script>
 </body>
 
