@@ -1364,36 +1364,61 @@
         });
     </script>
     <script>
-        // First, hide all dropdown content initially except Co-Conveners
         document.addEventListener('DOMContentLoaded', () => {
             const dropdownContents = document.querySelectorAll('.dropdown-content');
             dropdownContents.forEach(content => {
                 if (content.id !== 'co-con') {
                     content.style.display = 'none';
+                } else {
+                    content.style.display = 'flex';
+                }
+            });
+    
+            const dropdowns = document.querySelectorAll('.dropdown');
+            dropdowns.forEach(dropdown => {
+                const content = dropdown.nextElementSibling;
+                const isActive = dropdown.classList.contains('active') || content.id === 'co-con';
+    
+                // Apply initial styles
+                if (isActive) {
+                    dropdown.classList.add('active');
+                    dropdown.style.borderRadius = '10px 10px 0 0';
+                    dropdown.style.marginBottom = '0';
+                    content.style.display = 'flex';
+                } else {
+                    dropdown.style.borderRadius = '10px';
+                    dropdown.style.marginBottom = '2px';
+                    content.style.display = 'none';
                 }
             });
         });
-
-        // Handle dropdown toggle clicks
+    
         const dropdowns = document.querySelectorAll('.dropdown');
         dropdowns.forEach(dropdown => {
             dropdown.addEventListener('click', () => {
                 const content = dropdown.nextElementSibling;
                 const isActive = dropdown.classList.contains('active');
-        
+    
                 // Toggle active class
                 dropdown.classList.toggle('active');
-        
-                // Show content when active, hide when inactive except Co-Conveners
-                if (content.id !== 'co-con') {
-                    content.style.display = isActive ? 'none' : 'flex';
-                }
-                else if(content.id === 'co-con') {
-                    content.style.display = isActive ? 'flex' : 'none';
+    
+                // Show content when active, hide when inactive
+                content.style.display = isActive ? 'none' : 'flex';
+    
+                // Apply styles directly
+                if (isActive) {
+                    dropdown.style.borderRadius = '10px';
+                    dropdown.style.marginBottom = '2px';
+                } else {
+                    dropdown.style.borderRadius = '10px 10px 0 0';
+                    dropdown.style.marginBottom = '0';
                 }
             });
         });
     </script>
+    <script src="./assets/js/pre-loader.js"></script>
+    </body>
+    </html>
     <script src="./assets/js/pre-loader.js"></script>
 </body>
 
