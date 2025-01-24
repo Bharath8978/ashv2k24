@@ -11,7 +11,14 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/pre-loader.css">
     <link rel="stylesheet" href="assets/styles/events.css">
+    <!-- <link rel="stylesheet" href="assets/styles/res-style.css"> -->
     <style>
+        @media screen and (max-width:600px) {
+            .mits-logo img {
+                height: 40px;
+            }
+            
+        }
         .social-links {
             z-index: 2;
             display: flex;
@@ -688,6 +695,7 @@
             });
         let width = screen.width;
         if (width < 600) document.querySelector("nav").style.transform = "translateY(-100%)";
+        
         document.querySelector("#hamburger").addEventListener("click", function () {
             console.log(document.querySelector("nav").style.transform);
             if (document.querySelector("nav").style.transform === "translateY(-100%)") {
