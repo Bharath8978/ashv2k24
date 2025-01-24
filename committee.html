@@ -469,6 +469,7 @@
             height: 120px;
             flex-shrink: 0;
             order: 2;
+            object-fit: cover;
         }
 
         .dropdown-content .text {
@@ -652,9 +653,9 @@
                 <li><a href="/" class="selected">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="committee.html">Committee</a></li>
-                <li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                            height="16" style="font-weight: 700;" fill="currentColor" class="bi bi-chevron-down"
-                            viewBox="0 0 16 16">
+                <li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" style="font-weight: 700;" fill="currentColor"
+                            class="bi bi-chevron-down" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
                         </svg></a>
@@ -674,7 +675,8 @@
         </nav>
         <div class="two6-years-logo"
             style="position: relative; display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
-            <img src="assets/img/25_years 1.png" alt="" class="year-logo" style="height: 80%; scale: 1.5;" loading="eager">
+            <img src="assets/img/25_years 1.png" alt="" class="year-logo" style="height: 80%; scale: 1.5;"
+                loading="eager">
             <img src="assets/img/title_sp.png" class="year-logo" loading="eager" style="height: 80%;">
             <a href=""
                 style="position: absolute; bottom: 0; transform: translateY(70%); white-space: nowrap;color: #FFD700;right: 0; text-decoration: none;">Title
@@ -1007,7 +1009,7 @@
                             <div class="text json-grid" id="student-committee">
                             </div>
                         </div>
-                        <div class="dropdown">Student Advisors</div>
+                        <div class="dropdown">Student Sponsorship Team</div>
                         <div class="dropdown-content">
                             <div class="text json-grid" id="student-advisors">
                             </div>
@@ -1039,6 +1041,11 @@
                         <div class="dropdown">Ashv 2K25 Event Heads</div>
                         <div class="dropdown-content">
                             <div class="text json-grid" id="event-heads">
+                            </div>
+                        </div>
+                        <div class="dropdown">Student Sponsors</div>
+                        <div class="dropdown-content">
+                            <div class="text json-grid" id="student-sponsors">
                             </div>
                         </div>
 
@@ -1145,6 +1152,13 @@
                 { "name": "Venkata Sai Dhanush", "dept": "CST", "comi": "Theatre", "image": "assets/images/member/venkata.jpg" },
 
                 { "name": "P.S. Partha Saradhi", "dept": "ME", "comi": "Sound & Lighting", "image": "assets/images/member/partha.jpg" },
+            ],
+            "STUDENT SPONSORS": [
+                { "name": "G. Krupanjali", "dept": "MBA", "comi": "", "image": "assets/images/member/G.krupanjali.jpg" },
+                { "name": "V. Akhila", "dept": "MBA", "comi": "", "image": "assets/images/member/V.Akhila.jpg" },
+                { "name": "B.H. Thilak", "dept": "MBA", "comi": "", "image": "assets/images/member/B H Thilak.jpg" },
+                { "name": "P. Sai Kumar", "dept": "MBA", "comi": "", "image": "assets/images/member/P.sai kumar.jpg" },
+                { "name": "K. Jaswanth", "dept": "MBA", "comi": "", "image": "assets/images/member/K.jashwanth.JPEG" },
             ]
         }
 
@@ -1258,6 +1272,24 @@
                 </div>
             `;
             event_heads.appendChild(person);
+        });
+
+        const student_sponsors = document.getElementById('student-sponsors');
+        json_object["STUDENT SPONSORS"].forEach(member => {
+            const person = document.createElement('div');
+            person.classList.add('person');
+            person.innerHTML = `
+                <div class="image">
+                    <img src="${member.image}" onerror="javascript:this.src='assets/img/avatar.webp'" width=200 height=200 alt="">
+                </div>
+                <div class="details">
+                    <p class="name-role">
+                        <span class="name">${member.name}</span><br>
+                        <span class="role">${member.comi}-${member.dept}</span>
+                    </p>
+                </div>
+            `;
+            student_sponsors.appendChild(person);
         });
     </script>
 
