@@ -173,8 +173,13 @@
 	</div>
 	<!-- Header -->
   <header>
-    <div class="mits-logo">
-      <img src="assets/img/MITS.png" alt="">
+    <div class="mits-logo" style="height: 100%;">
+      <div class="logo"
+        style="display: flex; flex-direction: column; align-items: center;justify-content: center; position: relative;">
+        <img src="assets/img/MITS.png" alt="" loading="eager">
+        <a href="https://www.mits.ac.in/"
+          style="font-size: 0.7rem; color: white; position: absolute;bottom: 0; transform: translateY(100%);">www.mits.ac.in</a>
+      </div>
       <div class="title">
         <div class="upper">MITS</div>
         <hr>
@@ -183,7 +188,7 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
+        <li><a href="/" class="selected">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="committee.html">Committee</a></li>
         <li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -205,8 +210,13 @@
         <li><a href="contactus.html">Contact Us</a></li>
       </ul>
     </nav>
-    <div class="two6-years-logo">
-      <img src="assets/img/25_years 1.png" alt="" class="year-logo">
+    <div class="two6-years-logo"
+      style="position: relative; display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
+      <img src="assets/img/25_years 1.png" alt="" class="year-logo" style="height: 80%; scale: 1.5;" loading="eager">
+      <img src="assets/img/title_sp.png" class="year-logo" loading="eager" style="height: 80%;">
+      <a href=""
+        style="position: absolute; bottom: 0; transform: translateY(70%); white-space: nowrap;color: #FFD700;right: 0; text-decoration: none;">Title
+        Sponsor</a>
     </div>
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="7vh" class="ashv-hamburger"
       id="hamburger">

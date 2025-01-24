@@ -105,6 +105,9 @@ window.onload = () => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+	setTimeout(() => {
+		document.querySelector(".notifications").style.translate = "none";
+	}, 1000);
 	const gallery = document.querySelector(".gallery");
 	const galleryContainer = document.querySelector(".gallery-container");
 
@@ -184,7 +187,47 @@ document.querySelector(".conclave-btn").addEventListener("click", () => {
 });
 
 //footer reach us button
-document.querySelector('#reach-us-button').addEventListener('click', () => {
-	console.log('Reach us clicked!');
-	window.open("https://www.google.com/maps/search/?api=1&query=Madanapalle+Institute+of+Technology+and+Science", "_blank");
+document.querySelector("#reach-us-button").addEventListener("click", () => {
+	console.log("Reach us clicked!");
+	window.open(
+		"https://www.google.com/maps/search/?api=1&query=Madanapalle+Institute+of+Technology+and+Science",
+		"_blank"
+	);
+});
+
+var active_notification = undefined;
+
+document.querySelectorAll(".notification").forEach((i) => {
+	i.addEventListener("click", (e) => {
+		var n = e.target;
+		while(!n.classList.contains("notification")) n = n.parentNode;
+		console.log(n.classList.contains("notification"));
+		active_notification = n;
+		active_notification.classList.add("clicked");
+		active_notification.querySelector(".short").style.display = "none";
+		active_notification.querySelector(".content").style.display = "block";
+		if (active_notification !== document.querySelector(".notfication"))
+			active_notification = undefined;
+	});
+});
+
+document.querySelectorAll(".close-button").forEach((i) => {
+	i.addEventListener("click", (e) => {
+		console.log("Clicked Close");
+		console.log(active_notification);
+		if (active_notification === undefined) {
+			console.log(e.target.parentNode.parentNode.parentNode);
+			e.target.parentNode.parentNode.parentNode.style.transform =
+				"translateX(120%)";
+			setTimeout(() => {
+				e.target.parentNode.parentNode.parentNode.remove();
+			}, 300);
+		} else {
+			active_notification.classList.remove("clicked");
+			active_notification.querySelector(".short").style.display = "block";
+			active_notification.querySelector(".content").style.display =
+				"none";
+			active_notification = undefined;
+		}
+	});
 });
