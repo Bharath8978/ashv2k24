@@ -77,6 +77,17 @@
 			justify-content: center;
 		}
 
+		@media screen and (max-width: 600px) {
+			.sponsor-p {
+				font-size: 1rem !important;
+			}
+			.broucher-container{
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+
 		/* Nav */
 		@media (max-width: 768px) {
 			nav {
@@ -178,7 +189,7 @@
 			border-radius: 10px;
 		}
 
-		#show-sponsors{
+		#show-sponsors {
 			margin: 10px 0;
 		}
 	</style>
@@ -223,9 +234,9 @@
 				<li><a href="/" class="selected">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="committee.html">Committee</a></li>
-				<li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg" width="16"
-							height="16" style="font-weight: 700;" fill="currentColor" class="bi bi-chevron-down"
-							viewBox="0 0 16 16">
+				<li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg"
+							width="16" height="16" style="font-weight: 700;" fill="currentColor"
+							class="bi bi-chevron-down" viewBox="0 0 16 16">
 							<path fill-rule="evenodd"
 								d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
 						</svg></a>
@@ -245,7 +256,8 @@
 		</nav>
 		<div class="two6-years-logo"
 			style="position: relative; display: flex; align-items: center; justify-content: center; gap: 1.5rem;">
-			<img src="assets/img/25_years 1.png" alt="" class="year-logo" style="height: 80%; scale: 1.5;" loading="eager">
+			<img src="assets/img/25_years 1.png" alt="" class="year-logo" style="height: 80%; scale: 1.5;"
+				loading="eager">
 			<img src="assets/img/title_sp.png" class="year-logo" loading="eager" style="height: 80%;">
 			<a href=""
 				style="position: absolute; bottom: 0; transform: translateY(70%); white-space: nowrap;color: #FFD700;right: 0; text-decoration: none;">Title
@@ -264,7 +276,8 @@
 	</header>
 	<h2 style="color: white; margin-top: 15vh;">Title Sponsor</h2>
 	<div class="sponsors">
-	<img src="assets/images/sponsors/arva.jpg" alt="" style="height: 30vh; width: auto; border: 5px solid #ffd700; box-shadow: 0 0 10px 2px #ffd700;">
+		<img src="assets/images/sponsors/arva.jpg" alt=""
+			style="height: 30vh; width: auto; border: 5px solid #ffd700; box-shadow: 0 0 10px 2px #ffd700;">
 	</div>
 	<h2 style="color: white; margin-top: 5vh;font-family: Roboto;">Sponsors</h2>
 	<div class="sponsors">
@@ -278,16 +291,19 @@
 		<img src="assets/images/sponsors/sponsor1.jpg" alt="">
 		<img src="assets/images/sponsors/sponsor2.jpg" alt="">
 		<img src="assets/images/sponsors/swaad.jpg" alt="">
-	</div>	
+	</div>
 	<h2 style="color: white; margin-top: 5vh;font-family: Roboto;">Technical Partners</h2>
 	<div class="sponsors">
 		<img src="assets/images/sponsors/IEEE.jpg" alt="">
 		<img src="assets/images/sponsors/RADAR.jpg" alt="">
 	</div>
-	<div style="margin-left: 1vw;padding-left: max(5%, env(safe-area-inset-left));
-        padding-right: max(5%, env(safe-area-inset-right));border: 2px solid white;border-radius: 50vh; display: flex; padding-block: 0.5rem;">
-		<p style="color: white; font-size: 2rem;">For Sponsorship Contact: 9052077706, 8712655138, 9100907311</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<button onclick="window.open('assets/Sponsership Brochure.pdf')" style="background-color: transparent; outline: none; border: none; text-decoration: underline;color: #fecf00;text-align: left;align-self: flex-start;cursor: pointer; font-size: 2rem;">Brochure</button>
+	<div
+		style="margin-left: 1vw;padding-left: max(5%, env(safe-area-inset-left));
+        padding-right: max(5%, env(safe-area-inset-right));border: 2px solid white;border-radius: 50vh; display: flex; padding-block: 0.5rem; align-items: center; justify-content: center;" class="broucher-container">
+		<p style="color: white; font-size: 2rem;" class="sponsor-p">For Sponsorship Contact: 9052077706, 8712655138,
+			9100907311</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<button onclick="window.open('assets/Sponsership Brochure.pdf')"
+			style="background-color: transparent; outline: none; border: none; text-decoration: underline;color: #fecf00;text-align: left;align-self: flex-start;cursor: pointer; font-size: 2rem; width: 100%; height: 100%; text-align: center;"  class="sponsor-p">Brochure</button>
 	</div>
 	<button id="show-sponsors" class="cta-button" style="align-self: center; justify-self: center;">2024
 		Sponsors</button>
@@ -333,7 +349,7 @@
 						<p><strong>Cultural: </strong> 8143767320</p>
 						<p><strong>Sports: </strong> 9502631137</p>
 						<p><strong>Theatre: </strong> 9652698204</p>
-                        <p><strong>Bonus Bonanza: </strong> 7671033525</p>
+						<p><strong>Bonus Bonanza: </strong> 7671033525</p>
 						<p><strong>Registrations: </strong> 9398983918</p>
 					</div>
 				</div>
