@@ -1139,6 +1139,7 @@ h2 {
 strong,
 h3 {
 	color: #fecf00;
+	white-space: nowrap;
 }
 
 .footer-heading {
