@@ -214,7 +214,6 @@ html, body {
 
 .event-footer{
     display: flex;
-    margin-top: 38px;
     justify-content: space-between;
 }
 .event-info{
