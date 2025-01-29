@@ -205,7 +205,7 @@ document.querySelectorAll(".notification").forEach((i) => {
 		active_notification = n;
 		active_notification.classList.add("clicked");
 		active_notification.querySelector(".short").style.display = "none";
-		active_notification.querySelector(".content").style.display = "block";
+		active_notification.querySelector(".content").style.display = "flex";
 		if (active_notification !== document.querySelector(".notfication"))
 			active_notification = undefined;
 	});
@@ -224,7 +224,7 @@ document.querySelectorAll(".close-button").forEach((i) => {
 			}, 300);
 		} else {
 			active_notification.classList.remove("clicked");
-			active_notification.querySelector(".short").style.display = "block";
+			active_notification.querySelector(".short").style.display = "flex";
 			active_notification.querySelector(".content").style.display =
 				"none";
 			active_notification = undefined;
