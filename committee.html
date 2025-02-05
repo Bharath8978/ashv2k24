@@ -650,7 +650,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="/" >Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="committee.html" class="selected">Committee</a></li>
                 <li class="event-hover"><a href="eventTiles.html">Events <svg xmlns="http://www.w3.org/2000/svg"
@@ -1103,7 +1103,7 @@
 
             "ASHV 2K25 STUDENT COMMITTEE": [
                 { "name": "B. Jaganmohan Reddy", "dept": "CSD", "comi": "President", "image": "assets/images/member/jagan.jpeg" },
-                { "name": "Pavan Rasineni", "dept": "EEE", "comi": "Treasurer", "image": "assets/images/member/pavan.jpeg" },
+                { "name": "Pavan Rasineni", "dept": "EEE", "comi": "Treasurer", "image": "assets/images/member/pavan.jpeg", "style": "object-position: 0 35%" },
                 { "name": "K.S. Harika", "dept": "CSE", "comi": "Secretary", "image": "assets/images/member/harika.jpg" }
             ],
             "STUDENT ADVISORS": [
@@ -1213,7 +1213,7 @@
             person.classList.add('person');
             person.innerHTML = `
                 <div class="image">
-                    <img src="${member.image}" onerror="javascript:this.src='assets/img/avatar.webp'" width=200 height=200 alt="">
+                    <img src="${member.image}" ${member.style ? `style= "${member.style}"` : ""} onerror="javascript:this.src='assets/img/avatar.webp'" width=200 height=200 alt="">
                 </div>
                 <div class="details">
                     <p class="name-role">
