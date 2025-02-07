@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
 	--color-primary: #003366;
@@ -26,7 +26,7 @@ body {
 	color: var(--color-text-dark);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	display: none;
 }
 
@@ -40,7 +40,7 @@ button:focus {
 	outline: 2px solid var(--color-accent);
 }
 
-.notifications{
+.notifications {
 	position: fixed;
 	bottom: 2vh;
 	right: 2vw;
@@ -52,7 +52,7 @@ button:focus {
 	transition: all 800ms ease-in-out;
 }
 
-.notification{
+.notification {
 	width: 25vw;
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 50vw;
@@ -63,7 +63,7 @@ button:focus {
 	z-index: 1001;
 }
 
-.notification.clicked{
+.notification.clicked {
 	height: 90vh;
 	width: 90vw;
 	top: 5vh;
@@ -72,42 +72,42 @@ button:focus {
 	border-radius: 10px;
 }
 
-.short h3{
+.short h3 {
 	color: #000;
 	font-weight: 600;
 	font-family: "Montserrat";
 	overflow: hidden;
-  	text-overflow: ellipsis;
+	text-overflow: ellipsis;
 	text-wrap: nowrap;
 	display: flex;
 	gap: 10px;
 }
 
-.notification-content{
+.notification-content {
 	display: flex;
 	flex-direction: column;
 }
 
-.short p{
+.short p {
 	color: rgb(68, 68, 68);
 	font-size: 0.7rem;
 	font-family: "Montserrat";
 }
 
-.content{
+.content {
 	display: none;
 }
 
-.content h1{
+.content h1 {
 	font-family: "Montserrat";
 	font-size: 2.5rem;
 }
 
-.content p{
+.content p {
 	margin-bottom: 1rem;
 }
 
-.close-button{
+.close-button {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -115,7 +115,7 @@ button:focus {
 	transform: translateX(50%) translateY(-50%);
 }
 
-.close-button button{
+.close-button button {
 	background-color: red;
 	border-radius: 50%;
 	width: 20px;
@@ -127,7 +127,7 @@ button:focus {
 	justify-content: center;
 }
 
-.close-button button i{
+.close-button button i {
 	color: white;
 }
 
@@ -772,10 +772,10 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-	.notification{
+	.notification {
 		width: 80vw;
 		margin-right: 10vw;
-	}	
+	}
 }
 
 .cover {
@@ -1703,4 +1703,23 @@ h3 {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.hero-title {
+	font-size: 2rem;
+	color: #ffd700;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	margin-block: 1.5rem;
+}
+
+.ashv,
+.explore-events,
+.hero-title {
+	z-index: 3;
+}
+
+@media screen and (max-width: 600px) {
+	.title-sponser {
+		transform: translateX(-125%) translateY(90%) !important;
+	}
 }
