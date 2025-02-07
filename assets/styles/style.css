@@ -1723,3 +1723,7 @@ h3 {
 		transform: translateX(-125%) translateY(90%) !important;
 	}
 }
+
+.mits-logo img {
+	height: 80px !important;
+}
