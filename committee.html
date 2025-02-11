@@ -1160,7 +1160,7 @@
                 { "name": "S. Janardhan Yadav", "dept": "EEE", "comi": "Sports", "image": "assets/images/member/janardhan.jpg" },
                 { "name": "K. Tharun", "dept": "CST", "comi": "Marketing & PR", "image": "assets/images/member/tharun.jpg" },
                 { "name": "Venkata Sai Dhanush", "dept": "CST", "comi": "Theatre", "image": "assets/images/member/venkata.jpg" },
-
+                { "name": "L K Vidya Varshitha", "dept": "CAI", "comi": "Decoration", "image": "assets/images/member/vidya.jpg", "style": "object-position: top" },
                 { "name": "P.S. Partha Saradhi", "dept": "ME", "comi": "Sound & Lighting", "image": "assets/images/member/partha.jpg" },
             ],
             "STUDENT SPONSORS": [
@@ -1277,7 +1277,7 @@
             person.classList.add('person');
             person.innerHTML = `
                 <div class="image">
-                    <img src="${member.image}" onerror="javascript:this.src='assets/img/avatar.webp'" width=200 height=200 alt="">
+                    <img src="${member.image}" ${member.style ? `style= "${member.style}"` : ""} onerror="javascript:this.src='assets/img/avatar.webp'" width=200 height=200 alt="">
                 </div>
                 <div class="details">
                     <p class="name-role">
