@@ -4,27 +4,31 @@ const element_minutes = document.getElementById("minutes");
 const element_seconds = document.getElementById("seconds");
 
 function updateTimer() {
-	const eventDate = new Date("2025-02-21T00:00:00"); // Set your event date here
-	const now = new Date();
-	const timeDifference = eventDate - now;
+    const eventDate = new Date("2025-02-21T00:00:00"); // Set your event date here
+    const now = new Date();
+    const timeDifference = eventDate - now;
 
-	const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-	const hours = Math.floor(
-		(timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-	);
-	const minutes = Math.floor(
-		(timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-	);
-	const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+        (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+        (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-	element_days.innerText = days;
-	element_hours.innerText = hours;
-	element_minutes.innerText = minutes;
-	element_seconds.innerText = seconds;
+    element_days.innerText = days;
+    element_hours.innerText = hours;
+    element_minutes.innerText = minutes;
+    element_seconds.innerText = seconds;
 
 	if (timeDifference < 0) {
+		element_days.innerText = 0;
+		element_hours.innerText = 0;
+		element_minutes.innerText = 0;
+		element_seconds.innerText = 0;
 		clearInterval(timerInterval);
-		document.getElementById("timer").innerHTML = "Event has started!";
+		return;
 	}
 }
 
